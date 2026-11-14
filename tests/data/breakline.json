@@ -1,0 +1,135 @@
+{
+  "name": "breakline",
+  "description": "A ridge/breakline through the middle with steeply separated contours either side. The breakline is a hard constraint and must appear as mesh edges; elevations are not supplied along it and come from the harmonic solve.",
+  "meta": {
+    "xy_unit": "m",
+    "xy_meters_per_unit": 1.0,
+    "z_unit": "m",
+    "z_meters_per_unit": 1.0,
+    "z_datum": "local benchmark"
+  },
+  "boundary": [
+    [
+      0,
+      0
+    ],
+    [
+      100,
+      0
+    ],
+    [
+      100,
+      100
+    ],
+    [
+      0,
+      100
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "contours": [
+    {
+      "id": 1,
+      "name": "z=10",
+      "closed": false,
+      "elevation": 10,
+      "points": [
+        [
+          5,
+          10
+        ],
+        [
+          95,
+          10
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "z=20",
+      "closed": false,
+      "elevation": 20,
+      "points": [
+        [
+          5,
+          20
+        ],
+        [
+          95,
+          20
+        ]
+      ]
+    },
+    {
+      "id": 3,
+      "name": "z=80",
+      "closed": false,
+      "elevation": 80,
+      "points": [
+        [
+          5,
+          80
+        ],
+        [
+          95,
+          80
+        ]
+      ]
+    },
+    {
+      "id": 4,
+      "name": "z=90",
+      "closed": false,
+      "elevation": 90,
+      "points": [
+        [
+          5,
+          90
+        ],
+        [
+          95,
+          90
+        ]
+      ]
+    }
+  ],
+  "faults": [
+    {
+      "id": 1,
+      "name": "ridge",
+      "points": [
+        [
+          50,
+          0
+        ],
+        [
+          50,
+          100
+        ]
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "id": 1,
+      "name": "a",
+      "position": [
+        10,
+        5
+      ],
+      "elevation": 5
+    },
+    {
+      "id": 2,
+      "name": "b",
+      "position": [
+        90,
+        95
+      ],
+      "elevation": 95
+    }
+  ]
+}

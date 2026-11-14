@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contour → constrained TIN</title>
+<link rel="stylesheet" href="/styles.css">
+<script type="importmap">
+{ "imports": { "three": "/vendor/three.module.js", "three/addons/": "/vendor/" } }
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="title">
+    <h1>Contour → constrained TIN</h1>
+    <span class="sub">lines · elevations · real triangulated surface</span>
+  </div>
+  <div class="actions">
+    <label class="field">Sample
+      <select id="sampleSelect"></select>
+    </label>
+    <button id="reloadSample" class="ghost" title="Reload the selected sample from disk">Load</button>
+    <button id="runBtn" class="primary">Build mesh</button>
+    <span id="status" class="status"></span>
+  </div>
+</header>
+
+<main>
+  <section class="viewport">
+    <canvas id="view"></canvas>
+    <div class="view-overlay">
+      <div class="badge" id="meshBadge">no mesh</div>
+      <div class="legend">
+        <span><i class="sw constrained"></i>constrained edge</span>
+        <span><i class="sw unsupported"></i>beyond support / extrapolated</span>
+        <span><i class="sw problem"></i>validation issue</span>
+        <span><i class="sw original"></i>original (pre-repair)</span>
+      </div>
+      <div class="hint">drag orbit · wheel zoom · right-drag pan</div>
+    </div>
+    <div class="view-toggles">
+      <label><input type="checkbox" id="showSurface" checked> surface</label>
+      <label><input type="checkbox" id="showWire" checked> triangle edges</label>
+      <label><input type="checkbox" id="showContours" checked> contours</label>
+      <label><input type="checkbox" id="showLabels" checked> elevation labels</label>
+      <label><input type="checkbox" id="showControls" checked> control points</label>
+      <label><input type="checkbox" id="showConstraints" checked> constraints</label>
+      <label><input type="checkbox" id="showIssues" checked> issues</label>
+      <label><input type="checkbox" id="showRef" checked> reference grid</label>
+      <label><input type="checkbox" id="showHoles" checked> holes</label>
+      <label><input type="checkbox" id="showOriginal" checked> original outline</label>
+      <label class="slider">vertical ×<input type="range" id="exaggeration" min="1" max="20" step="0.5" value="1"><span id="exaggerationValue">1.0</span></label>
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <section class="panel">
+      <h2>Input</h2>
+      <div class="kv" id="metaPanel"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Result</h2>
+      <div class="kv" id="resultPanel"></div>
+      <div class="timing" id="timingPanel"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Interpolation</h2>
+      <div class="method" id="methodPanel"></div>
+      <div class="coverage" id="coveragePanel"></div>
+      <div class="kv" id="sourcesPanel"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Validation <span id="issueCount" class="count"></span></h2>
+      <div id="issueList" class="issue-list"></div>
+    </section>
+
+    <section class="panel" id="repairPanelWrap" hidden>
+      <h2>Repair candidates</h2>
+      <p class="note">Candidates are suggestions only. Nothing is applied until you tick it and build. The original document stays untouched and is always exportable.</p>
+      <div id="repairList" class="repair-list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Tolerance (derived from data)</h2>
+      <div class="kv" id="tolerancePanel"></div>
+      <p class="note" id="toleranceNote"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Export</h2>
+      <div class="export-row">
+        <button data-format="obj">OBJ</button>
+        <button data-format="stl">STL</button>
+        <button data-format="csv">CSV</button>
+        <button data-format="json">Mesh JSON</button>
+      </div>
+      <div class="export-row">
+        <button id="exportPipeline" class="ghost">Pipeline JSON (original + repaired + mesh)</button>
+      </div>
+      <p class="note" id="exportNote">Exports contain the real triangulated surface in the declared units.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Source</h2>
+      <textarea id="sourceText" spellcheck="false"></textarea>
+      <div class="export-row">
+        <button id="loadSource" class="ghost">Load this text</button>
+      </div>
+    </section>
+  </aside>
+</main>
+
+<div id="tooltip" class="tooltip" hidden></div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

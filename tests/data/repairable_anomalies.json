@@ -1,0 +1,67 @@
+{
+  "name": "repairable_anomalies",
+  "description": "Messy but fixable: a duplicated contour, a repeated consecutive vertex with a very short segment, a self-intersecting contour, a contour leaving the boundary, and a control point outside the boundary. No different-elevation crossings. Selecting the repair candidates must yield a valid mesh while the original document stays intact.",
+  "meta": {
+    "xy_unit": "m",
+    "xy_meters_per_unit": 1.0,
+    "z_unit": "m",
+    "z_meters_per_unit": 1.0,
+    "z_datum": "local benchmark",
+    "coordinate_note": "Small local grid; coordinates in metres."
+  },
+  "boundary": [
+    [0, 0],
+    [100, 0],
+    [100, 100],
+    [0, 100],
+    [0, 0]
+  ],
+  "contours": [
+    {
+      "id": 1,
+      "name": "z=10 duplicate A",
+      "closed": false,
+      "elevation": 10,
+      "points": [[5, 12], [40, 12], [70, 12], [95, 12]]
+    },
+    {
+      "id": 2,
+      "name": "z=10 duplicate B",
+      "closed": false,
+      "elevation": 10,
+      "points": [[5, 12], [40, 12], [70, 12], [95, 12]]
+    },
+    {
+      "id": 3,
+      "name": "z=20 duplicate vertex and short segment",
+      "closed": false,
+      "elevation": 20,
+      "points": [[5, 25], [5.000001, 25], [30, 25], [30.02, 25], [95, 25]]
+    },
+    {
+      "id": 4,
+      "name": "z=35 self-intersecting",
+      "closed": false,
+      "elevation": 35,
+      "points": [[10, 45], [90, 45], [90, 60], [10, 60], [50, 45], [50, 60]]
+    },
+    {
+      "id": 5,
+      "name": "z=45 leaves the boundary",
+      "closed": false,
+      "elevation": 45,
+      "points": [[-15, 75], [40, 75], [130, 75]]
+    },
+    {
+      "id": 6,
+      "name": "z=60",
+      "closed": false,
+      "elevation": 60,
+      "points": [[10, 88], [90, 88]]
+    }
+  ],
+  "controls": [
+    { "id": 1, "name": "inside", "position": [20, 50], "elevation": 28 },
+    { "id": 2, "name": "outside", "position": [120, 30], "elevation": 35 }
+  ]
+}

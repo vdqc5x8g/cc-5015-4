@@ -1,0 +1,102 @@
+{
+  "name": "hole_boundary",
+  "description": "A boundary with a rectangular void. The hole must remain unfilled; triangles must not cover its area. One contour line crosses the domain.",
+  "meta": {
+    "xy_unit": "m",
+    "xy_meters_per_unit": 1.0,
+    "z_unit": "m",
+    "z_meters_per_unit": 1.0,
+    "z_datum": "local benchmark"
+  },
+  "boundary": [
+    [
+      0,
+      0
+    ],
+    [
+      100,
+      0
+    ],
+    [
+      100,
+      100
+    ],
+    [
+      0,
+      100
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "holes": [
+    [
+      [
+        40,
+        40
+      ],
+      [
+        60,
+        40
+      ],
+      [
+        60,
+        60
+      ],
+      [
+        40,
+        60
+      ],
+      [
+        40,
+        40
+      ]
+    ]
+  ],
+  "contours": [
+    {
+      "id": 1,
+      "name": "z=5",
+      "closed": false,
+      "elevation": 5,
+      "points": [
+        [
+          0,
+          5
+        ],
+        [
+          100,
+          5
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "z=10",
+      "closed": false,
+      "elevation": 10,
+      "points": [
+        [
+          0,
+          10
+        ],
+        [
+          100,
+          10
+        ]
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "id": 1,
+      "name": "cp",
+      "position": [
+        20,
+        50
+      ],
+      "elevation": 7.5
+    }
+  ]
+}

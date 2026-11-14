@@ -23,3 +23,12 @@ __pycache__/
 *.log
 .env
 .env.*
+
+# Terrain CLI exports (default prefix and documented output directory)
+/mesh.obj
+/mesh.stl
+/mesh_vertices.csv
+/mesh_triangles.csv
+/mesh_mesh.json
+/mesh_pipeline.json
+/out/

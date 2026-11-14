@@ -1,0 +1,74 @@
+{
+  "name": "anomalies",
+  "description": "Deliberately messy data: a duplicated contour, a duplicate consecutive vertex, a short segment, a self-intersecting contour, a contour leaving the boundary, a control point outside the boundary, and two different-elevation lines that cross. Each anomaly must be located and offered as a confirmable repair; the crossing must block the build instead of being force-merged.",
+  "meta": {
+    "xy_unit": "m",
+    "xy_meters_per_unit": 1.0,
+    "z_unit": "m",
+    "z_meters_per_unit": 1.0,
+    "z_datum": "local benchmark",
+    "coordinate_note": "Small local grid; coordinates in metres."
+  },
+  "boundary": [
+    [0, 0],
+    [100, 0],
+    [100, 100],
+    [0, 100],
+    [0, 0]
+  ],
+  "contours": [
+    {
+      "id": 1,
+      "name": "z=10 duplicate A",
+      "closed": false,
+      "elevation": 10,
+      "points": [[5, 12], [40, 12], [70, 12], [95, 12]]
+    },
+    {
+      "id": 2,
+      "name": "z=10 duplicate B",
+      "closed": false,
+      "elevation": 10,
+      "points": [[5, 12], [40, 12], [70, 12], [95, 12]]
+    },
+    {
+      "id": 3,
+      "name": "z=20 with duplicate vertex and short segment",
+      "closed": false,
+      "elevation": 20,
+      "points": [[5, 25], [5.000001, 25], [30, 25], [30.02, 25], [95, 25]]
+    },
+    {
+      "id": 4,
+      "name": "z=30 self-intersecting",
+      "closed": false,
+      "elevation": 30,
+      "points": [[10, 40], [90, 55], [10, 55], [90, 40]]
+    },
+    {
+      "id": 5,
+      "name": "z=40 leaves the boundary",
+      "closed": false,
+      "elevation": 40,
+      "points": [[-15, 80], [40, 80], [130, 80]]
+    },
+    {
+      "id": 6,
+      "name": "z=70 crossing line (different elevation)",
+      "closed": false,
+      "elevation": 70,
+      "points": [[5, 90], [95, 90]]
+    },
+    {
+      "id": 7,
+      "name": "z=80 crossing line (different elevation)",
+      "closed": false,
+      "elevation": 80,
+      "points": [[50, 70], [50, 98]]
+    }
+  ],
+  "controls": [
+    { "id": 1, "name": "inside", "position": [20, 50], "elevation": 25 },
+    { "id": 2, "name": "outside", "position": [120, 30], "elevation": 35 }
+  ]
+}
