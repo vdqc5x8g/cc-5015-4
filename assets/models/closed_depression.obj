@@ -1,0 +1,4844 @@
+# constraints-to-TIN export
+# xy unit: m (1 = 1 m)
+# z unit: m (1 = 1 m), datum: asset-local datum (0 m at the recipe base plane)
+# vertices: 1212, faces: 2412
+# elevation source: observed | constraint_edge | face | boundary_extrapolated | unobserved
+# unsupported vertices (beyond observation support) are marked in the v comment
+v 0 0 32.591795  # 1 boundary_extrapolated unsupported
+v 240 0 35.931178  # 2 boundary_extrapolated unsupported
+v 240 37.80482 36  # 3 observed
+v 240 96.618983 40  # 4 observed
+v 240 203.381574 40  # 5 observed
+v 240 220 40.001288  # 6 boundary_extrapolated
+v 223.381574 220 40  # 7 observed
+v 116.618491 220 40  # 8 observed
+v 57.804519 220 36  # 9 observed
+v 0 220 35.679712  # 10 boundary_extrapolated unsupported
+v 80 63.49757 24  # 11 observed
+v 78.781558 64 24  # 12 observed
+v 78 64.361103 24  # 13 observed
+v 76 65.52441 24  # 14 observed
+v 75.321247 66 24  # 15 observed
+v 74 67.07757 24  # 16 observed
+v 73.030586 68 24  # 17 observed
+v 72 69.191145 24  # 18 observed
+v 71.380889 70 24  # 19 observed
+v 70.187867 72 24  # 20 observed
+v 70 72.437074 24  # 21 observed
+v 69.385791 74 24  # 22 observed
+v 68.904686 76 24  # 23 observed
+v 68.726152 78 24  # 24 observed
+v 68.852645 80 24  # 25 observed
+v 69.294577 82 24  # 26 observed
+v 70 83.819805 24  # 27 observed
+v 70.077312 84 24  # 28 observed
+v 71.317238 86 24  # 29 observed
+v 72 86.827225 24  # 30 observed
+v 73.122971 88 24  # 31 observed
+v 74 88.731844 24  # 32 observed
+v 75.852925 90 24  # 33 observed
+v 76 90.08415 24  # 34 observed
+v 78 90.99223 24  # 35 observed
+v 80 91.639161 24  # 36 observed
+v 81.802096 92 24  # 37 observed
+v 82 92.034604 24  # 38 observed
+v 84 92.180838 24  # 39 observed
+v 86 92.122303 24  # 40 observed
+v 86.940167 92 24  # 41 observed
+v 88 91.849204 24  # 42 observed
+v 90 91.345571 24  # 43 observed
+v 92 90.628395 24  # 44 observed
+v 93.350195 90 24  # 45 observed
+v 94 89.658573 24  # 46 observed
+v 96 88.36657 24  # 47 observed
+v 96.479749 88 24  # 48 observed
+v 98 86.645853 24  # 49 observed
+v 98.631178 86 24  # 50 observed
+v 100 84.303613 24  # 51 observed
+v 100.218458 84 24  # 52 observed
+v 101.342975 82 24  # 53 observed
+v 102 80.374831 24  # 54 observed
+v 102.138423 80 24  # 55 observed
+v 102.579407 78 24  # 56 observed
+v 102.722747 76 24  # 57 observed
+v 102.559267 74 24  # 58 observed
+v 102.076813 72 24  # 59 observed
+v 102 71.806262 24  # 60 observed
+v 101.175793 70 24  # 61 observed
+v 100 68.191777 24  # 62 observed
+v 99.852137 68 24  # 63 observed
+v 98 66.118184 24  # 64 observed
+v 97.856854 66 24  # 65 observed
+v 96 64.715817 24  # 66 observed
+v 94.661923 64 24  # 67 observed
+v 94 63.689144 24  # 68 observed
+v 92 62.99417 24  # 69 observed
+v 90 62.538314 24  # 70 observed
+v 88 62.306825 24  # 71 observed
+v 86 62.290092 24  # 72 observed
+v 84 62.483014 24  # 73 observed
+v 82 62.884568 24  # 74 observed
+v 84 49.86003 28  # 75 observed
+v 82.674509 50 28  # 76 observed
+v 82 50.07064 28  # 77 observed
+v 80 50.393845 28  # 78 observed
+v 78 50.836225 28  # 79 observed
+v 76 51.403606 28  # 80 observed
+v 74.28902 52 28  # 81 observed
+v 74 52.103016 28  # 82 observed
+v 72 52.93919 28  # 83 observed
+v 70 53.929604 28  # 84 observed
+v 69.873394 54 28  # 85 observed
+v 68 55.093614 28  # 86 observed
+v 66.638261 56 28  # 87 observed
+v 66 56.454153 28  # 88 observed
+v 64.05323 58 28  # 89 observed
+v 64 58.046074 28  # 90 observed
+v 62 59.937095 28  # 91 observed
+v 61.938414 60 28  # 92 observed
+v 60.178165 62 28  # 93 observed
+v 60 62.230493 28  # 94 observed
+v 58.705995 64 28  # 95 observed
+v 58 65.132498 28  # 96 observed
+v 57.480146 66 28  # 97 observed
+v 56.474451 68 28  # 98 observed
+v 56 69.166978 28  # 99 observed
+v 55.667332 70 28  # 100 observed
+v 55.044023 72 28  # 101 observed
+v 54.599136 74 28  # 102 observed
+v 54.325162 76 28  # 103 observed
+v 54.218272 78 28  # 104 observed
+v 54.278299 80 28  # 105 observed
+v 54.508839 82 28  # 106 observed
+v 54.917557 84 28  # 107 observed
+v 55.516682 86 28  # 108 observed
+v 56 87.212118 28  # 109 observed
+v 56.320529 88 28  # 110 observed
+v 57.349901 90 28  # 111 observed
+v 58 91.028965 28  # 112 observed
+v 58.642871 92 28  # 113 observed
+v 60 93.708375 28  # 114 observed
+v 60.247863 94 28  # 115 observed
+v 62 95.767877 28  # 116 observed
+v 62.252051 96 28  # 117 observed
+v 64 97.414573 28  # 118 observed
+v 64.815064 98 28  # 119 observed
+v 66 98.764114 28  # 120 observed
+v 68 99.876557 28  # 121 observed
+v 68.256416 100 28  # 122 observed
+v 70 100.771487 28  # 123 observed
+v 72 101.493886 28  # 124 observed
+v 73.779281 102 28  # 125 observed
+v 74 102.058975 28  # 126 observed
+v 76 102.47034 28  # 127 observed
+v 78 102.74664 28  # 128 observed
+v 80 102.893909 28  # 129 observed
+v 82 102.916617 28  # 130 observed
+v 84 102.817828 28  # 131 observed
+v 86 102.599336 28  # 132 observed
+v 88 102.261754 28  # 133 observed
+v 89.14034 102 28  # 134 observed
+v 90 101.800634 28  # 135 observed
+v 92 101.210913 28  # 136 observed
+v 94 100.495784 28  # 137 observed
+v 95.175563 100 28  # 138 observed
+v 96 99.640938 28  # 139 observed
+v 98 98.634205 28  # 140 observed
+v 99.109457 98 28  # 141 observed
+v 100 97.464499 28  # 142 observed
+v 102 96.116623 28  # 143 observed
+v 102.156994 96 28  # 144 observed
+v 104 94.533528 28  # 145 observed
+v 104.614043 94 28  # 146 observed
+v 106 92.688576 28  # 147 observed
+v 106.675081 92 28  # 148 observed
+v 108 90.502508 28  # 149 observed
+v 108.417827 90 28  # 150 observed
+v 109.892118 88 28  # 151 observed
+v 110 87.831417 28  # 152 observed
+v 111.119275 86 28  # 153 observed
+v 112 84.2976 28  # 154 observed
+v 112.149004 84 28  # 155 observed
+v 112.971327 82 28  # 156 observed
+v 113.616937 80 28  # 157 observed
+v 114 78.367631 28  # 158 observed
+v 114.085307 78 28  # 159 observed
+v 114.373662 76 28  # 160 observed
+v 114.48963 74 28  # 161 observed
+v 114.430047 72 28  # 162 observed
+v 114.189687 70 28  # 163 observed
+v 114 69.096984 28  # 164 observed
+v 113.755044 68 28  # 165 observed
+v 113.112184 66 28  # 166 observed
+v 112.252355 64 28  # 167 observed
+v 112 63.519933 28  # 168 observed
+v 111.128841 62 28  # 169 observed
+v 110 60.365733 28  # 170 observed
+v 109.720055 60 28  # 171 observed
+v 108 58.048388 28  # 172 observed
+v 107.95191 58 28  # 173 observed
+v 106 56.233741 28  # 174 observed
+v 105.703135 56 28  # 175 observed
+v 104 54.759285 28  # 176 observed
+v 102.776691 54 28  # 177 observed
+v 102 53.54306 28  # 178 observed
+v 100 52.543255 28  # 179 observed
+v 98.684602 52 28  # 180 observed
+v 98 51.724466 28  # 181 observed
+v 96 51.065035 28  # 182 observed
+v 94 50.552124 28  # 183 observed
+v 92 50.173661 28  # 184 observed
+v 90.631062 50 28  # 185 observed
+v 90 49.919145 28  # 186 observed
+v 88 49.782697 28  # 187 observed
+v 86 49.763617 28  # 188 observed
+v 78 35.954586 32  # 189 observed
+v 77.737577 36 32  # 190 observed
+v 76 36.282846 32  # 191 observed
+v 74 36.690883 32  # 192 observed
+v 72 37.188438 32  # 193 observed
+v 70 37.783018 32  # 194 observed
+v 69.361376 38 32  # 195 observed
+v 68 38.447475 32  # 196 observed
+v 66 39.204295 32  # 197 observed
+v 64.178354 40 32  # 198 observed
+v 64 40.076762 32  # 199 observed
+v 62 41.02293 32  # 200 observed
+v 60.195237 42 32  # 201 observed
+v 60 42.106086 32  # 202 observed
+v 58 43.285918 32  # 203 observed
+v 56.910146 44 32  # 204 observed
+v 56 44.609828 32  # 205 observed
+v 54.113633 46 32  # 206 observed
+v 54 46.086879 32  # 207 observed
+v 52 47.721002 32  # 208 observed
+v 51.680694 48 32  # 209 observed
+v 50 49.553603 32  # 210 observed
+v 49.544034 50 32  # 211 observed
+v 48 51.624101 32  # 212 observed
+v 47.657877 52 32  # 213 observed
+v 46 53.98907 32  # 214 observed
+v 45.99116 54 32  # 215 observed
+v 44.496456 56 32  # 216 observed
+v 44 56.747685 32  # 217 observed
+v 43.177251 58 32  # 218 observed
+v 42.031374 60 32  # 219 observed
+v 42 60.061328 32  # 220 observed
+v 40.999629 62 32  # 221 observed
+v 40.131536 64 32  # 222 observed
+v 40 64.352191 32  # 223 observed
+v 39.367285 66 32  # 224 observed
+v 38.735537 68 32  # 225 observed
+v 38.233412 70 32  # 226 observed
+v 38 71.209991 32  # 227 observed
+v 37.839291 72 32  # 228 observed
+v 37.548418 74 32  # 229 observed
+v 37.374621 76 32  # 230 observed
+v 37.3154 78 32  # 231 observed
+v 37.370701 80 32  # 232 observed
+v 37.542994 82 32  # 233 observed
+v 37.837448 84 32  # 234 observed
+v 38 84.775669 32  # 235 observed
+v 38.242649 86 32  # 236 observed
+v 38.767064 88 32  # 237 observed
+v 39.437457 90 32  # 238 observed
+v 40 91.365155 32  # 239 observed
+v 40.254442 92 32  # 240 observed
+v 41.210413 94 32  # 241 observed
+v 42 95.381638 32  # 242 observed
+v 42.351555 96 32  # 243 observed
+v 43.677239 98 32  # 244 observed
+v 44 98.426038 32  # 245 observed
+v 45.216092 100 32  # 246 observed
+v 46 100.88788 32  # 247 observed
+v 47.019354 102 32  # 248 observed
+v 48 102.952728 32  # 249 observed
+v 49.141277 104 32  # 250 observed
+v 50 104.713245 32  # 251 observed
+v 51.677135 106 32  # 252 observed
+v 52 106.227702 32  # 253 observed
+v 54 107.536541 32  # 254 observed
+v 54.786168 108 32  # 255 observed
+v 56 108.67027 32  # 256 observed
+v 58 109.645041 32  # 257 observed
+v 58.823947 110 32  # 258 observed
+v 60 110.483306 32  # 259 observed
+v 62 111.194153 32  # 260 observed
+v 64 111.782179 32  # 261 observed
+v 64.887703 112 32  # 262 observed
+v 66 112.266099 32  # 263 observed
+v 68 112.64986 32  # 264 observed
+v 70 112.933646 32  # 265 observed
+v 72 113.123184 32  # 266 observed
+v 74 113.222893 32  # 267 observed
+v 76 113.236029 32  # 268 observed
+v 78 113.164786 32  # 269 observed
+v 80 113.010389 32  # 270 observed
+v 82 112.773167 32  # 271 observed
+v 84 112.45261 32  # 272 observed
+v 86 112.047413 32  # 273 observed
+v 86.19046 112 32  # 274 observed
+v 88 111.569287 32  # 275 observed
+v 90 111.005908 32  # 276 observed
+v 92 110.352452 32  # 277 observed
+v 92.941758 110 32  # 278 observed
+v 94 109.613639 32  # 279 observed
+v 96 108.786149 32  # 280 observed
+v 97.693738 108 32  # 281 observed
+v 98 107.859061 32  # 282 observed
+v 100 106.836634 32  # 283 observed
+v 101.480309 106 32  # 284 observed
+v 102 105.704131 32  # 285 observed
+v 104 104.458049 32  # 286 observed
+v 104.676787 104 32  # 287 observed
+v 106 103.083954 32  # 288 observed
+v 107.44787 102 32  # 289 observed
+v 108 101.571814 32  # 290 observed
+v 109.890482 100 32  # 291 observed
+v 110 99.904474 32  # 292 observed
+v 112 98.052814 32  # 293 observed
+v 112.054211 98 32  # 294 observed
+v 113.985431 96 32  # 295 observed
+v 114 95.983778 32  # 296 observed
+v 115.711839 94 32  # 297 observed
+v 116 93.636297 32  # 298 observed
+v 117.258977 92 32  # 299 observed
+v 118 90.938522 32  # 300 observed
+v 118.643189 90 32  # 301 observed
+v 119.87416 88 32  # 302 observed
+v 120 87.769743 32  # 303 observed
+v 120.963693 86 32  # 304 observed
+v 121.915993 84 32  # 305 observed
+v 122 83.794633 32  # 306 observed
+v 122.742956 82 32  # 307 observed
+v 123.442548 80 32  # 308 observed
+v 124 78.062518 32  # 309 observed
+v 124.0185 78 32  # 310 observed
+v 124.480822 76 32  # 311 observed
+v 124.822856 74 32  # 312 observed
+v 125.045753 72 32  # 313 observed
+v 125.149433 70 32  # 314 observed
+v 125.132469 68 32  # 315 observed
+v 124.991976 66 32  # 316 observed
+v 124.723455 64 32  # 317 observed
+v 124.320616 62 32  # 318 observed
+v 124 60.797047 32  # 319 observed
+v 123.778759 60 32  # 320 observed
+v 123.091314 58 32  # 321 observed
+v 122.240296 56 32  # 322 observed
+v 122 55.507335 32  # 323 observed
+v 121.216865 54 32  # 324 observed
+v 120 52.001748 32  # 325 observed
+v 119.998852 52 32  # 326 observed
+v 118.563198 50 32  # 327 observed
+v 118 49.290964 32  # 328 observed
+v 116.873769 48 32  # 329 observed
+v 116 47.068915 32  # 330 observed
+v 114.883534 46 32  # 331 observed
+v 114 45.194513 32  # 332 observed
+v 112.521556 44 32  # 333 observed
+v 112 43.590194 32  # 334 observed
+v 110 42.202344 32  # 335 observed
+v 109.669392 42 32  # 336 observed
+v 108 40.979743 32  # 337 observed
+v 106.116569 40 32  # 338 observed
+v 106 39.938418 32  # 339 observed
+v 104 39.003105 32  # 340 observed
+v 102 38.219299 32  # 341 observed
+v 101.345157 38 32  # 342 observed
+v 100 37.529612 32  # 343 observed
+v 98 36.94512 32  # 344 observed
+v 96 36.469921 32  # 345 observed
+v 94 36.0929 32  # 346 observed
+v 93.359869 36 32  # 347 observed
+v 92 35.787534 32  # 348 observed
+v 90 35.564467 32  # 349 observed
+v 88 35.427077 32  # 350 observed
+v 86 35.37187 32  # 351 observed
+v 84 35.396881 32  # 352 observed
+v 82 35.501573 32  # 353 observed
+v 80 35.686756 32  # 354 observed
+v 238 36.574697 36  # 355 observed
+v 237.015599 36 36  # 356 observed
+v 236 35.399011 36  # 357 observed
+v 234 34.275404 36  # 358 observed
+v 233.488351 34 36  # 359 observed
+v 232 33.184457 36  # 360 observed
+v 230 32.15497 36  # 361 observed
+v 229.686557 32 36  # 362 observed
+v 228 31.14752 36  # 363 observed
+v 226 30.201877 36  # 364 observed
+v 225.553485 30 36  # 365 observed
+v 224 29.278899 36  # 366 observed
+v 222 28.408681 36  # 367 observed
+v 221.006384 28 36  # 368 observed
+v 220 27.573204 36  # 369 observed
+v 218 26.771598 36  # 370 observed
+v 216 26.026974 36  # 371 observed
+v 215.924148 26 36  # 372 observed
+v 214 25.290519 36  # 373 observed
+v 212 24.605648 36  # 374 observed
+v 210.093824 24 36  # 375 observed
+v 210 23.968958 36  # 376 observed
+v 208 23.340663 36  # 377 observed
+v 206 22.760109 36  # 378 observed
+v 204 22.224728 36  # 379 observed
+v 203.097976 22 36  # 380 observed
+v 202 21.713134 36  # 381 observed
+v 200 21.229263 36  # 382 observed
+v 198 20.787187 36  # 383 observed
+v 196 20.385162 36  # 384 observed
+v 194 20.021744 36  # 385 observed
+v 193.868351 20 36  # 386 observed
+v 192 19.673559 36  # 387 observed
+v 190 19.362819 36  # 388 observed
+v 188 19.090273 36  # 389 observed
+v 186 18.855363 36  # 390 observed
+v 184 18.657823 36  # 391 observed
+v 182 18.497682 36  # 392 observed
+v 180 18.375327 36  # 393 observed
+v 178 18.291545 36  # 394 observed
+v 176 18.247592 36  # 395 observed
+v 174 18.24523 36  # 396 observed
+v 172 18.28692 36  # 397 observed
+v 170 18.375898 36  # 398 observed
+v 168 18.516408 36  # 399 observed
+v 166 18.71397 36  # 400 observed
+v 164 18.975755 36  # 401 observed
+v 162 19.311089 36  # 402 observed
+v 160 19.732199 36  # 403 observed
+v 158.958773 20 36  # 404 observed
+v 158 20.241388 36  # 405 observed
+v 156 20.855557 36  # 406 observed
+v 154 21.62073 36  # 407 observed
+v 153.179901 22 36  # 408 observed
+v 152 22.556383 36  # 409 observed
+v 150 23.73509 36  # 410 observed
+v 149.62909 24 36  # 411 observed
+v 148 25.248387 36  # 412 observed
+v 147.215083 26 36  # 413 observed
+v 146 27.308636 36  # 414 observed
+v 145.481618 28 36  # 415 observed
+v 144.213475 30 36  # 416 observed
+v 144 30.396895 36  # 417 observed
+v 143.295249 32 36  # 418 observed
+v 142.607063 34 36  # 419 observed
+v 142.084717 36 36  # 420 observed
+v 142 36.390378 36  # 421 observed
+v 141.709657 38 36  # 422 observed
+v 141.427202 40 36  # 423 observed
+v 141.206389 42 36  # 424 observed
+v 141.026534 44 36  # 425 observed
+v 140.870613 46 36  # 426 observed
+v 140.724526 48 36  # 427 observed
+v 140.576504 50 36  # 428 observed
+v 140.41663 52 36  # 429 observed
+v 140.236393 54 36  # 430 observed
+v 140.02837 56 36  # 431 observed
+v 140 56.220608 36  # 432 observed
+v 139.799674 58 36  # 433 observed
+v 139.534907 60 36  # 434 observed
+v 139.226888 62 36  # 435 observed
+v 138.870418 64 36  # 436 observed
+v 138.460333 66 36  # 437 observed
+v 138 67.961745 36  # 438 observed
+v 137.991894 68 36  # 439 observed
+v 137.489824 70 36  # 440 observed
+v 136.921782 72 36  # 441 observed
+v 136.282072 74 36  # 442 observed
+v 136 74.775772 36  # 443 observed
+v 135.587491 76 36  # 444 observed
+v 134.827772 78 36  # 445 observed
+v 134 79.955675 36  # 446 observed
+v 133.982339 80 36  # 447 observed
+v 133.086065 82 36  # 448 observed
+v 132.093127 84 36  # 449 observed
+v 132 84.169868 36  # 450 observed
+v 131.036517 86 36  # 451 observed
+v 130 87.786986 36  # 452 observed
+v 129.880095 88 36  # 453 observed
+v 128.647388 90 36  # 454 observed
+v 128 90.963852 36  # 455 observed
+v 127.314853 92 36  # 456 observed
+v 126 93.831099 36  # 457 observed
+v 125.879391 94 36  # 458 observed
+v 124.344536 96 36  # 459 observed
+v 124 96.420397 36  # 460 observed
+v 122.695864 98 36  # 461 observed
+v 122 98.793894 36  # 462 observed
+v 120.925146 100 36  # 463 observed
+v 120 100.986044 36  # 464 observed
+v 119.024184 102 36  # 465 observed
+v 118 103.02007 36  # 466 observed
+v 116.982341 104 36  # 467 observed
+v 116 104.915482 36  # 468 observed
+v 114.78695 106 36  # 469 observed
+v 114 106.687831 36  # 470 observed
+v 112.424015 108 36  # 471 observed
+v 112 108.348755 36  # 472 observed
+v 110 109.908252 36  # 473 observed
+v 109.875565 110 36  # 474 observed
+v 108 111.383899 36  # 475 observed
+v 107.107815 112 36  # 476 observed
+v 106 112.774137 36  # 477 observed
+v 104.118416 114 36  # 478 observed
+v 104 114.078951 36  # 479 observed
+v 102 115.32824 36  # 480 observed
+v 100.838405 116 36  # 481 observed
+v 100 116.503398 36  # 482 observed
+v 98 117.616665 36  # 483 observed
+v 97.254307 118 36  # 484 observed
+v 96 118.6795 36  # 485 observed
+v 94 119.679305 36  # 486 observed
+v 93.302653 120 36  # 487 observed
+v 92 120.640986 36  # 488 observed
+v 90 121.547822 36  # 489 observed
+v 88.91475 122 36  # 490 observed
+v 88 122.414161 36  # 491 observed
+v 86 123.246727 36  # 492 observed
+v 84.045101 124 36  # 493 observed
+v 84 124.019182 36  # 494 observed
+v 82 124.795057 36  # 495 observed
+v 80 125.516988 36  # 496 observed
+v 78.554666 126 36  # 497 observed
+v 78 126.208666 36  # 498 observed
+v 76 126.899147 36  # 499 observed
+v 74 127.549391 36  # 500 observed
+v 72.520731 128 36  # 501 observed
+v 72 128.182161 36  # 502 observed
+v 70 128.829597 36  # 503 observed
+v 68 129.452181 36  # 504 observed
+v 66.178355 130 36  # 505 observed
+v 66 130.062847 36  # 506 observed
+v 64 130.721874 36  # 507 observed
+v 62 131.376608 36  # 508 observed
+v 60.102258 132 36  # 509 observed
+v 60 132.040165 36  # 510 observed
+v 58 132.79446 36  # 511 observed
+v 56 133.576659 36  # 512 observed
+v 54.933335 134 36  # 513 observed
+v 54 134.452095 36  # 514 observed
+v 52 135.446523 36  # 515 observed
+v 50.931064 136 36  # 516 observed
+v 50 136.598357 36  # 517 observed
+v 48 137.949767 36  # 518 observed
+v 47.926918 138 36  # 519 observed
+v 46 139.672917 36  # 520 observed
+v 45.636195 140 36  # 521 observed
+v 44 141.885103 36  # 522 observed
+v 43.901745 142 36  # 523 observed
+v 42.549536 144 36  # 524 observed
+v 42 145.068322 36  # 525 observed
+v 41.513082 146 36  # 526 observed
+v 40.707788 148 36  # 527 observed
+v 40.106151 150 36  # 528 observed
+v 40 150.469044 36  # 529 observed
+v 39.637732 152 36  # 530 observed
+v 39.296692 154 36  # 531 observed
+v 39.066188 156 36  # 532 observed
+v 38.928266 158 36  # 533 observed
+v 38.869625 160 36  # 534 observed
+v 38.880312 162 36  # 535 observed
+v 38.95294 164 36  # 536 observed
+v 39.081965 166 36  # 537 observed
+v 39.263342 168 36  # 538 observed
+v 39.494166 170 36  # 539 observed
+v 39.772505 172 36  # 540 observed
+v 40 173.406525 36  # 541 observed
+v 40.090618 174 36  # 542 observed
+v 40.435976 176 36  # 543 observed
+v 40.824205 178 36  # 544 observed
+v 41.255833 180 36  # 545 observed
+v 41.73184 182 36  # 546 observed
+v 42 183.038485 36  # 547 observed
+v 42.23669 184 36  # 548 observed
+v 42.767983 186 36  # 549 observed
+v 43.345594 188 36  # 550 observed
+v 43.971793 190 36  # 551 observed
+v 44 190.085453 36  # 552 observed
+v 44.606871 192 36  # 553 observed
+v 45.290782 194 36  # 554 observed
+v 46 195.925034 36  # 555 observed
+v 46.026636 196 36  # 556 observed
+v 46.770887 198 36  # 557 observed
+v 47.572292 200 36  # 558 observed
+v 48 201.00861 36  # 559 observed
+v 48.407742 202 36  # 560 observed
+v 49.277944 204 36  # 561 observed
+v 50 205.555422 36  # 562 observed
+v 50.201017 206 36  # 563 observed
+v 51.146716 208 36  # 564 observed
+v 52 209.688022 36  # 565 observed
+v 52.15426 210 36  # 566 observed
+v 53.183832 212 36  # 567 observed
+v 54 213.489375 36  # 568 observed
+v 54.274882 214 36  # 569 observed
+v 55.398555 216 36  # 570 observed
+v 56 217.016296 36  # 571 observed
+v 56.574339 218 36  # 572 observed
+v 239.52703 96 40  # 573 observed
+v 238 94.093243 40  # 574 observed
+v 237.923752 94 40  # 575 observed
+v 236.224732 92 40  # 576 observed
+v 236 91.745503 40  # 577 observed
+v 234.418445 90 40  # 578 observed
+v 234 89.554796 40  # 579 observed
+v 232.495119 88 40  # 580 observed
+v 232 87.505027 40  # 581 observed
+v 230.443953 86 40  # 582 observed
+v 230 85.582992 40  # 583 observed
+v 228.251532 84 40  # 584 observed
+v 228 83.778046 40  # 585 observed
+v 226 82.080466 40  # 586 observed
+v 225.901481 82 40  # 587 observed
+v 224 80.478949 40  # 588 observed
+v 223.372218 80 40  # 589 observed
+v 222 78.971078 40  # 590 observed
+v 220.636354 78 40  # 591 observed
+v 220 77.55308 40  # 592 observed
+v 218 76.21775 40  # 593 observed
+v 217.657622 76 40  # 594 observed
+v 216 74.955317 40  # 595 observed
+v 214.383981 74 40  # 596 observed
+v 214 73.774303 40  # 597 observed
+v 212 72.65827 40  # 598 observed
+v 210.737967 72 40  # 599 observed
+v 210 71.615457 40  # 600 observed
+v 208 70.635878 40  # 601 observed
+v 206.60201 70 40  # 602 observed
+v 206 69.725137 40  # 603 observed
+v 204 68.871102 40  # 604 observed
+v 202 68.088585 40  # 605 observed
+v 201.756123 68 40  # 606 observed
+v 200 67.355638 40  # 607 observed
+v 198 66.688317 40  # 608 observed
+v 196 66.087433 40  # 609 observed
+v 195.677904 66 40  # 610 observed
+v 194 65.536834 40  # 611 observed
+v 192 65.04953 40  # 612 observed
+v 190 64.628057 40  # 613 observed
+v 188 64.272747 40  # 614 observed
+v 186.107838 64 40  # 615 observed
+v 186 63.984045 40  # 616 observed
+v 184 63.756935 40  # 617 observed
+v 182 63.60383 40  # 618 observed
+v 180 63.528555 40  # 619 observed
+v 178 63.53619 40  # 620 observed
+v 176 63.63327 40  # 621 observed
+v 174 63.828137 40  # 622 observed
+v 172.862708 64 40  # 623 observed
+v 172 64.126235 40  # 624 observed
+v 170 64.533902 40  # 625 observed
+v 168 65.07291 40  # 626 observed
+v 166 65.762413 40  # 627 observed
+v 165.442355 66 40  # 628 observed
+v 164 66.599231 40  # 629 observed
+v 162 67.617824 40  # 630 observed
+v 161.375039 68 40  # 631 observed
+v 160 68.82124 40  # 632 observed
+v 158.347909 70 40  # 633 observed
+v 158 70.242181 40  # 634 observed
+v 156 71.87637 40  # 635 observed
+v 155.869602 72 40  # 636 observed
+v 154 73.724321 40  # 637 observed
+v 153.740016 74 40  # 638 observed
+v 152 75.787392 40  # 639 observed
+v 151.817729 76 40  # 640 observed
+v 150.038094 78 40  # 641 observed
+v 150 78.041116 40  # 642 observed
+v 148.375235 80 40  # 643 observed
+v 148 80.433132 40  # 644 observed
+v 146.77086 82 40  # 645 observed
+v 146 82.936148 40  # 646 observed
+v 145.197959 84 40  # 647 observed
+v 144 85.506886 40  # 648 observed
+v 143.637197 86 40  # 649 observed
+v 142.079898 88 40  # 650 observed
+v 142 88.097268 40  # 651 observed
+v 140.532255 90 40  # 652 observed
+v 140 90.652457 40  # 653 observed
+v 138.957138 92 40  # 654 observed
+v 138 93.168938 40  # 655 observed
+v 137.348017 94 40  # 656 observed
+v 136 95.625396 40  # 657 observed
+v 135.699445 96 40  # 658 observed
+v 134.006905 98 40  # 659 observed
+v 134 98.007813 40  # 660 observed
+v 132.275533 100 40  # 661 observed
+v 132 100.304826 40  # 662 observed
+v 130.485958 102 40  # 663 observed
+v 130 102.523645 40  # 664 observed
+v 128.634805 104 40  # 665 observed
+v 128 104.664613 40  # 666 observed
+v 126.71894 106 40  # 667 observed
+v 126 106.730459 40  # 668 observed
+v 124.735655 108 40  # 669 observed
+v 124 108.725381 40  # 670 observed
+v 122.68297 110 40  # 671 observed
+v 122 110.654358 40  # 672 observed
+v 120.560102 112 40  # 673 observed
+v 120 112.522685 40  # 674 observed
+v 118.368015 114 40  # 675 observed
+v 118 114.33569 40  # 676 observed
+v 116.110108 116 40  # 677 observed
+v 116 116.098638 40  # 678 observed
+v 114 117.826429 40  # 679 observed
+v 113.790338 118 40  # 680 observed
+v 112 119.525814 40  # 681 observed
+v 111.41693 120 40  # 682 observed
+v 110 121.198585 40  # 683 observed
+v 109.005447 122 40  # 684 observed
+v 108 122.851657 40  # 685 observed
+v 106.575704 124 40  # 686 observed
+v 106 124.493204 40  # 687 observed
+v 104.152334 126 40  # 688 observed
+v 104 126.133463 40  # 689 observed
+v 102 127.805239 40  # 690 observed
+v 101.75503 128 40  # 691 observed
+v 100 129.520726 40  # 692 observed
+v 99.419091 130 40  # 693 observed
+v 98 131.290938 40  # 694 observed
+v 97.183363 132 40  # 695 observed
+v 96 133.146496 40  # 696 observed
+v 95.079411 134 40  # 697 observed
+v 94 135.130549 40  # 698 observed
+v 93.134724 136 40  # 699 observed
+v 92 137.304792 40  # 700 observed
+v 91.371239 138 40  # 701 observed
+v 90 139.758836 40  # 702 observed
+v 89.804827 140 40  # 703 observed
+v 88.426739 142 40  # 704 observed
+v 88 142.737857 40  # 705 observed
+v 87.243895 144 40  # 706 observed
+v 86.255842 146 40  # 707 observed
+v 86 146.637943 40  # 708 observed
+v 85.434227 148 40  # 709 observed
+v 84.777219 150 40  # 710 observed
+v 84.274614 152 40  # 711 observed
+v 84 153.500452 40  # 712 observed
+v 83.905078 154 40  # 713 observed
+v 83.651518 156 40  # 714 observed
+v 83.511347 158 40  # 715 observed
+v 83.473452 160 40  # 716 observed
+v 83.528783 162 40  # 717 observed
+v 83.670068 164 40  # 718 observed
+v 83.891604 166 40  # 719 observed
+v 84 166.73373 40  # 720 observed
+v 84.182637 168 40  # 721 observed
+v 84.540383 170 40  # 722 observed
+v 84.966504 172 40  # 723 observed
+v 85.45988 174 40  # 724 observed
+v 86 175.929045 40  # 725 observed
+v 86.019557 176 40  # 726 observed
+v 86.627497 178 40  # 727 observed
+v 87.301821 180 40  # 728 observed
+v 88 181.88321 40  # 729 observed
+v 88.042889 182 40  # 730 observed
+v 88.831601 184 40  # 731 observed
+v 89.691285 186 40  # 732 observed
+v 90 186.672002 40  # 733 observed
+v 90.60796 188 40  # 734 observed
+v 91.591968 190 40  # 735 observed
+v 92 190.779815 40  # 736 observed
+v 92.639197 192 40  # 737 observed
+v 93.758524 194 40  # 738 observed
+v 94 194.409735 40  # 739 observed
+v 94.94269 196 40  # 740 observed
+v 96 197.674139 40  # 741 observed
+v 96.207697 198 40  # 742 observed
+v 97.544977 200 40  # 743 observed
+v 98 200.647063 40  # 744 observed
+v 98.964727 202 40  # 745 observed
+v 100 203.379333 40  # 746 observed
+v 100.473999 204 40  # 747 observed
+v 102 205.906231 40  # 748 observed
+v 102.076644 206 40  # 749 observed
+v 103.775069 208 40  # 750 observed
+v 104 208.254796 40  # 751 observed
+v 105.580733 210 40  # 752 observed
+v 106 210.446214 40  # 753 observed
+v 107.503322 212 40  # 754 observed
+v 108 212.496707 40  # 755 observed
+v 109.553525 214 40  # 756 observed
+v 110 214.419565 40  # 757 observed
+v 111.744573 216 40  # 758 observed
+v 112 216.225526 40  # 759 observed
+v 114 217.924317 40  # 760 observed
+v 114.092563 218 40  # 761 observed
+v 116 219.527444 40  # 762 observed
+v 239.5275 204 40  # 763 observed
+v 238 205.907524 40  # 764 observed
+v 237.92439 206 40  # 765 observed
+v 236.22565 208 40  # 766 observed
+v 236 208.255574 40  # 767 observed
+v 234.419759 210 40  # 768 observed
+v 234 210.446698 40  # 769 observed
+v 232.497011 212 40  # 770 observed
+v 232 212.497011 40  # 771 observed
+v 230.446698 214 40  # 772 observed
+v 230 214.419759 40  # 773 observed
+v 228.255574 216 40  # 774 observed
+v 228 216.22565 40  # 775 observed
+v 226 217.92439 40  # 776 observed
+v 225.907524 218 40  # 777 observed
+v 224 219.5275 40  # 778 observed
+v 168 87.952871 44  # 779 observed
+v 167.837422 88 44  # 780 observed
+v 166 88.522238 44  # 781 observed
+v 164 89.219991 44  # 782 observed
+v 162.12756 90 44  # 783 observed
+v 162 90.05209 44  # 784 observed
+v 160 91.008818 44  # 785 observed
+v 158.193137 92 44  # 786 observed
+v 158 92.103728 44  # 787 observed
+v 156 93.321246 44  # 788 observed
+v 155.001355 94 44  # 789 observed
+v 154 94.664936 44  # 790 observed
+v 152.174951 96 44  # 791 observed
+v 152 96.125077 44  # 792 observed
+v 150 97.68634 44  # 793 observed
+v 149.628304 98 44  # 794 observed
+v 148 99.339941 44  # 795 observed
+v 147.24941 100 44  # 796 observed
+v 146 101.072752 44  # 797 observed
+v 144.979485 102 44  # 798 observed
+v 144 102.870575 44  # 799 observed
+v 142.788076 104 44  # 800 observed
+v 142 104.72029 44  # 801 observed
+v 140.652963 106 44  # 802 observed
+v 140 106.610408 44  # 803 observed
+v 138.558163 108 44  # 804 observed
+v 138 108.531497 44  # 805 observed
+v 136.492622 110 44  # 806 observed
+v 136 110.476456 44  # 807 observed
+v 134.449306 112 44  # 808 observed
+v 134 112.440681 44  # 809 observed
+v 132.424635 114 44  # 810 observed
+v 132 114.422194 44  # 811 observed
+v 130.418096 116 44  # 812 observed
+v 130 116.421752 44  # 813 observed
+v 128.432 118 44  # 814 observed
+v 128 118.443042 44  # 815 observed
+v 126.471288 120 44  # 816 observed
+v 126 120.49299 44  # 817 observed
+v 124.543343 122 44  # 818 observed
+v 124 122.58228 44  # 819 observed
+v 122.657753 124 44  # 820 observed
+v 122 124.726183 44  # 821 observed
+v 120.826017 126 44  # 822 observed
+v 120 126.945813 44  # 823 observed
+v 119.061088 128 44  # 824 observed
+v 118 129.269968 44  # 825 observed
+v 117.376871 130 44  # 826 observed
+v 116 131.737919 44  # 827 observed
+v 115.787611 132 44  # 828 observed
+v 114.305469 134 44  # 829 observed
+v 114 134.454944 44  # 830 observed
+v 112.940499 136 44  # 831 observed
+v 112 137.529523 44  # 832 observed
+v 111.704335 138 44  # 833 observed
+v 110.599995 140 44  # 834 observed
+v 110 141.250939 44  # 835 observed
+v 109.633275 142 44  # 836 observed
+v 108.802547 144 44  # 837 observed
+v 108.11056 146 44  # 838 observed
+v 108 146.398445 44  # 839 observed
+v 107.547017 148 44  # 840 observed
+v 107.111671 150 44  # 841 observed
+v 106.79911 152 44  # 842 observed
+v 106.602647 154 44  # 843 observed
+v 106.515948 156 44  # 844 observed
+v 106.533216 158 44  # 845 observed
+v 106.649361 160 44  # 846 observed
+v 106.860074 162 44  # 847 observed
+v 107.161896 164 44  # 848 observed
+v 107.552209 166 44  # 849 observed
+v 108 167.878824 44  # 850 observed
+v 108.028981 168 44  # 851 observed
+v 108.586786 170 44  # 852 observed
+v 109.229532 172 44  # 853 observed
+v 109.957823 174 44  # 854 observed
+v 110 174.105166 44  # 855 observed
+v 110.76805 176 44  # 856 observed
+v 111.666387 178 44  # 857 observed
+v 112 178.683119 44  # 858 observed
+v 112.653235 180 44  # 859 observed
+v 113.732845 182 44  # 860 observed
+v 114 182.461481 44  # 861 observed
+v 114.909291 184 44  # 862 observed
+v 116 185.711852 44  # 863 observed
+v 116.188173 186 44  # 864 observed
+v 117.576478 188 44  # 865 observed
+v 118 188.574395 44  # 866 observed
+v 119.083125 190 44  # 867 observed
+v 120 191.138712 44  # 868 observed
+v 120.717572 192 44  # 869 observed
+v 122 193.460154 44  # 870 observed
+v 122.492711 194 44  # 871 observed
+v 124 195.574431 44  # 872 observed
+v 124.425265 196 44  # 873 observed
+v 126 197.509467 44  # 874 observed
+v 126.536628 198 44  # 875 observed
+v 128 199.287138 44  # 876 observed
+v 128.853965 200 44  # 877 observed
+v 130 200.924555 44  # 878 observed
+v 131.411696 202 44  # 879 observed
+v 132 202.434961 44  # 880 observed
+v 134 203.828221 44  # 881 observed
+v 134.261654 204 44  # 882 observed
+v 136 205.113609 44  # 883 observed
+v 137.488043 206 44  # 884 observed
+v 138 206.298762 44  # 885 observed
+v 140 207.389815 44  # 886 observed
+v 141.210485 208 44  # 887 observed
+v 142 208.391929 44  # 888 observed
+v 144 209.309961 44  # 889 observed
+v 145.646937 210 44  # 890 observed
+v 146 210.146425 44  # 891 observed
+v 148 210.907815 44  # 892 observed
+v 150 211.592954 44  # 893 observed
+v 151.325162 212 44  # 894 observed
+v 152 212.206494 44  # 895 observed
+v 154 212.752102 44  # 896 observed
+v 156 213.22846 44  # 897 observed
+v 158 213.637497 44  # 898 observed
+v 160 213.98087 44  # 899 observed
+v 160.136333 214 44  # 900 observed
+v 162 214.26285 44  # 901 observed
+v 164 214.481177 44  # 902 observed
+v 166 214.636504 44  # 903 observed
+v 168 214.729454 44  # 904 observed
+v 170 214.7604 44  # 905 observed
+v 172 214.729457 44  # 906 observed
+v 174 214.636506 44  # 907 observed
+v 176 214.481181 44  # 908 observed
+v 178 214.262856 44  # 909 observed
+v 179.863739 214 44  # 910 observed
+v 180 213.98088 44  # 911 observed
+v 182 213.637508 44  # 912 observed
+v 184 213.228473 44  # 913 observed
+v 186 212.752122 44  # 914 observed
+v 188 212.206515 44  # 915 observed
+v 188.674915 212 44  # 916 observed
+v 190 211.592985 44  # 917 observed
+v 192 210.907857 44  # 918 observed
+v 194 210.14648 44  # 919 observed
+v 194.353203 210 44  # 920 observed
+v 196 209.310039 44  # 921 observed
+v 198 208.392036 44  # 922 observed
+v 198.789757 208 44  # 923 observed
+v 200 207.38996 44  # 924 observed
+v 202 206.298961 44  # 925 observed
+v 202.512329 206 44  # 926 observed
+v 204 205.113898 44  # 927 observed
+v 205.73893 204 44  # 928 observed
+v 206 203.828623 44  # 929 observed
+v 208 202.435558 44  # 930 observed
+v 208.589193 202 44  # 931 observed
+v 210 200.925437 44  # 932 observed
+v 211.147374 200 44  # 933 observed
+v 212 199.288471 44  # 934 observed
+v 213.465363 198 44  # 935 observed
+v 214 197.511513 44  # 936 observed
+v 215.577656 196 44  # 937 observed
+v 216 195.577656 44  # 938 observed
+v 217.511513 194 44  # 939 observed
+v 218 193.465363 44  # 940 observed
+v 219.288471 192 44  # 941 observed
+v 220 191.147374 44  # 942 observed
+v 220.925437 190 44  # 943 observed
+v 222 188.589193 44  # 944 observed
+v 222.435558 188 44  # 945 observed
+v 223.828623 186 44  # 946 observed
+v 224 185.73893 44  # 947 observed
+v 225.113895 184 44  # 948 observed
+v 226 182.512326 44  # 949 observed
+v 226.298961 182 44  # 950 observed
+v 227.38996 180 44  # 951 observed
+v 228 178.78975 44  # 952 observed
+v 228.392032 178 44  # 953 observed
+v 229.310039 176 44  # 954 observed
+v 230 174.353203 44  # 955 observed
+v 230.14648 174 44  # 956 observed
+v 230.907852 172 44  # 957 observed
+v 231.592984 170 44  # 958 observed
+v 232 168.674915 44  # 959 observed
+v 232.206515 168 44  # 960 observed
+v 232.752119 166 44  # 961 observed
+v 233.228471 164 44  # 962 observed
+v 233.637502 162 44  # 963 observed
+v 233.980875 160 44  # 964 observed
+v 234 159.863702 44  # 965 observed
+v 234.26285 158 44  # 966 observed
+v 234.481172 156 44  # 967 observed
+v 234.636495 154 44  # 968 observed
+v 234.729444 152 44  # 969 observed
+v 234.760383 150 44  # 970 observed
+v 234.729435 148 44  # 971 observed
+v 234.636481 146 44  # 972 observed
+v 234.481143 144 44  # 973 observed
+v 234.26281 142 44  # 974 observed
+v 234 140.136666 44  # 975 observed
+v 233.980822 140 44  # 976 observed
+v 233.637435 138 44  # 977 observed
+v 233.228381 136 44  # 978 observed
+v 232.752002 134 44  # 979 observed
+v 232.206362 132 44  # 980 observed
+v 232 131.325629 44  # 981 observed
+v 231.592785 130 44  # 982 observed
+v 230.907594 128 44  # 983 observed
+v 230.146139 126 44  # 984 observed
+v 230 125.647657 44  # 985 observed
+v 229.309586 124 44  # 986 observed
+v 228.39143 122 44  # 987 observed
+v 228 121.211592 44  # 988 observed
+v 227.389155 120 44  # 989 observed
+v 226.297876 118 44  # 990 observed
+v 226 117.489667 44  # 991 observed
+v 225.112408 116 44  # 992 observed
+v 224 114.26404 44  # 993 observed
+v 223.826589 114 44  # 994 observed
+v 222.432721 112 44  # 995 observed
+v 222 111.414985 44  # 996 observed
+v 220.92143 110 44  # 997 observed
+v 220 108.858537 44  # 998 observed
+v 219.282747 108 44  # 999 observed
+v 218 106.542857 44  # 1000 observed
+v 217.503223 106 44  # 1001 observed
+v 216 104.4336 44  # 1002 observed
+v 215.565427 104 44  # 1003 observed
+v 214 102.503705 44  # 1004 observed
+v 213.446953 102 44  # 1005 observed
+v 212 100.731901 44  # 1006 observed
+v 211.119019 100 44  # 1007 observed
+v 210 99.101595 44  # 1008 observed
+v 208.544537 98 44  # 1009 observed
+v 208 97.600046 44  # 1010 observed
+v 206 96.218028 44  # 1011 observed
+v 205.663985 96 44  # 1012 observed
+v 204 94.94661 44  # 1013 observed
+v 202.384701 94 44  # 1014 observed
+v 202 93.779174 44  # 1015 observed
+v 200 92.71005 44  # 1016 observed
+v 198.548655 92 44  # 1017 observed
+v 198 91.735708 44  # 1018 observed
+v 196 90.851442 44  # 1019 observed
+v 194 90.057604 44  # 1020 observed
+v 193.839042 90 44  # 1021 observed
+v 192 89.347766 44  # 1022 observed
+v 190 88.725175 44  # 1023 observed
+v 188 88.189562 44  # 1024 observed
+v 187.160983 88 44  # 1025 observed
+v 186 87.738334 44  # 1026 observed
+v 184 87.37357 44  # 1027 observed
+v 182 87.098513 44  # 1028 observed
+v 180 86.915271 44  # 1029 observed
+v 178 86.826679 44  # 1030 observed
+v 176 86.836306 44  # 1031 observed
+v 174 86.948436 44  # 1032 observed
+v 172 87.168058 44  # 1033 observed
+v 170 87.500799 44  # 1034 observed
+v 166 107.753125 48  # 1035 observed
+v 165.087998 108 48  # 1036 observed
+v 164 108.297116 48  # 1037 observed
+v 162 108.967271 48  # 1038 observed
+v 160 109.756476 48  # 1039 observed
+v 159.466609 110 48  # 1040 observed
+v 158 110.676561 48  # 1041 observed
+v 156 111.714759 48  # 1042 observed
+v 155.506766 112 48  # 1043 observed
+v 154 112.882521 48  # 1044 observed
+v 152.250099 114 48  # 1045 observed
+v 152 114.162402 48  # 1046 observed
+v 150 115.571098 48  # 1047 observed
+v 149.430927 116 48  # 1048 observed
+v 148 117.100082 48  # 1049 observed
+v 146.894251 118 48  # 1050 observed
+v 146 118.746136 48  # 1051 observed
+v 144.56939 120 48  # 1052 observed
+v 144 120.514513 48  # 1053 observed
+v 142.424081 122 48  # 1054 observed
+v 142 122.414719 48  # 1055 observed
+v 140.436242 124 48  # 1056 observed
+v 140 124.462 48  # 1057 observed
+v 138.591189 126 48  # 1058 observed
+v 138 126.679414 48  # 1059 observed
+v 136.879636 128 48  # 1060 observed
+v 136 129.10076 48  # 1061 observed
+v 135.296195 130 48  # 1062 observed
+v 134 131.7748 48  # 1063 observed
+v 133.838261 132 48  # 1064 observed
+v 132.520754 134 48  # 1065 observed
+v 132 134.868436 48  # 1066 observed
+v 131.33124 136 48  # 1067 observed
+v 130.27113 138 48  # 1068 observed
+v 130 138.583094 48  # 1069 observed
+v 129.349294 140 48  # 1070 observed
+v 128.557883 142 48  # 1071 observed
+v 128 143.68209 48  # 1072 observed
+v 127.89563 144 48  # 1073 observed
+v 127.370572 146 48  # 1074 observed
+v 126.971262 148 48  # 1075 observed
+v 126.696705 150 48  # 1076 observed
+v 126.545188 152 48  # 1077 observed
+v 126.514612 154 48  # 1078 observed
+v 126.602788 156 48  # 1079 observed
+v 126.807676 158 48  # 1080 observed
+v 127.127572 160 48  # 1081 observed
+v 127.561245 162 48  # 1082 observed
+v 128 163.608262 48  # 1083 observed
+v 128.110234 164 48  # 1084 observed
+v 128.783465 166 48  # 1085 observed
+v 129.572793 168 48  # 1086 observed
+v 130 168.94904 48  # 1087 observed
+v 130.491122 170 48  # 1088 observed
+v 131.542237 172 48  # 1089 observed
+v 132 172.785638 48  # 1090 observed
+v 132.739041 174 48  # 1091 observed
+v 134 175.88033 48  # 1092 observed
+v 134.084275 176 48  # 1093 observed
+v 135.612431 178 48  # 1094 observed
+v 136 178.469449 48  # 1095 observed
+v 137.336245 180 48  # 1096 observed
+v 138 180.708744 48  # 1097 observed
+v 139.286818 182 48  # 1098 observed
+v 140 182.672061 48  # 1099 observed
+v 141.509686 184 48  # 1100 observed
+v 142 184.407735 48  # 1101 observed
+v 144 185.949712 48  # 1102 observed
+v 144.070542 186 48  # 1103 observed
+v 146 187.31016 48  # 1104 observed
+v 147.11392 188 48  # 1105 observed
+v 148 188.525674 48  # 1106 observed
+v 150 189.602395 48  # 1107 observed
+v 150.821129 190 48  # 1108 observed
+v 152 190.550507 48  # 1109 observed
+v 154 191.380517 48  # 1110 observed
+v 155.707353 192 48  # 1111 observed
+v 156 192.10306 48  # 1112 observed
+v 158 192.712989 48  # 1113 observed
+v 160 193.224993 48  # 1114 observed
+v 162 193.641137 48  # 1115 observed
+v 164 193.963098 48  # 1116 observed
+v 164.321303 194 48  # 1117 observed
+v 166 194.189037 48  # 1118 observed
+v 168 194.323891 48  # 1119 observed
+v 170 194.368802 48  # 1120 observed
+v 172 194.323946 48  # 1121 observed
+v 174 194.189148 48  # 1122 observed
+v 175.680149 194 48  # 1123 observed
+v 176 193.963276 48  # 1124 observed
+v 178 193.6414 48  # 1125 observed
+v 180 193.225354 48  # 1126 observed
+v 182 192.713481 48  # 1127 observed
+v 184 192.103719 48  # 1128 observed
+v 184.294599 192 48  # 1129 observed
+v 186 191.381432 48  # 1130 observed
+v 188 190.551751 48  # 1131 observed
+v 189.182024 190 48  # 1132 observed
+v 190 189.604134 48  # 1133 observed
+v 192 188.52809 48  # 1134 observed
+v 192.890749 188 48  # 1135 observed
+v 194 187.313658 48  # 1136 observed
+v 195.936549 186 48  # 1137 observed
+v 196 185.954828 48  # 1138 observed
+v 198 184.415248 48  # 1139 observed
+v 198.500171 184 48  # 1140 observed
+v 200 182.683713 48  # 1141 observed
+v 200.727343 182 48  # 1142 observed
+v 202 180.727338 48  # 1143 observed
+v 202.683706 180 48  # 1144 observed
+v 204 178.500157 48  # 1145 observed
+v 204.415236 178 48  # 1146 observed
+v 205.954815 176 48  # 1147 observed
+v 206 175.93653 48  # 1148 observed
+v 207.31364 174 48  # 1149 observed
+v 208 172.890707 48  # 1150 observed
+v 208.528062 172 48  # 1151 observed
+v 209.604103 170 48  # 1152 observed
+v 210 169.181948 48  # 1153 observed
+v 210.551708 168 48  # 1154 observed
+v 211.381379 166 48  # 1155 observed
+v 212 164.294432 48  # 1156 observed
+v 212.103659 164 48  # 1157 observed
+v 212.713406 162 48  # 1158 observed
+v 213.225265 160 48  # 1159 observed
+v 213.641284 158 48  # 1160 observed
+v 213.963136 156 48  # 1161 observed
+v 214 155.678888 48  # 1162 observed
+v 214.188979 154 48  # 1163 observed
+v 214.323734 152 48  # 1164 observed
+v 214.368537 150 48  # 1165 observed
+v 214.323563 148 48  # 1166 observed
+v 214.188621 146 48  # 1167 observed
+v 214 144.325807 48  # 1168 observed
+v 213.962562 144 48  # 1169 observed
+v 213.640451 142 48  # 1170 observed
+v 213.224111 140 48  # 1171 observed
+v 212.711855 138 48  # 1172 observed
+v 212.101591 136 48  # 1173 observed
+v 212 135.711683 48  # 1174 observed
+v 211.378552 134 48  # 1175 observed
+v 210.547921 132 48  # 1176 observed
+v 210 130.827607 48  # 1177 observed
+v 209.598879 130 48  # 1178 observed
+v 208.520966 128 48  # 1179 observed
+v 208 127.122888 48  # 1180 observed
+v 207.303606 126 48  # 1181 observed
+v 206 124.083278 48  # 1182 observed
+v 205.940516 124 48  # 1183 observed
+v 204.394987 122 48  # 1184 observed
+v 204 121.526156 48  # 1185 observed
+v 202.653524 120 48  # 1186 observed
+v 202 119.308756 48  # 1187 observed
+v 200.681284 118 48  # 1188 observed
+v 200 117.364792 48  # 1189 observed
+v 198.427856 116 48  # 1190 observed
+v 198 115.648895 48  # 1191 observed
+v 196 114.131598 48  # 1192 observed
+v 195.811328 114 48  # 1193 observed
+v 194 112.797482 48  # 1194 observed
+v 192.672338 112 48  # 1195 observed
+v 192 111.613546 48  # 1196 observed
+v 190 110.579238 48  # 1197 observed
+v 188.732619 110 48  # 1198 observed
+v 188 109.677651 48  # 1199 observed
+v 186 108.909528 48  # 1200 observed
+v 184 108.259886 48  # 1201 observed
+v 183.028971 108 48  # 1202 observed
+v 182 107.733166 48  # 1203 observed
+v 180 107.326518 48  # 1204 observed
+v 178 107.035066 48  # 1205 observed
+v 176 106.859422 48  # 1206 observed
+v 174 106.80051 48  # 1207 observed
+v 172 106.859435 48  # 1208 observed
+v 170 107.037292 48  # 1209 observed
+v 168 107.335013 48  # 1210 observed
+v 55 80 27.7985  # 1211 observed
+v 170 150 52.9878  # 1212 observed
+# constrained edges:
+# e 1 2 boundary
+# e 2 3 boundary
+# e 3 4 boundary
+# e 4 5 boundary
+# e 5 6 boundary
+# e 6 7 boundary
+# e 7 8 boundary
+# e 8 9 boundary
+# e 9 10 boundary
+# e 1 10 boundary
+# e 11 12 contour
+# e 12 13 contour
+# e 13 14 contour
+# e 14 15 contour
+# e 15 16 contour
+# e 16 17 contour
+# e 17 18 contour
+# e 18 19 contour
+# e 19 20 contour
+# e 20 21 contour
+# e 21 22 contour
+# e 22 23 contour
+# e 23 24 contour
+# e 24 25 contour
+# e 25 26 contour
+# e 26 27 contour
+# e 27 28 contour
+# e 28 29 contour
+# e 29 30 contour
+# e 30 31 contour
+# e 31 32 contour
+# e 32 33 contour
+# e 33 34 contour
+# e 34 35 contour
+# e 35 36 contour
+# e 36 37 contour
+# e 37 38 contour
+# e 38 39 contour
+# e 39 40 contour
+# e 40 41 contour
+# e 41 42 contour
+# e 42 43 contour
+# e 43 44 contour
+# e 44 45 contour
+# e 45 46 contour
+# e 46 47 contour
+# e 47 48 contour
+# e 48 49 contour
+# e 49 50 contour
+# e 50 51 contour
+# e 51 52 contour
+# e 52 53 contour
+# e 53 54 contour
+# e 54 55 contour
+# e 55 56 contour
+# e 56 57 contour
+# e 57 58 contour
+# e 58 59 contour
+# e 59 60 contour
+# e 60 61 contour
+# e 61 62 contour
+# e 62 63 contour
+# e 63 64 contour
+# e 64 65 contour
+# e 65 66 contour
+# e 66 67 contour
+# e 67 68 contour
+# e 68 69 contour
+# e 69 70 contour
+# e 70 71 contour
+# e 71 72 contour
+# e 72 73 contour
+# e 73 74 contour
+# e 11 74 contour
+# e 75 76 contour
+# e 76 77 contour
+# e 77 78 contour
+# e 78 79 contour
+# e 79 80 contour
+# e 80 81 contour
+# e 81 82 contour
+# e 82 83 contour
+# e 83 84 contour
+# e 84 85 contour
+# e 85 86 contour
+# e 86 87 contour
+# e 87 88 contour
+# e 88 89 contour
+# e 89 90 contour
+# e 90 91 contour
+# e 91 92 contour
+# e 92 93 contour
+# e 93 94 contour
+# e 94 95 contour
+# e 95 96 contour
+# e 96 97 contour
+# e 97 98 contour
+# e 98 99 contour
+# e 99 100 contour
+# e 100 101 contour
+# e 101 102 contour
+# e 102 103 contour
+# e 103 104 contour
+# e 104 105 contour
+# e 105 106 contour
+# e 106 107 contour
+# e 107 108 contour
+# e 108 109 contour
+# e 109 110 contour
+# e 110 111 contour
+# e 111 112 contour
+# e 112 113 contour
+# e 113 114 contour
+# e 114 115 contour
+# e 115 116 contour
+# e 116 117 contour
+# e 117 118 contour
+# e 118 119 contour
+# e 119 120 contour
+# e 120 121 contour
+# e 121 122 contour
+# e 122 123 contour
+# e 123 124 contour
+# e 124 125 contour
+# e 125 126 contour
+# e 126 127 contour
+# e 127 128 contour
+# e 128 129 contour
+# e 129 130 contour
+# e 130 131 contour
+# e 131 132 contour
+# e 132 133 contour
+# e 133 134 contour
+# e 134 135 contour
+# e 135 136 contour
+# e 136 137 contour
+# e 137 138 contour
+# e 138 139 contour
+# e 139 140 contour
+# e 140 141 contour
+# e 141 142 contour
+# e 142 143 contour
+# e 143 144 contour
+# e 144 145 contour
+# e 145 146 contour
+# e 146 147 contour
+# e 147 148 contour
+# e 148 149 contour
+# e 149 150 contour
+# e 150 151 contour
+# e 151 152 contour
+# e 152 153 contour
+# e 153 154 contour
+# e 154 155 contour
+# e 155 156 contour
+# e 156 157 contour
+# e 157 158 contour
+# e 158 159 contour
+# e 159 160 contour
+# e 160 161 contour
+# e 161 162 contour
+# e 162 163 contour
+# e 163 164 contour
+# e 164 165 contour
+# e 165 166 contour
+# e 166 167 contour
+# e 167 168 contour
+# e 168 169 contour
+# e 169 170 contour
+# e 170 171 contour
+# e 171 172 contour
+# e 172 173 contour
+# e 173 174 contour
+# e 174 175 contour
+# e 175 176 contour
+# e 176 177 contour
+# e 177 178 contour
+# e 178 179 contour
+# e 179 180 contour
+# e 180 181 contour
+# e 181 182 contour
+# e 182 183 contour
+# e 183 184 contour
+# e 184 185 contour
+# e 185 186 contour
+# e 186 187 contour
+# e 187 188 contour
+# e 75 188 contour
+# e 189 190 contour
+# e 190 191 contour
+# e 191 192 contour
+# e 192 193 contour
+# e 193 194 contour
+# e 194 195 contour
+# e 195 196 contour
+# e 196 197 contour
+# e 197 198 contour
+# e 198 199 contour
+# e 199 200 contour
+# e 200 201 contour
+# e 201 202 contour
+# e 202 203 contour
+# e 203 204 contour
+# e 204 205 contour
+# e 205 206 contour
+# e 206 207 contour
+# e 207 208 contour
+# e 208 209 contour
+# e 209 210 contour
+# e 210 211 contour
+# e 211 212 contour
+# e 212 213 contour
+# e 213 214 contour
+# e 214 215 contour
+# e 215 216 contour
+# e 216 217 contour
+# e 217 218 contour
+# e 218 219 contour
+# e 219 220 contour
+# e 220 221 contour
+# e 221 222 contour
+# e 222 223 contour
+# e 223 224 contour
+# e 224 225 contour
+# e 225 226 contour
+# e 226 227 contour
+# e 227 228 contour
+# e 228 229 contour
+# e 229 230 contour
+# e 230 231 contour
+# e 231 232 contour
+# e 232 233 contour
+# e 233 234 contour
+# e 234 235 contour
+# e 235 236 contour
+# e 236 237 contour
+# e 237 238 contour
+# e 238 239 contour
+# e 239 240 contour
+# e 240 241 contour
+# e 241 242 contour
+# e 242 243 contour
+# e 243 244 contour
+# e 244 245 contour
+# e 245 246 contour
+# e 246 247 contour
+# e 247 248 contour
+# e 248 249 contour
+# e 249 250 contour
+# e 250 251 contour
+# e 251 252 contour
+# e 252 253 contour
+# e 253 254 contour
+# e 254 255 contour
+# e 255 256 contour
+# e 256 257 contour
+# e 257 258 contour
+# e 258 259 contour
+# e 259 260 contour
+# e 260 261 contour
+# e 261 262 contour
+# e 262 263 contour
+# e 263 264 contour
+# e 264 265 contour
+# e 265 266 contour
+# e 266 267 contour
+# e 267 268 contour
+# e 268 269 contour
+# e 269 270 contour
+# e 270 271 contour
+# e 271 272 contour
+# e 272 273 contour
+# e 273 274 contour
+# e 274 275 contour
+# e 275 276 contour
+# e 276 277 contour
+# e 277 278 contour
+# e 278 279 contour
+# e 279 280 contour
+# e 280 281 contour
+# e 281 282 contour
+# e 282 283 contour
+# e 283 284 contour
+# e 284 285 contour
+# e 285 286 contour
+# e 286 287 contour
+# e 287 288 contour
+# e 288 289 contour
+# e 289 290 contour
+# e 290 291 contour
+# e 291 292 contour
+# e 292 293 contour
+# e 293 294 contour
+# e 294 295 contour
+# e 295 296 contour
+# e 296 297 contour
+# e 297 298 contour
+# e 298 299 contour
+# e 299 300 contour
+# e 300 301 contour
+# e 301 302 contour
+# e 302 303 contour
+# e 303 304 contour
+# e 304 305 contour
+# e 305 306 contour
+# e 306 307 contour
+# e 307 308 contour
+# e 308 309 contour
+# e 309 310 contour
+# e 310 311 contour
+# e 311 312 contour
+# e 312 313 contour
+# e 313 314 contour
+# e 314 315 contour
+# e 315 316 contour
+# e 316 317 contour
+# e 317 318 contour
+# e 318 319 contour
+# e 319 320 contour
+# e 320 321 contour
+# e 321 322 contour
+# e 322 323 contour
+# e 323 324 contour
+# e 324 325 contour
+# e 325 326 contour
+# e 326 327 contour
+# e 327 328 contour
+# e 328 329 contour
+# e 329 330 contour
+# e 330 331 contour
+# e 331 332 contour
+# e 332 333 contour
+# e 333 334 contour
+# e 334 335 contour
+# e 335 336 contour
+# e 336 337 contour
+# e 337 338 contour
+# e 338 339 contour
+# e 339 340 contour
+# e 340 341 contour
+# e 341 342 contour
+# e 342 343 contour
+# e 343 344 contour
+# e 344 345 contour
+# e 345 346 contour
+# e 346 347 contour
+# e 347 348 contour
+# e 348 349 contour
+# e 349 350 contour
+# e 350 351 contour
+# e 351 352 contour
+# e 352 353 contour
+# e 353 354 contour
+# e 189 354 contour
+# e 3 355 contour
+# e 355 356 contour
+# e 356 357 contour
+# e 357 358 contour
+# e 358 359 contour
+# e 359 360 contour
+# e 360 361 contour
+# e 361 362 contour
+# e 362 363 contour
+# e 363 364 contour
+# e 364 365 contour
+# e 365 366 contour
+# e 366 367 contour
+# e 367 368 contour
+# e 368 369 contour
+# e 369 370 contour
+# e 370 371 contour
+# e 371 372 contour
+# e 372 373 contour
+# e 373 374 contour
+# e 374 375 contour
+# e 375 376 contour
+# e 376 377 contour
+# e 377 378 contour
+# e 378 379 contour
+# e 379 380 contour
+# e 380 381 contour
+# e 381 382 contour
+# e 382 383 contour
+# e 383 384 contour
+# e 384 385 contour
+# e 385 386 contour
+# e 386 387 contour
+# e 387 388 contour
+# e 388 389 contour
+# e 389 390 contour
+# e 390 391 contour
+# e 391 392 contour
+# e 392 393 contour
+# e 393 394 contour
+# e 394 395 contour
+# e 395 396 contour
+# e 396 397 contour
+# e 397 398 contour
+# e 398 399 contour
+# e 399 400 contour
+# e 400 401 contour
+# e 401 402 contour
+# e 402 403 contour
+# e 403 404 contour
+# e 404 405 contour
+# e 405 406 contour
+# e 406 407 contour
+# e 407 408 contour
+# e 408 409 contour
+# e 409 410 contour
+# e 410 411 contour
+# e 411 412 contour
+# e 412 413 contour
+# e 413 414 contour
+# e 414 415 contour
+# e 415 416 contour
+# e 416 417 contour
+# e 417 418 contour
+# e 418 419 contour
+# e 419 420 contour
+# e 420 421 contour
+# e 421 422 contour
+# e 422 423 contour
+# e 423 424 contour
+# e 424 425 contour
+# e 425 426 contour
+# e 426 427 contour
+# e 427 428 contour
+# e 428 429 contour
+# e 429 430 contour
+# e 430 431 contour
+# e 431 432 contour
+# e 432 433 contour
+# e 433 434 contour
+# e 434 435 contour
+# e 435 436 contour
+# e 436 437 contour
+# e 437 438 contour
+# e 438 439 contour
+# e 439 440 contour
+# e 440 441 contour
+# e 441 442 contour
+# e 442 443 contour
+# e 443 444 contour
+# e 444 445 contour
+# e 445 446 contour
+# e 446 447 contour
+# e 447 448 contour
+# e 448 449 contour
+# e 449 450 contour
+# e 450 451 contour
+# e 451 452 contour
+# e 452 453 contour
+# e 453 454 contour
+# e 454 455 contour
+# e 455 456 contour
+# e 456 457 contour
+# e 457 458 contour
+# e 458 459 contour
+# e 459 460 contour
+# e 460 461 contour
+# e 461 462 contour
+# e 462 463 contour
+# e 463 464 contour
+# e 464 465 contour
+# e 465 466 contour
+# e 466 467 contour
+# e 467 468 contour
+# e 468 469 contour
+# e 469 470 contour
+# e 470 471 contour
+# e 471 472 contour
+# e 472 473 contour
+# e 473 474 contour
+# e 474 475 contour
+# e 475 476 contour
+# e 476 477 contour
+# e 477 478 contour
+# e 478 479 contour
+# e 479 480 contour
+# e 480 481 contour
+# e 481 482 contour
+# e 482 483 contour
+# e 483 484 contour
+# e 484 485 contour
+# e 485 486 contour
+# e 486 487 contour
+# e 487 488 contour
+# e 488 489 contour
+# e 489 490 contour
+# e 490 491 contour
+# e 491 492 contour
+# e 492 493 contour
+# e 493 494 contour
+# e 494 495 contour
+# e 495 496 contour
+# e 496 497 contour
+# e 497 498 contour
+# e 498 499 contour
+# e 499 500 contour
+# e 500 501 contour
+# e 501 502 contour
+# e 502 503 contour
+# e 503 504 contour
+# e 504 505 contour
+# e 505 506 contour
+# e 506 507 contour
+# e 507 508 contour
+# e 508 509 contour
+# e 509 510 contour
+# e 510 511 contour
+# e 511 512 contour
+# e 512 513 contour
+# e 513 514 contour
+# e 514 515 contour
+# e 515 516 contour
+# e 516 517 contour
+# e 517 518 contour
+# e 518 519 contour
+# e 519 520 contour
+# e 520 521 contour
+# e 521 522 contour
+# e 522 523 contour
+# e 523 524 contour
+# e 524 525 contour
+# e 525 526 contour
+# e 526 527 contour
+# e 527 528 contour
+# e 528 529 contour
+# e 529 530 contour
+# e 530 531 contour
+# e 531 532 contour
+# e 532 533 contour
+# e 533 534 contour
+# e 534 535 contour
+# e 535 536 contour
+# e 536 537 contour
+# e 537 538 contour
+# e 538 539 contour
+# e 539 540 contour
+# e 540 541 contour
+# e 541 542 contour
+# e 542 543 contour
+# e 543 544 contour
+# e 544 545 contour
+# e 545 546 contour
+# e 546 547 contour
+# e 547 548 contour
+# e 548 549 contour
+# e 549 550 contour
+# e 550 551 contour
+# e 551 552 contour
+# e 552 553 contour
+# e 553 554 contour
+# e 554 555 contour
+# e 555 556 contour
+# e 556 557 contour
+# e 557 558 contour
+# e 558 559 contour
+# e 559 560 contour
+# e 560 561 contour
+# e 561 562 contour
+# e 562 563 contour
+# e 563 564 contour
+# e 564 565 contour
+# e 565 566 contour
+# e 566 567 contour
+# e 567 568 contour
+# e 568 569 contour
+# e 569 570 contour
+# e 570 571 contour
+# e 571 572 contour
+# e 9 572 contour
+# e 4 573 contour
+# e 573 574 contour
+# e 574 575 contour
+# e 575 576 contour
+# e 576 577 contour
+# e 577 578 contour
+# e 578 579 contour
+# e 579 580 contour
+# e 580 581 contour
+# e 581 582 contour
+# e 582 583 contour
+# e 583 584 contour
+# e 584 585 contour
+# e 585 586 contour
+# e 586 587 contour
+# e 587 588 contour
+# e 588 589 contour
+# e 589 590 contour
+# e 590 591 contour
+# e 591 592 contour
+# e 592 593 contour
+# e 593 594 contour
+# e 594 595 contour
+# e 595 596 contour
+# e 596 597 contour
+# e 597 598 contour
+# e 598 599 contour
+# e 599 600 contour
+# e 600 601 contour
+# e 601 602 contour
+# e 602 603 contour
+# e 603 604 contour
+# e 604 605 contour
+# e 605 606 contour
+# e 606 607 contour
+# e 607 608 contour
+# e 608 609 contour
+# e 609 610 contour
+# e 610 611 contour
+# e 611 612 contour
+# e 612 613 contour
+# e 613 614 contour
+# e 614 615 contour
+# e 615 616 contour
+# e 616 617 contour
+# e 617 618 contour
+# e 618 619 contour
+# e 619 620 contour
+# e 620 621 contour
+# e 621 622 contour
+# e 622 623 contour
+# e 623 624 contour
+# e 624 625 contour
+# e 625 626 contour
+# e 626 627 contour
+# e 627 628 contour
+# e 628 629 contour
+# e 629 630 contour
+# e 630 631 contour
+# e 631 632 contour
+# e 632 633 contour
+# e 633 634 contour
+# e 634 635 contour
+# e 635 636 contour
+# e 636 637 contour
+# e 637 638 contour
+# e 638 639 contour
+# e 639 640 contour
+# e 640 641 contour
+# e 641 642 contour
+# e 642 643 contour
+# e 643 644 contour
+# e 644 645 contour
+# e 645 646 contour
+# e 646 647 contour
+# e 647 648 contour
+# e 648 649 contour
+# e 649 650 contour
+# e 650 651 contour
+# e 651 652 contour
+# e 652 653 contour
+# e 653 654 contour
+# e 654 655 contour
+# e 655 656 contour
+# e 656 657 contour
+# e 657 658 contour
+# e 658 659 contour
+# e 659 660 contour
+# e 660 661 contour
+# e 661 662 contour
+# e 662 663 contour
+# e 663 664 contour
+# e 664 665 contour
+# e 665 666 contour
+# e 666 667 contour
+# e 667 668 contour
+# e 668 669 contour
+# e 669 670 contour
+# e 670 671 contour
+# e 671 672 contour
+# e 672 673 contour
+# e 673 674 contour
+# e 674 675 contour
+# e 675 676 contour
+# e 676 677 contour
+# e 677 678 contour
+# e 678 679 contour
+# e 679 680 contour
+# e 680 681 contour
+# e 681 682 contour
+# e 682 683 contour
+# e 683 684 contour
+# e 684 685 contour
+# e 685 686 contour
+# e 686 687 contour
+# e 687 688 contour
+# e 688 689 contour
+# e 689 690 contour
+# e 690 691 contour
+# e 691 692 contour
+# e 692 693 contour
+# e 693 694 contour
+# e 694 695 contour
+# e 695 696 contour
+# e 696 697 contour
+# e 697 698 contour
+# e 698 699 contour
+# e 699 700 contour
+# e 700 701 contour
+# e 701 702 contour
+# e 702 703 contour
+# e 703 704 contour
+# e 704 705 contour
+# e 705 706 contour
+# e 706 707 contour
+# e 707 708 contour
+# e 708 709 contour
+# e 709 710 contour
+# e 710 711 contour
+# e 711 712 contour
+# e 712 713 contour
+# e 713 714 contour
+# e 714 715 contour
+# e 715 716 contour
+# e 716 717 contour
+# e 717 718 contour
+# e 718 719 contour
+# e 719 720 contour
+# e 720 721 contour
+# e 721 722 contour
+# e 722 723 contour
+# e 723 724 contour
+# e 724 725 contour
+# e 725 726 contour
+# e 726 727 contour
+# e 727 728 contour
+# e 728 729 contour
+# e 729 730 contour
+# e 730 731 contour
+# e 731 732 contour
+# e 732 733 contour
+# e 733 734 contour
+# e 734 735 contour
+# e 735 736 contour
+# e 736 737 contour
+# e 737 738 contour
+# e 738 739 contour
+# e 739 740 contour
+# e 740 741 contour
+# e 741 742 contour
+# e 742 743 contour
+# e 743 744 contour
+# e 744 745 contour
+# e 745 746 contour
+# e 746 747 contour
+# e 747 748 contour
+# e 748 749 contour
+# e 749 750 contour
+# e 750 751 contour
+# e 751 752 contour
+# e 752 753 contour
+# e 753 754 contour
+# e 754 755 contour
+# e 755 756 contour
+# e 756 757 contour
+# e 757 758 contour
+# e 758 759 contour
+# e 759 760 contour
+# e 760 761 contour
+# e 761 762 contour
+# e 8 762 contour
+# e 5 763 contour
+# e 763 764 contour
+# e 764 765 contour
+# e 765 766 contour
+# e 766 767 contour
+# e 767 768 contour
+# e 768 769 contour
+# e 769 770 contour
+# e 770 771 contour
+# e 771 772 contour
+# e 772 773 contour
+# e 773 774 contour
+# e 774 775 contour
+# e 775 776 contour
+# e 776 777 contour
+# e 777 778 contour
+# e 7 778 contour
+# e 779 780 contour
+# e 780 781 contour
+# e 781 782 contour
+# e 782 783 contour
+# e 783 784 contour
+# e 784 785 contour
+# e 785 786 contour
+# e 786 787 contour
+# e 787 788 contour
+# e 788 789 contour
+# e 789 790 contour
+# e 790 791 contour
+# e 791 792 contour
+# e 792 793 contour
+# e 793 794 contour
+# e 794 795 contour
+# e 795 796 contour
+# e 796 797 contour
+# e 797 798 contour
+# e 798 799 contour
+# e 799 800 contour
+# e 800 801 contour
+# e 801 802 contour
+# e 802 803 contour
+# e 803 804 contour
+# e 804 805 contour
+# e 805 806 contour
+# e 806 807 contour
+# e 807 808 contour
+# e 808 809 contour
+# e 809 810 contour
+# e 810 811 contour
+# e 811 812 contour
+# e 812 813 contour
+# e 813 814 contour
+# e 814 815 contour
+# e 815 816 contour
+# e 816 817 contour
+# e 817 818 contour
+# e 818 819 contour
+# e 819 820 contour
+# e 820 821 contour
+# e 821 822 contour
+# e 822 823 contour
+# e 823 824 contour
+# e 824 825 contour
+# e 825 826 contour
+# e 826 827 contour
+# e 827 828 contour
+# e 828 829 contour
+# e 829 830 contour
+# e 830 831 contour
+# e 831 832 contour
+# e 832 833 contour
+# e 833 834 contour
+# e 834 835 contour
+# e 835 836 contour
+# e 836 837 contour
+# e 837 838 contour
+# e 838 839 contour
+# e 839 840 contour
+# e 840 841 contour
+# e 841 842 contour
+# e 842 843 contour
+# e 843 844 contour
+# e 844 845 contour
+# e 845 846 contour
+# e 846 847 contour
+# e 847 848 contour
+# e 848 849 contour
+# e 849 850 contour
+# e 850 851 contour
+# e 851 852 contour
+# e 852 853 contour
+# e 853 854 contour
+# e 854 855 contour
+# e 855 856 contour
+# e 856 857 contour
+# e 857 858 contour
+# e 858 859 contour
+# e 859 860 contour
+# e 860 861 contour
+# e 861 862 contour
+# e 862 863 contour
+# e 863 864 contour
+# e 864 865 contour
+# e 865 866 contour
+# e 866 867 contour
+# e 867 868 contour
+# e 868 869 contour
+# e 869 870 contour
+# e 870 871 contour
+# e 871 872 contour
+# e 872 873 contour
+# e 873 874 contour
+# e 874 875 contour
+# e 875 876 contour
+# e 876 877 contour
+# e 877 878 contour
+# e 878 879 contour
+# e 879 880 contour
+# e 880 881 contour
+# e 881 882 contour
+# e 882 883 contour
+# e 883 884 contour
+# e 884 885 contour
+# e 885 886 contour
+# e 886 887 contour
+# e 887 888 contour
+# e 888 889 contour
+# e 889 890 contour
+# e 890 891 contour
+# e 891 892 contour
+# e 892 893 contour
+# e 893 894 contour
+# e 894 895 contour
+# e 895 896 contour
+# e 896 897 contour
+# e 897 898 contour
+# e 898 899 contour
+# e 899 900 contour
+# e 900 901 contour
+# e 901 902 contour
+# e 902 903 contour
+# e 903 904 contour
+# e 904 905 contour
+# e 905 906 contour
+# e 906 907 contour
+# e 907 908 contour
+# e 908 909 contour
+# e 909 910 contour
+# e 910 911 contour
+# e 911 912 contour
+# e 912 913 contour
+# e 913 914 contour
+# e 914 915 contour
+# e 915 916 contour
+# e 916 917 contour
+# e 917 918 contour
+# e 918 919 contour
+# e 919 920 contour
+# e 920 921 contour
+# e 921 922 contour
+# e 922 923 contour
+# e 923 924 contour
+# e 924 925 contour
+# e 925 926 contour
+# e 926 927 contour
+# e 927 928 contour
+# e 928 929 contour
+# e 929 930 contour
+# e 930 931 contour
+# e 931 932 contour
+# e 932 933 contour
+# e 933 934 contour
+# e 934 935 contour
+# e 935 936 contour
+# e 936 937 contour
+# e 937 938 contour
+# e 938 939 contour
+# e 939 940 contour
+# e 940 941 contour
+# e 941 942 contour
+# e 942 943 contour
+# e 943 944 contour
+# e 944 945 contour
+# e 945 946 contour
+# e 946 947 contour
+# e 947 948 contour
+# e 948 949 contour
+# e 949 950 contour
+# e 950 951 contour
+# e 951 952 contour
+# e 952 953 contour
+# e 953 954 contour
+# e 954 955 contour
+# e 955 956 contour
+# e 956 957 contour
+# e 957 958 contour
+# e 958 959 contour
+# e 959 960 contour
+# e 960 961 contour
+# e 961 962 contour
+# e 962 963 contour
+# e 963 964 contour
+# e 964 965 contour
+# e 965 966 contour
+# e 966 967 contour
+# e 967 968 contour
+# e 968 969 contour
+# e 969 970 contour
+# e 970 971 contour
+# e 971 972 contour
+# e 972 973 contour
+# e 973 974 contour
+# e 974 975 contour
+# e 975 976 contour
+# e 976 977 contour
+# e 977 978 contour
+# e 978 979 contour
+# e 979 980 contour
+# e 980 981 contour
+# e 981 982 contour
+# e 982 983 contour
+# e 983 984 contour
+# e 984 985 contour
+# e 985 986 contour
+# e 986 987 contour
+# e 987 988 contour
+# e 988 989 contour
+# e 989 990 contour
+# e 990 991 contour
+# e 991 992 contour
+# e 992 993 contour
+# e 993 994 contour
+# e 994 995 contour
+# e 995 996 contour
+# e 996 997 contour
+# e 997 998 contour
+# e 998 999 contour
+# e 999 1000 contour
+# e 1000 1001 contour
+# e 1001 1002 contour
+# e 1002 1003 contour
+# e 1003 1004 contour
+# e 1004 1005 contour
+# e 1005 1006 contour
+# e 1006 1007 contour
+# e 1007 1008 contour
+# e 1008 1009 contour
+# e 1009 1010 contour
+# e 1010 1011 contour
+# e 1011 1012 contour
+# e 1012 1013 contour
+# e 1013 1014 contour
+# e 1014 1015 contour
+# e 1015 1016 contour
+# e 1016 1017 contour
+# e 1017 1018 contour
+# e 1018 1019 contour
+# e 1019 1020 contour
+# e 1020 1021 contour
+# e 1021 1022 contour
+# e 1022 1023 contour
+# e 1023 1024 contour
+# e 1024 1025 contour
+# e 1025 1026 contour
+# e 1026 1027 contour
+# e 1027 1028 contour
+# e 1028 1029 contour
+# e 1029 1030 contour
+# e 1030 1031 contour
+# e 1031 1032 contour
+# e 1032 1033 contour
+# e 1033 1034 contour
+# e 779 1034 contour
+# e 1035 1036 contour
+# e 1036 1037 contour
+# e 1037 1038 contour
+# e 1038 1039 contour
+# e 1039 1040 contour
+# e 1040 1041 contour
+# e 1041 1042 contour
+# e 1042 1043 contour
+# e 1043 1044 contour
+# e 1044 1045 contour
+# e 1045 1046 contour
+# e 1046 1047 contour
+# e 1047 1048 contour
+# e 1048 1049 contour
+# e 1049 1050 contour
+# e 1050 1051 contour
+# e 1051 1052 contour
+# e 1052 1053 contour
+# e 1053 1054 contour
+# e 1054 1055 contour
+# e 1055 1056 contour
+# e 1056 1057 contour
+# e 1057 1058 contour
+# e 1058 1059 contour
+# e 1059 1060 contour
+# e 1060 1061 contour
+# e 1061 1062 contour
+# e 1062 1063 contour
+# e 1063 1064 contour
+# e 1064 1065 contour
+# e 1065 1066 contour
+# e 1066 1067 contour
+# e 1067 1068 contour
+# e 1068 1069 contour
+# e 1069 1070 contour
+# e 1070 1071 contour
+# e 1071 1072 contour
+# e 1072 1073 contour
+# e 1073 1074 contour
+# e 1074 1075 contour
+# e 1075 1076 contour
+# e 1076 1077 contour
+# e 1077 1078 contour
+# e 1078 1079 contour
+# e 1079 1080 contour
+# e 1080 1081 contour
+# e 1081 1082 contour
+# e 1082 1083 contour
+# e 1083 1084 contour
+# e 1084 1085 contour
+# e 1085 1086 contour
+# e 1086 1087 contour
+# e 1087 1088 contour
+# e 1088 1089 contour
+# e 1089 1090 contour
+# e 1090 1091 contour
+# e 1091 1092 contour
+# e 1092 1093 contour
+# e 1093 1094 contour
+# e 1094 1095 contour
+# e 1095 1096 contour
+# e 1096 1097 contour
+# e 1097 1098 contour
+# e 1098 1099 contour
+# e 1099 1100 contour
+# e 1100 1101 contour
+# e 1101 1102 contour
+# e 1102 1103 contour
+# e 1103 1104 contour
+# e 1104 1105 contour
+# e 1105 1106 contour
+# e 1106 1107 contour
+# e 1107 1108 contour
+# e 1108 1109 contour
+# e 1109 1110 contour
+# e 1110 1111 contour
+# e 1111 1112 contour
+# e 1112 1113 contour
+# e 1113 1114 contour
+# e 1114 1115 contour
+# e 1115 1116 contour
+# e 1116 1117 contour
+# e 1117 1118 contour
+# e 1118 1119 contour
+# e 1119 1120 contour
+# e 1120 1121 contour
+# e 1121 1122 contour
+# e 1122 1123 contour
+# e 1123 1124 contour
+# e 1124 1125 contour
+# e 1125 1126 contour
+# e 1126 1127 contour
+# e 1127 1128 contour
+# e 1128 1129 contour
+# e 1129 1130 contour
+# e 1130 1131 contour
+# e 1131 1132 contour
+# e 1132 1133 contour
+# e 1133 1134 contour
+# e 1134 1135 contour
+# e 1135 1136 contour
+# e 1136 1137 contour
+# e 1137 1138 contour
+# e 1138 1139 contour
+# e 1139 1140 contour
+# e 1140 1141 contour
+# e 1141 1142 contour
+# e 1142 1143 contour
+# e 1143 1144 contour
+# e 1144 1145 contour
+# e 1145 1146 contour
+# e 1146 1147 contour
+# e 1147 1148 contour
+# e 1148 1149 contour
+# e 1149 1150 contour
+# e 1150 1151 contour
+# e 1151 1152 contour
+# e 1152 1153 contour
+# e 1153 1154 contour
+# e 1154 1155 contour
+# e 1155 1156 contour
+# e 1156 1157 contour
+# e 1157 1158 contour
+# e 1158 1159 contour
+# e 1159 1160 contour
+# e 1160 1161 contour
+# e 1161 1162 contour
+# e 1162 1163 contour
+# e 1163 1164 contour
+# e 1164 1165 contour
+# e 1165 1166 contour
+# e 1166 1167 contour
+# e 1167 1168 contour
+# e 1168 1169 contour
+# e 1169 1170 contour
+# e 1170 1171 contour
+# e 1171 1172 contour
+# e 1172 1173 contour
+# e 1173 1174 contour
+# e 1174 1175 contour
+# e 1175 1176 contour
+# e 1176 1177 contour
+# e 1177 1178 contour
+# e 1178 1179 contour
+# e 1179 1180 contour
+# e 1180 1181 contour
+# e 1181 1182 contour
+# e 1182 1183 contour
+# e 1183 1184 contour
+# e 1184 1185 contour
+# e 1185 1186 contour
+# e 1186 1187 contour
+# e 1187 1188 contour
+# e 1188 1189 contour
+# e 1189 1190 contour
+# e 1190 1191 contour
+# e 1191 1192 contour
+# e 1192 1193 contour
+# e 1193 1194 contour
+# e 1194 1195 contour
+# e 1195 1196 contour
+# e 1196 1197 contour
+# e 1197 1198 contour
+# e 1198 1199 contour
+# e 1199 1200 contour
+# e 1200 1201 contour
+# e 1201 1202 contour
+# e 1202 1203 contour
+# e 1203 1204 contour
+# e 1204 1205 contour
+# e 1205 1206 contour
+# e 1206 1207 contour
+# e 1207 1208 contour
+# e 1208 1209 contour
+# e 1209 1210 contour
+# e 1035 1210 contour
+f 68 67 69
+f 60 165 59
+f 40 12 41
+f 279 280 483
+f 6 7 778
+f 601 600 1017
+f 21 30 22
+f 29 27 30
+f 18 32 19
+f 77 73 78
+f 31 30 32
+f 22 98 21
+f 74 78 73
+f 22 30 23
+f 78 74 79
+f 25 30 26
+f 11 79 74
+f 20 19 21
+f 79 11 80
+f 26 30 27
+f 80 11 81
+f 24 30 25
+f 13 82 12
+f 23 30 24
+f 83 13 84
+f 28 27 29
+f 85 14 86
+f 86 15 87
+f 21 32 30
+f 99 221 98
+f 88 16 89
+f 19 32 21
+f 89 17 90
+f 33 32 35
+f 19 92 18
+f 94 19 95
+f 34 33 35
+f 113 247 112
+f 96 20 97
+f 99 22 100
+f 18 35 32
+f 129 270 128
+f 23 101 22
+f 17 35 18
+f 24 103 23
+f 16 35 17
+f 106 1211 107
+f 35 16 36
+f 26 107 25
+f 36 16 37
+f 109 26 110
+f 15 37 16
+f 110 27 111
+f 14 37 15
+f 112 28 113
+f 37 14 39
+f 29 114 28
+f 38 37 39
+f 116 30 117
+f 13 39 14
+f 118 31 119
+f 12 39 13
+f 32 120 31
+f 39 12 40
+f 33 122 32
+f 123 34 124
+f 11 41 12
+f 146 291 145
+f 125 35 126
+f 42 41 74
+f 36 127 35
+f 43 42 74
+f 37 129 36
+f 39 130 38
+f 72 44 73
+f 300 153 301
+f 40 132 39
+f 71 46 72
+f 41 133 40
+f 70 47 71
+f 42 134 41
+f 69 49 70
+f 135 42 136
+f 50 69 67
+f 136 43 137
+f 66 51 67
+f 44 138 43
+f 64 54 65
+f 139 45 140
+f 54 62 56
+f 141 46 142
+f 52 51 53
+f 142 47 143
+f 56 61 57
+f 49 145 48
+f 59 58 60
+f 145 49 146
+f 55 54 56
+f 51 148 50
+f 60 58 61
+f 149 52 150
+f 57 61 58
+f 152 53 153
+f 61 56 62
+f 154 55 155
+f 63 62 64
+f 156 56 157
+f 54 64 62
+f 157 56 158
+f 65 54 66
+f 160 57 161
+f 53 66 54
+f 161 58 162
+f 51 66 53
+f 59 163 58
+f 50 67 51
+f 49 69 50
+f 188 350 187
+f 165 60 166
+f 167 61 168
+f 48 70 49
+f 76 73 77
+f 170 63 171
+f 47 70 48
+f 172 64 173
+f 46 71 47
+f 175 65 176
+f 45 72 46
+f 70 183 69
+f 44 72 45
+f 186 71 187
+f 43 73 44
+f 72 73 75
+f 73 43 74
+f 75 73 76
+f 11 74 41
+f 68 179 67
+f 75 352 188
+f 12 81 11
+f 77 78 189
+f 353 76 354
+f 81 12 82
+f 82 13 83
+f 189 78 190
+f 14 84 13
+f 79 191 78
+f 190 78 191
+f 84 14 85
+f 15 86 14
+f 191 79 192
+f 16 87 15
+f 192 80 193
+f 80 192 79
+f 87 16 88
+f 17 89 16
+f 193 80 194
+f 90 17 91
+f 82 195 81
+f 81 194 80
+f 18 91 17
+f 194 81 195
+f 91 18 92
+f 92 19 93
+f 197 83 198
+f 195 82 196
+f 93 19 94
+f 20 95 19
+f 199 85 200
+f 198 84 199
+f 95 20 96
+f 21 97 20
+f 202 87 203
+f 200 86 201
+f 97 21 98
+f 98 22 99
+f 223 100 224
+f 203 88 204
+f 100 22 101
+f 89 205 88
+f 101 23 102
+f 205 89 206
+f 102 23 103
+f 91 208 90
+f 104 103 1211
+f 209 92 210
+f 105 104 1211
+f 210 92 211
+f 212 93 213
+f 1211 24 25
+f 213 94 214
+f 25 107 1211
+f 215 95 216
+f 107 26 108
+f 98 219 97
+f 97 217 96
+f 108 26 109
+f 27 110 26
+f 238 239 527
+f 28 111 27
+f 224 101 225
+f 222 100 223
+f 111 28 112
+f 113 28 114
+f 227 102 228
+f 114 29 115
+f 232 105 233
+f 103 228 102
+f 115 29 116
+f 230 104 231
+f 30 116 29
+f 117 30 118
+f 107 236 106
+f 106 234 105
+f 31 118 30
+f 119 31 120
+f 237 107 238
+f 120 32 121
+f 109 241 108
+f 239 108 240
+f 121 32 122
+f 122 33 123
+f 259 260 509
+f 241 110 242
+f 34 123 33
+f 244 111 245
+f 35 124 34
+f 112 246 111
+f 124 35 125
+f 126 35 127
+f 114 249 113
+f 127 36 128
+f 116 252 115
+f 250 114 251
+f 128 36 129
+f 38 129 37
+f 255 118 256
+f 254 117 255
+f 129 38 130
+f 130 39 131
+f 259 120 260
+f 119 257 118
+f 131 39 132
+f 132 40 133
+f 122 261 121
+f 133 41 134
+f 262 123 263
+f 134 42 135
+f 124 264 123
+f 43 136 42
+f 126 266 125
+f 137 43 138
+f 127 267 126
+f 138 44 139
+f 598 597 1015
+f 269 128 270
+f 45 139 44
+f 46 140 45
+f 272 131 273
+f 130 271 129
+f 140 46 141
+f 47 142 46
+f 132 274 131
+f 143 47 144
+f 135 277 134
+f 133 275 132
+f 48 144 47
+f 134 276 133
+f 144 48 145
+f 50 146 49
+f 281 137 282
+f 278 135 279
+f 146 50 147
+f 279 136 280
+f 147 50 148
+f 148 51 149
+f 139 283 138
+f 138 282 137
+f 52 149 51
+f 150 52 151
+f 301 302 457
+f 140 284 139
+f 53 151 52
+f 285 141 286
+f 151 53 152
+f 286 142 287
+f 54 153 53
+f 143 288 142
+f 153 54 154
+f 289 144 290
+f 55 154 54
+f 155 55 156
+f 293 148 294
+f 147 292 146
+f 56 156 55
+f 57 158 56
+f 298 151 299
+f 294 148 295
+f 158 57 159
+f 150 296 149
+f 159 57 160
+f 58 161 57
+f 311 312 445
+f 299 153 300
+f 162 58 163
+f 163 59 164
+f 156 304 155
+f 155 302 154
+f 164 59 165
+f 61 166 60
+f 183 344 182
+f 157 305 156
+f 166 61 167
+f 158 307 157
+f 168 61 169
+f 160 308 159
+f 62 169 61
+f 308 160 309
+f 169 62 170
+f 310 160 311
+f 63 170 62
+f 312 162 313
+f 171 63 172
+f 163 314 162
+f 64 172 63
+f 314 163 315
+f 173 64 174
+f 165 316 164
+f 65 174 64
+f 166 317 165
+f 174 65 175
+f 318 166 319
+f 66 176 65
+f 319 167 320
+f 176 66 177
+f 168 321 167
+f 177 66 178
+f 321 169 322
+f 67 178 66
+f 322 169 323
+f 178 67 179
+f 170 324 169
+f 179 68 180
+f 171 325 170
+f 180 68 181
+f 326 171 327
+f 69 181 68
+f 172 327 171
+f 181 69 182
+f 328 173 329
+f 182 69 183
+f 330 174 331
+f 183 70 184
+f 176 333 175
+f 184 70 185
+f 178 336 177
+f 71 185 70
+f 341 181 342
+f 185 71 186
+f 343 182 344
+f 72 187 71
+f 184 345 183
+f 187 72 188
+f 347 185 348
+f 75 188 72
+f 339 179 340
+f 1 189 190  # unsupported
+f 83 196 82
+f 1 191 192  # unsupported
+f 1 190 191  # unsupported
+f 196 83 197
+f 84 198 83
+f 1 192 193  # unsupported
+f 85 199 84
+f 1 193 194  # unsupported
+f 86 200 85
+f 1 194 195  # unsupported
+f 201 86 202
+f 1 196 197  # unsupported
+f 1 195 196  # unsupported
+f 87 202 86
+f 88 203 87
+f 1 197 198  # unsupported
+f 204 88 205
+f 1 198 199  # unsupported
+f 90 206 89
+f 1 201 202  # unsupported
+f 1 199 200  # unsupported
+f 206 90 207
+f 1 200 201  # unsupported
+f 207 90 208
+f 208 91 209
+f 1 203 204  # unsupported
+f 1 202 203  # unsupported
+f 92 209 91
+f 93 211 92
+f 1 205 206  # unsupported
+f 1 204 205  # unsupported
+f 211 93 212
+f 94 213 93
+f 1 206 207  # unsupported
+f 95 214 94
+f 1 208 209  # unsupported
+f 1 207 208  # unsupported
+f 214 95 215
+f 96 216 95
+f 1 210 211  # unsupported
+f 1 209 210  # unsupported
+f 216 96 217
+f 217 97 218
+f 1 212 213  # unsupported
+f 1 211 212  # unsupported
+f 218 97 219
+f 219 98 220
+f 1 214 215  # unsupported
+f 1 213 214  # unsupported
+f 220 98 221
+f 221 99 222
+f 1 216 217  # unsupported
+f 1 215 216  # unsupported
+f 100 222 99
+f 101 224 100
+f 10 1 234  # unsupported
+f 1 217 218  # unsupported
+f 225 101 226
+f 1 218 219  # unsupported
+f 102 226 101
+f 1 219 220  # unsupported
+f 226 102 227
+f 1 220 221  # unsupported
+f 228 103 229
+f 1 221 222  # unsupported
+f 229 103 230
+f 1 222 223  # unsupported
+f 104 230 103
+f 1 223 224  # unsupported
+f 231 104 232
+f 1 224 225  # unsupported
+f 225 226 1  # unsupported
+f 105 232 104
+f 226 227 1  # unsupported
+f 233 105 234
+f 227 228 1  # unsupported
+f 234 106 235
+f 229 230 1  # unsupported
+f 228 229 1  # unsupported
+f 235 106 236
+f 236 107 237
+f 230 231 1  # unsupported
+f 108 238 107
+f 232 233 1  # unsupported
+f 231 232 1  # unsupported
+f 238 108 239
+f 240 108 241
+f 233 234 1  # unsupported
+f 110 241 109
+f 10 234 236  # unsupported
+f 242 110 243
+f 10 237 530  # unsupported
+f 235 236 234
+f 243 110 244
+f 10 236 237  # unsupported
+f 111 244 110
+f 245 111 246
+f 502 501 706
+f 237 238 528
+f 246 112 247
+f 247 113 248
+f 240 241 526
+f 239 240 527
+f 248 113 249
+f 249 114 250
+f 241 242 524
+f 115 251 114
+f 243 244 524
+f 242 243 524
+f 251 115 252
+f 252 116 253
+f 246 247 521
+f 244 245 523
+f 253 116 254
+f 245 246 523
+f 117 254 116
+f 118 255 117
+f 247 248 521
+f 256 118 257
+f 248 249 520
+f 257 119 258
+f 251 252 517
+f 249 250 519
+f 120 258 119
+f 250 251 518
+f 258 120 259
+f 121 260 120
+f 253 254 515
+f 252 253 516
+f 260 121 261
+f 261 122 262
+f 255 256 513
+f 254 255 514
+f 123 262 122
+f 263 123 264
+f 256 257 512
+f 264 124 265
+f 482 481 687
+f 257 258 511
+f 125 265 124
+f 258 259 510
+f 265 125 266
+f 266 126 267
+f 260 261 507
+f 267 127 268
+f 263 264 504
+f 261 262 506
+f 128 268 127
+f 262 263 505
+f 268 128 269
+f 270 129 271
+f 264 265 503
+f 271 130 272
+f 266 267 500
+f 265 266 501
+f 131 272 130
+f 273 131 274
+f 267 268 498
+f 274 132 275
+f 268 269 496
+f 275 133 276
+f 480 481 281
+f 276 134 277
+f 270 271 494
+f 277 135 278
+f 271 272 492
+f 136 279 135
+f 272 273 491
+f 137 280 136
+f 274 275 489
+f 273 274 490
+f 280 137 281
+f 282 138 283
+f 275 276 488
+f 283 139 284
+f 276 277 486
+f 284 140 285
+f 637 638 437
+f 277 278 485
+f 141 285 140
+f 278 279 484
+f 142 286 141
+f 287 142 288
+f 280 281 481
+f 288 143 289
+f 282 283 479
+f 281 282 480
+f 144 289 143
+f 145 290 144
+f 284 285 477
+f 283 284 478
+f 290 145 291
+f 291 146 292
+f 285 286 476
+f 292 147 293
+f 287 288 474
+f 286 287 475
+f 148 293 147
+f 149 295 148
+f 289 290 471
+f 288 289 472
+f 295 149 296
+f 296 150 297
+f 292 293 468
+f 290 291 470
+f 151 297 150
+f 291 292 469
+f 297 151 298
+f 152 299 151
+f 294 295 465
+f 293 294 467
+f 153 299 152
+f 154 301 153
+f 296 297 463
+f 295 296 464
+f 301 154 302
+f 302 155 303
+f 298 299 461
+f 297 298 462
+f 303 155 304
+f 304 156 305
+f 299 300 460
+f 305 157 306
+f 355 3 595
+f 300 301 459
+f 306 157 307
+f 307 158 308
+f 303 304 455
+f 302 303 456
+f 159 308 158
+f 309 160 310
+f 304 305 454
+f 161 311 160
+f 307 308 450
+f 305 306 452
+f 311 161 312
+f 306 307 452
+f 162 312 161
+f 313 162 314
+f 308 309 448
+f 164 315 163
+f 310 311 447
+f 309 310 448
+f 315 164 316
+f 316 165 317
+f 2 3 355  # unsupported
+f 317 166 318
+f 367 366 603
+f 167 319 166
+f 357 356 597
+f 320 167 321
+f 356 355 596
+f 169 321 168
+f 358 357 597
+f 323 169 324
+f 359 358 598
+f 324 170 325
+f 360 359 598
+f 325 171 326
+f 361 360 599
+f 327 172 328
+f 423 404 625
+f 362 361 600
+f 173 328 172
+f 363 362 600
+f 329 173 330
+f 364 363 601
+f 174 330 173
+f 365 364 601
+f 175 331 174
+f 368 367 604
+f 331 175 332
+f 369 368 604
+f 332 175 333
+f 372 371 606
+f 333 176 334
+f 374 373 608
+f 334 176 335
+f 377 376 609
+f 177 335 176
+f 645 644 787
+f 335 177 336
+f 590 591 3
+f 336 178 337
+f 779 631 1034
+f 179 337 178
+f 598 599 360
+f 337 179 338
+f 614 613 1027
+f 338 179 339
+f 455 454 658
+f 180 340 179
+f 419 420 333
+f 181 340 180
+f 401 400 624
+f 340 181 341
+f 403 402 625
+f 182 342 181
+f 404 403 625
+f 342 182 343
+f 344 183 345
+f 422 404 423
+f 408 419 409
+f 412 411 413
+f 345 184 346
+f 189 1 354  # unsupported
+f 415 416 339
+f 346 184 347
+f 414 413 415
+f 185 347 184
+f 418 411 419
+f 186 348 185
+f 409 419 411
+f 348 186 349
+f 406 421 407
+f 187 349 186
+f 346 347 410
+f 349 187 350
+f 414 415 340
+f 350 188 351
+f 340 341 414
+f 351 188 352
+f 1 350 351  # unsupported
+f 352 75 353
+f 1 351 352  # unsupported
+f 76 353 75
+f 1 352 353  # unsupported
+f 77 354 76
+f 1 353 354  # unsupported
+f 189 354 77
+f 366 365 603
+f 2 355 356  # unsupported
+f 370 369 605
+f 2 357 358  # unsupported
+f 2 356 357  # unsupported
+f 371 370 606
+f 373 372 607
+f 2 358 359  # unsupported
+f 375 374 608
+f 2 360 361  # unsupported
+f 2 359 360  # unsupported
+f 376 375 609
+f 378 377 610
+f 2 361 362  # unsupported
+f 619 618 1029
+f 2 363 364  # unsupported
+f 2 362 363  # unsupported
+f 388 387 616
+f 594 595 3
+f 2 364 365  # unsupported
+f 625 624 1032
+f 2 366 367  # unsupported
+f 2 365 366  # unsupported
+f 393 392 619
+f 397 396 621
+f 2 367 368  # unsupported
+f 399 398 622
+f 2 368 369  # unsupported
+f 427 426 627
+f 2 369 370  # unsupported
+f 426 425 626
+f 2 370 371  # unsupported
+f 425 424 626
+f 2 371 372  # unsupported
+f 404 422 405
+f 2 374 375  # unsupported
+f 2 372 373  # unsupported
+f 421 406 422
+f 2 373 374  # unsupported
+f 407 421 408
+f 416 413 418
+f 2 375 376  # unsupported
+f 411 418 413
+f 2 377 378  # unsupported
+f 2 376 377  # unsupported
+f 410 409 411
+f 417 416 418
+f 2 378 379  # unsupported
+f 415 413 416
+f 2 379 380  # unsupported
+f 419 408 420
+f 2 381 382  # unsupported
+f 2 380 381  # unsupported
+f 420 408 421
+f 405 422 406
+f 2 382 383  # unsupported
+f 424 423 625
+f 1 2 401  # unsupported
+f 2 383 384  # unsupported
+f 417 418 336
+f 2 384 385  # unsupported
+f 314 315 440
+f 2 385 386  # unsupported
+f 416 417 337
+f 2 386 387  # unsupported
+f 319 320 434
+f 2 387 388  # unsupported
+f 412 413 343
+f 2 388 389  # unsupported
+f 325 326 426
+f 2 389 390  # unsupported
+f 390 391 2  # unsupported
+f 326 327 425
+f 398 399 2  # unsupported
+f 391 392 2  # unsupported
+f 410 411 346
+f 392 393 2  # unsupported
+f 330 331 422
+f 393 394 2  # unsupported
+f 409 410 348
+f 394 395 2  # unsupported
+f 407 408 1  # unsupported
+f 395 396 2  # unsupported
+f 336 337 417
+f 396 397 2  # unsupported
+f 406 407 1  # unsupported
+f 397 398 2  # unsupported
+f 339 340 415
+f 405 406 1  # unsupported
+f 350 1 408  # unsupported
+f 399 400 2  # unsupported
+f 1 403 405  # unsupported
+f 400 401 2  # unsupported
+f 347 348 410
+f 1 401 402  # unsupported
+f 348 349 409
+f 1 402 403  # unsupported
+f 349 350 409
+f 343 344 412
+f 345 346 411
+f 404 405 403
+f 344 345 412
+f 341 342 413
+f 342 343 413
+f 337 338 416
+f 338 339 416
+f 408 409 350
+f 335 336 418
+f 333 334 419
+f 334 335 418
+f 331 332 421
+f 332 333 420
+f 411 412 345
+f 329 330 423
+f 327 328 424
+f 328 329 424
+f 322 323 429
+f 324 325 427
+f 413 414 341
+f 323 324 428
+f 320 321 433
+f 321 322 430
+f 317 318 435
+f 318 319 434
+f 315 316 438
+f 316 317 437
+f 402 401 624
+f 418 419 334
+f 400 399 623
+f 313 314 442
+f 398 397 622
+f 420 421 332
+f 602 603 365
+f 312 313 444
+f 421 422 331
+f 395 394 620
+f 422 423 330
+f 627 626 1033
+f 423 424 329
+f 391 390 618
+f 424 425 327
+f 630 629 1034
+f 425 426 326
+f 389 388 617
+f 426 427 325
+f 611 610 1024
+f 427 428 324
+f 387 386 616
+f 428 429 323
+f 386 385 614
+f 429 430 322
+f 385 384 614
+f 430 431 321
+f 384 383 614
+f 431 432 321
+f 383 382 613
+f 432 433 321
+f 382 381 612
+f 433 434 320
+f 381 380 612
+f 434 435 318
+f 380 379 612
+f 435 436 317
+f 606 605 1020
+f 436 437 317
+f 609 608 1023
+f 437 438 316
+f 642 641 785
+f 438 439 315
+f 608 607 1022
+f 439 440 315
+f 649 648 790
+f 440 441 314
+f 605 604 1020
+f 441 442 314
+f 603 602 1019
+f 442 443 313
+f 640 639 783
+f 443 444 313
+f 602 601 1018
+f 444 445 312
+f 650 649 792
+f 445 446 311
+f 647 646 789
+f 446 447 311
+f 600 599 1016
+f 447 448 310
+f 599 598 1016
+f 448 449 308
+f 597 596 1014
+f 449 450 308
+f 596 595 1013
+f 450 451 307
+f 595 594 1013
+f 451 452 307
+f 594 593 1012
+f 452 453 305
+f 593 592 1011
+f 453 454 305
+f 592 591 1011
+f 454 455 304
+f 591 590 1010
+f 455 456 303
+f 588 587 1008
+f 456 457 302
+f 461 460 664
+f 457 458 301
+f 641 642 440
+f 458 459 301
+f 586 585 1006
+f 459 460 300
+f 463 462 666
+f 460 461 299
+f 464 463 667
+f 461 462 298
+f 465 464 668
+f 462 463 297
+f 647 648 445
+f 463 464 296
+f 805 804 1050
+f 464 465 295
+f 467 466 671
+f 465 466 294
+f 468 467 672
+f 466 467 294
+f 652 653 450
+f 467 468 293
+f 1139 1138 1212
+f 468 469 292
+f 470 469 674
+f 469 470 291
+f 471 470 675
+f 470 471 290
+f 472 471 676
+f 471 472 289
+f 473 472 677
+f 472 473 288
+f 474 473 678
+f 473 474 288
+f 475 474 679
+f 474 475 287
+f 476 475 680
+f 475 476 286
+f 477 476 681
+f 476 477 285
+f 478 477 683
+f 477 478 284
+f 479 478 683
+f 478 479 283
+f 480 479 684
+f 479 480 282
+f 481 480 686
+f 483 482 688
+f 269 270 495
+f 481 482 280
+f 484 483 689
+f 482 483 280
+f 485 484 690
+f 483 484 279
+f 486 485 691
+f 484 485 278
+f 487 486 692
+f 485 486 277
+f 488 487 693
+f 486 487 276
+f 489 488 694
+f 487 488 276
+f 490 489 696
+f 488 489 275
+f 491 490 696
+f 489 490 274
+f 492 491 697
+f 490 491 273
+f 493 492 699
+f 491 492 272
+f 494 493 699
+f 492 493 271
+f 495 494 700
+f 493 494 271
+f 496 495 701
+f 494 495 270
+f 497 496 703
+f 495 496 269
+f 498 497 703
+f 496 497 268
+f 499 498 704
+f 497 498 268
+f 688 689 483
+f 498 499 267
+f 544 543 721
+f 499 500 267
+f 508 507 711
+f 500 501 266
+f 539 538 718
+f 501 502 265
+f 509 508 711
+f 502 503 265
+f 511 510 712
+f 503 504 264
+f 506 505 709
+f 504 505 263
+f 514 512 714
+f 505 506 262
+f 533 532 715
+f 506 507 261
+f 531 530 715
+f 507 508 260
+f 510 509 711
+f 508 509 260
+f 525 529 527
+f 509 510 259
+f 528 527 529
+f 510 511 258
+f 521 520 522
+f 511 512 257
+f 513 512 514
+f 512 513 256
+f 520 518 525
+f 513 514 255
+f 524 522 525
+f 514 515 254
+f 516 515 517
+f 515 516 253
+f 520 525 522
+f 516 517 252
+f 519 518 520
+f 517 518 251
+f 523 522 524
+f 518 519 250
+f 517 525 518
+f 519 520 249
+f 526 525 527
+f 520 521 248
+f 517 529 525
+f 521 522 246
+f 529 517 715
+f 522 523 246
+f 530 529 715
+f 523 524 244
+f 524 525 241
+f 517 515 714
+f 9 10 572  # unsupported
+f 525 526 241
+f 532 531 715
+f 526 527 240
+f 515 514 714
+f 527 528 238
+f 534 533 716
+f 237 528 530
+f 535 534 716
+f 529 530 528
+f 512 511 713
+f 10 530 531  # unsupported
+f 536 535 717
+f 10 531 532  # unsupported
+f 537 536 717
+f 10 532 533  # unsupported
+f 538 537 718
+f 10 533 534  # unsupported
+f 540 539 719
+f 10 534 535  # unsupported
+f 541 540 719
+f 10 535 536  # unsupported
+f 507 506 710
+f 10 536 537  # unsupported
+f 542 541 720
+f 10 537 538  # unsupported
+f 543 542 721
+f 10 538 539  # unsupported
+f 505 504 709
+f 10 539 540  # unsupported
+f 545 544 722
+f 10 540 541  # unsupported
+f 693 694 488
+f 10 541 542  # unsupported
+f 692 693 487
+f 10 542 543  # unsupported
+f 557 556 729
+f 10 543 544  # unsupported
+f 503 502 707
+f 10 544 545  # unsupported
+f 561 560 732
+f 10 545 546  # unsupported
+f 707 706 842
+f 10 546 547  # unsupported
+f 700 699 838
+f 10 547 548  # unsupported
+f 690 691 485
+f 10 548 549  # unsupported
+f 713 712 844
+f 10 549 550  # unsupported
+f 719 718 847
+f 10 550 551  # unsupported
+f 816 817 674
+f 10 551 552  # unsupported
+f 692 691 833
+f 10 552 553  # unsupported
+f 694 693 834
+f 10 553 554  # unsupported
+f 716 715 845
+f 10 554 555  # unsupported
+f 698 697 837
+f 10 555 556  # unsupported
+f 712 711 844
+f 10 556 557  # unsupported
+f 705 704 841
+f 10 557 558  # unsupported
+f 702 701 840
+f 10 558 559  # unsupported
+f 708 707 842
+f 10 559 560  # unsupported
+f 562 561 732
+f 10 560 561  # unsupported
+f 563 562 734
+f 10 561 562  # unsupported
+f 564 563 734
+f 10 562 563  # unsupported
+f 565 564 735
+f 10 563 564  # unsupported
+f 566 565 735
+f 10 564 565  # unsupported
+f 567 566 736
+f 10 565 566  # unsupported
+f 568 567 737
+f 10 566 567  # unsupported
+f 569 568 737
+f 10 567 568  # unsupported
+f 570 569 738
+f 10 568 569  # unsupported
+f 571 570 738
+f 10 569 570  # unsupported
+f 572 571 739
+f 10 570 571  # unsupported
+f 9 572 740
+f 10 571 572  # unsupported
+f 8 9 762
+f 379 378 611
+f 4 573 3
+f 573 574 3
+f 648 647 790
+f 574 575 3
+f 646 645 788
+f 575 576 3
+f 613 612 1026
+f 576 577 3
+f 644 643 787
+f 577 578 3
+f 610 609 1023
+f 578 579 3
+f 643 642 785
+f 579 580 3
+f 615 614 1027
+f 580 581 3
+f 641 640 784
+f 581 582 3
+f 616 615 1028
+f 582 583 3
+f 607 606 1021
+f 583 584 3
+f 621 620 1030
+f 584 585 3
+f 623 622 1031
+f 585 586 3
+f 637 636 782
+f 586 587 3
+f 636 635 781
+f 587 588 3
+f 638 637 782
+f 588 589 3
+f 635 634 781
+f 589 590 3
+f 631 779 632
+f 626 625 1032
+f 390 389 618
+f 591 592 3
+f 629 628 1034
+f 592 593 3
+f 618 617 1028
+f 593 594 3
+f 624 623 1032
+f 628 627 1033
+f 392 391 619
+f 595 596 355
+f 630 1034 631
+f 596 597 356
+f 633 632 779
+f 597 598 358
+f 634 633 781
+f 622 621 1031
+f 394 393 620
+f 599 600 361
+f 639 638 783
+f 600 601 363
+f 620 619 1030
+f 601 602 365
+f 617 616 1028
+f 612 611 1024
+f 396 395 621
+f 603 604 367
+f 632 633 433
+f 604 605 369
+f 456 455 658
+f 605 606 370
+f 630 631 430
+f 606 607 372
+f 451 450 653
+f 607 608 373
+f 608 609 375
+f 609 610 377
+f 428 427 629
+f 629 630 429
+f 429 428 629
+f 610 611 378
+f 611 612 379
+f 612 613 382
+f 430 429 630
+f 614 615 386
+f 431 430 631
+f 613 614 383
+f 432 431 632
+f 626 627 426
+f 433 432 632
+f 615 616 386
+f 616 617 388
+f 617 618 389
+f 434 433 634
+f 622 623 399
+f 435 434 634
+f 618 619 391
+f 619 620 393
+f 620 621 395
+f 436 435 636
+f 621 622 397
+f 437 436 637
+f 439 438 639
+f 438 437 639
+f 444 443 645
+f 440 439 640
+f 623 624 400
+f 624 625 402
+f 625 626 424
+f 441 440 642
+f 443 442 644
+f 442 441 643
+f 627 628 427
+f 445 444 646
+f 448 447 649
+f 446 445 648
+f 628 629 427
+f 447 446 648
+f 450 449 652
+f 449 448 651
+f 454 453 656
+f 452 451 654
+f 631 632 431
+f 453 452 655
+f 634 635 435
+f 458 457 661
+f 633 634 433
+f 457 456 660
+f 604 603 1019
+f 459 458 662
+f 635 636 435
+f 652 651 793
+f 636 637 436
+f 651 650 793
+f 590 589 1009
+f 460 459 663
+f 638 639 437
+f 654 653 795
+f 639 640 439
+f 589 588 1008
+f 640 641 440
+f 587 586 1007
+f 585 584 1005
+f 462 461 665
+f 642 643 441
+f 584 583 1005
+f 643 644 442
+f 583 582 1004
+f 644 645 443
+f 582 581 1003
+f 645 646 444
+f 656 655 797
+f 646 647 445
+f 657 656 798
+f 1148 1212 1149
+f 466 465 670
+f 648 649 447
+f 1148 1147 1212
+f 649 650 448
+f 1145 1212 1146
+f 650 651 448
+f 1144 1212 1145
+f 651 652 449
+f 1140 1139 1212
+f 806 805 1051
+f 469 468 673
+f 653 654 451
+f 658 657 799
+f 654 655 452
+f 779 780 633
+f 655 656 453
+f 662 661 803
+f 656 657 454
+f 781 782 636
+f 657 658 454
+f 782 783 638
+f 658 659 456
+f 1095 1094 1212
+f 659 660 456
+f 668 667 809
+f 660 661 457
+f 784 785 641
+f 661 662 458
+f 671 670 813
+f 662 663 459
+f 672 671 814
+f 663 664 460
+f 1090 1089 1212
+f 664 665 461
+f 1091 1090 1212
+f 665 666 462
+f 1066 1212 1067
+f 666 667 463
+f 1137 1212 1138
+f 667 668 464
+f 1137 1136 1212
+f 668 669 465
+f 796 795 1042
+f 669 670 465
+f 1054 1212 1055
+f 670 671 466
+f 673 672 815
+f 671 672 467
+f 674 673 816
+f 672 673 468
+f 791 792 649
+f 673 674 469
+f 1038 1039 790
+f 674 675 470
+f 676 675 818
+f 675 676 471
+f 677 676 819
+f 676 677 472
+f 678 677 820
+f 677 678 473
+f 679 678 821
+f 678 679 474
+f 800 801 659
+f 679 680 475
+f 802 803 661
+f 680 681 476
+f 1153 1152 1212
+f 681 682 477
+f 806 807 665
+f 682 683 477
+f 827 826 1069
+f 683 684 479
+f 685 684 826
+f 684 685 480
+f 845 844 1079
+f 685 686 480
+f 687 686 828
+f 686 687 481
+f 1113 1114 896
+f 687 688 482
+f 689 688 830
+f 840 841 704
+f 689 690 484
+f 696 695 836
+f 500 499 705
+f 704 703 840
+f 691 692 486
+f 701 702 496
+f 501 500 706
+f 546 545 723
+f 504 503 709
+f 695 696 489
+f 548 547 723
+f 694 695 489
+f 547 546 723
+f 697 698 492
+f 550 549 724
+f 696 697 491
+f 549 548 724
+f 699 700 494
+f 552 551 726
+f 698 699 492
+f 551 550 726
+f 555 554 728
+f 553 552 727
+f 700 701 495
+f 554 553 727
+f 703 704 498
+f 558 557 730
+f 702 703 496
+f 556 555 728
+f 560 559 731
+f 559 558 731
+f 704 705 499
+f 711 710 843
+f 705 706 500
+f 710 709 843
+f 706 707 502
+f 709 708 842
+f 707 708 503
+f 706 705 841
+f 708 709 503
+f 714 713 844
+f 709 710 506
+f 715 714 845
+f 710 711 507
+f 703 702 840
+f 711 712 510
+f 717 716 846
+f 712 713 511
+f 718 717 846
+f 713 714 512
+f 701 700 839
+f 714 715 517
+f 720 719 847
+f 715 716 533
+f 699 698 837
+f 716 717 535
+f 838 839 700
+f 717 718 537
+f 819 820 677
+f 718 719 539
+f 841 842 706
+f 719 720 541
+f 751 750 870
+f 720 721 542
+f 844 845 714
+f 721 722 544
+f 750 749 869
+f 722 723 545
+f 756 755 873
+f 723 724 548
+f 846 847 718
+f 724 725 550
+f 814 815 672
+f 725 726 550
+f 847 848 720
+f 726 727 552
+f 1047 1048 802
+f 727 728 554
+f 812 813 670
+f 728 729 556
+f 891 890 1110
+f 729 730 557
+f 1064 1065 821
+f 730 731 558
+f 1078 1079 844
+f 731 732 560
+f 1053 1054 808
+f 732 733 562
+f 810 811 668
+f 733 734 562
+f 844 843 1078
+f 734 735 564
+f 842 841 1077
+f 735 736 566
+f 841 840 1077
+f 736 737 567
+f 809 810 668
+f 737 738 569
+f 834 833 1074
+f 738 739 571
+f 838 837 1076
+f 739 740 572
+f 835 834 1074
+f 9 740 741
+f 829 828 1070
+f 9 741 742
+f 830 829 1071
+f 9 742 743
+f 843 842 1078
+f 9 743 744
+f 1049 1050 804
+f 9 744 745
+f 1082 1083 850
+f 9 745 746
+f 881 880 1103
+f 9 746 747
+f 1076 1077 840
+f 9 747 748
+f 1088 1089 859
+f 9 748 749
+f 1110 1111 892
+f 9 749 750
+f 804 805 663
+f 9 750 751
+f 683 682 824
+f 9 751 752
+f 1115 1116 899
+f 9 752 753
+f 1125 1126 913
+f 9 753 754
+f 823 822 1066
+f 9 754 755
+f 1054 1053 1212
+f 9 755 756
+f 1146 1212 1147
+f 9 756 757
+f 1114 1113 1212
+f 9 757 758
+f 1056 1212 1057
+f 9 758 759
+f 1125 1124 1212
+f 9 759 760
+f 681 680 822
+f 9 760 761
+f 1117 1212 1118
+f 9 761 762
+f 1082 1081 1212
+f 786 785 1035
+f 5 6 763
+f 1105 1104 1212
+f 763 6 764
+f 783 1210 784
+f 764 6 765
+f 783 782 1210
+f 765 6 766
+f 785 784 1035
+f 766 6 767
+f 1026 1025 1203
+f 767 6 768
+f 789 788 1038
+f 768 6 769
+f 788 787 1037
+f 769 6 770
+f 1016 1015 1196
+f 770 6 771
+f 799 798 1045
+f 771 6 772
+f 791 790 1039
+f 772 6 773
+f 803 802 1048
+f 773 6 774
+f 793 792 1040
+f 774 6 775
+f 794 793 1041
+f 775 6 776
+f 812 811 1056
+f 776 6 777
+f 1080 1079 1212
+f 777 6 778
+f 655 654 797
+f 653 652 795
+f 661 660 802
+f 659 658 800
+f 780 781 633
+f 660 659 801
+f 664 663 805
+f 663 662 804
+f 667 666 808
+f 665 664 806
+f 783 784 640
+f 666 665 807
+f 670 669 812
+f 669 668 811
+f 785 786 643
+f 1085 1084 1212
+f 786 787 643
+f 1101 1102 878
+f 787 788 645
+f 1072 1212 1074
+f 788 789 646
+f 1119 1120 904
+f 789 790 647
+f 1083 1082 1212
+f 790 791 649
+f 1135 1134 1212
+f 1073 1072 1074
+f 675 674 817
+f 792 793 650
+f 1069 1068 1212
+f 793 794 652
+f 1075 1212 1076
+f 794 795 652
+f 1055 1212 1056
+f 795 796 654
+f 1075 1074 1212
+f 796 797 654
+f 1164 1212 1165
+f 797 798 656
+f 1108 1212 1109
+f 798 799 657
+f 1111 1110 1212
+f 799 800 658
+f 1115 1212 1116
+f 1155 1212 1156
+f 680 679 822
+f 801 802 660
+f 1065 1064 1212
+f 1163 1164 968
+f 803 804 662
+f 825 824 1067
+f 682 681 824
+f 1051 1052 806
+f 805 806 664
+f 869 868 1095
+f 684 683 826
+f 839 838 1076
+f 807 808 666
+f 832 831 1073
+f 686 685 828
+f 808 809 667
+f 837 836 1075
+f 840 839 1076
+f 688 687 829
+f 1077 1078 842
+f 811 812 669
+f 1080 1081 847
+f 690 689 831
+f 1106 1107 886
+f 691 690 832
+f 813 814 671
+f 848 849 722
+f 759 758 875
+f 693 692 834
+f 815 816 673
+f 845 846 716
+f 843 844 711
+f 817 818 675
+f 842 843 709
+f 695 694 835
+f 818 819 676
+f 745 744 865
+f 739 738 861
+f 697 696 837
+f 820 821 678
+f 837 838 699
+f 821 822 679
+f 822 823 681
+f 736 735 859
+f 721 720 848
+f 823 824 681
+f 824 825 683
+f 829 830 688
+f 722 721 848
+f 825 826 683
+f 826 827 685
+f 727 726 852
+f 723 722 849
+f 827 828 685
+f 828 829 687
+f 725 724 851
+f 724 723 850
+f 834 835 694
+f 831 832 690
+f 830 831 689
+f 726 725 852
+f 731 730 855
+f 833 834 692
+f 832 833 691
+f 728 727 853
+f 730 729 854
+f 729 728 853
+f 836 837 696
+f 732 731 856
+f 835 836 695
+f 733 732 856
+f 735 734 858
+f 734 733 857
+f 738 737 860
+f 737 736 859
+f 742 741 863
+f 740 739 862
+f 839 840 701
+f 741 740 862
+f 744 743 864
+f 743 742 864
+f 747 746 867
+f 746 745 866
+f 749 748 868
+f 748 747 867
+f 753 752 871
+f 752 751 870
+f 755 754 873
+f 754 753 872
+f 758 757 875
+f 757 756 874
+f 761 760 877
+f 760 759 876
+f 8 762 878
+f 762 761 878
+f 1118 1119 903
+f 7 8 905
+f 849 850 723
+f 1120 1121 906
+f 850 851 724
+f 1043 1044 797
+f 851 852 725
+f 948 947 1149
+f 852 853 727
+f 1137 1138 930
+f 853 854 729
+f 1151 1152 951
+f 854 855 730
+f 1158 1159 961
+f 855 856 731
+f 1039 1040 792
+f 856 857 733
+f 1159 1160 962
+f 857 858 734
+f 1161 1162 966
+f 858 859 735
+f 1052 1051 1212
+f 859 860 737
+f 1079 1078 1212
+f 860 861 738
+f 821 820 1064
+f 861 862 739
+f 1081 1080 1212
+f 862 863 741
+f 1078 1077 1212
+f 863 864 742
+f 1077 1076 1212
+f 864 865 744
+f 820 819 1064
+f 865 866 745
+f 1133 1134 924
+f 866 867 746
+f 1070 1212 1071
+f 867 868 748
+f 1071 1212 1072
+f 868 869 749
+f 1083 1212 1084
+f 869 870 750
+f 1037 1038 788
+f 870 871 752
+f 1069 1212 1070
+f 871 872 753
+f 1085 1212 1086
+f 872 873 754
+f 1087 1086 1212
+f 873 874 756
+f 817 816 1061
+f 874 875 757
+f 1067 1212 1068
+f 875 876 759
+f 1088 1212 1089
+f 876 877 760
+f 1106 1212 1107
+f 877 878 761
+f 1087 1212 1088
+f 8 878 879
+f 1035 1036 786
+f 8 879 880
+f 1109 1110 890
+f 8 880 881
+f 1065 1212 1066
+f 8 881 882
+f 1139 1140 933
+f 8 882 883
+f 1092 1091 1212
+f 8 883 884
+f 813 812 1057
+f 8 884 885
+f 1103 1102 1212
+f 8 885 886
+f 1094 1093 1212
+f 8 886 887
+f 1127 1128 916
+f 8 887 888
+f 1092 1212 1093
+f 8 888 889
+f 1096 1095 1212
+f 8 889 890
+f 1130 1129 1212
+f 8 890 891
+f 1142 1141 1212
+f 8 891 892
+f 1097 1096 1212
+f 8 892 893
+f 1063 1212 1064
+f 8 893 894
+f 909 910 7
+f 8 894 895
+f 908 909 7
+f 8 895 896
+f 907 908 7
+f 8 896 897
+f 906 907 7
+f 8 897 898
+f 905 906 7
+f 8 898 899
+f 904 905 8
+f 8 899 900
+f 903 904 8
+f 8 900 901
+f 902 903 8
+f 8 901 902
+f 778 7 932
+f 776 777 933
+f 777 778 932
+f 774 775 935
+f 775 776 934
+f 772 773 936
+f 773 774 935
+f 770 771 938
+f 771 772 937
+f 768 769 939
+f 769 770 938
+f 766 767 940
+f 767 768 940
+f 764 765 942
+f 765 766 941
+f 1098 1097 1212
+f 763 764 943
+f 910 911 7
+f 911 912 7
+f 912 913 7
+f 5 763 943
+f 1100 1099 1212
+f 4 5 970
+f 913 914 7
+f 1141 1140 1212
+f 914 915 7
+f 1099 1098 1212
+f 915 916 7
+f 1062 1212 1063
+f 916 917 7
+f 1101 1100 1212
+f 917 918 7
+f 1060 1212 1061
+f 918 919 7
+f 1113 1112 1212
+f 919 920 7
+f 1038 1037 1212
+f 920 921 7
+f 811 810 1055
+f 921 922 7
+f 1047 1046 1212
+f 922 923 7
+f 1123 1122 1212
+f 923 924 7
+f 1156 1212 1157
+f 924 925 7
+f 1040 1039 1212
+f 925 926 7
+f 1197 1212 1198
+f 926 927 7
+f 1043 1042 1212
+f 927 928 7
+f 1168 1212 1169
+f 928 929 7
+f 1127 1126 1212
+f 929 930 7
+f 810 809 1055
+f 930 931 7
+f 1121 1120 1212
+f 931 932 7
+f 1101 1212 1102
+f 932 933 777
+f 1104 1103 1212
+f 933 934 776
+f 1061 1212 1062
+f 934 935 775
+f 1108 1107 1212
+f 935 936 773
+f 1057 1212 1058
+f 936 937 772
+f 1110 1109 1212
+f 937 938 771
+f 1105 1212 1106
+f 938 939 769
+f 809 808 1054
+f 939 940 768
+f 1115 1114 1212
+f 940 941 766
+f 1059 1212 1060
+f 941 942 765
+f 1111 1212 1112
+f 942 943 764
+f 1051 1050 1212
+f 5 943 944
+f 1117 1116 1212
+f 5 944 945
+f 1058 1212 1059
+f 5 945 946
+f 1119 1118 1212
+f 5 946 947
+f 808 807 1053
+f 5 947 948
+f 1150 1212 1151
+f 5 948 949
+f 1120 1119 1212
+f 5 949 950
+f 1121 1212 1122
+f 5 950 951
+f 1123 1212 1124
+f 5 951 952
+f 1146 1147 943
+f 5 952 953
+f 1126 1125 1212
+f 5 953 954
+f 1129 1128 1212
+f 5 954 955
+f 1127 1212 1128
+f 5 955 956
+f 1132 1131 1212
+f 5 956 957
+f 807 806 1052
+f 5 957 958
+f 1130 1212 1131
+f 5 958 959
+f 1134 1133 1212
+f 5 959 960
+f 1132 1212 1133
+f 5 960 961
+f 1136 1135 1212
+f 5 961 962
+f 1154 1155 955
+f 5 962 963
+f 970 971 4
+f 5 963 964
+f 969 970 5
+f 5 964 965
+f 968 969 5
+f 5 965 966
+f 967 968 5
+f 5 966 967
+f 573 4 997
+f 575 574 998
+f 574 573 997
+f 577 576 999
+f 576 575 999
+f 579 578 1001
+f 578 577 1000
+f 581 580 1002
+f 580 579 1002
+f 971 972 4
+f 804 803 1049
+f 972 973 4
+f 1053 1052 1212
+f 973 974 4
+f 1149 1212 1150
+f 974 975 4
+f 1151 1212 1152
+f 975 976 4
+f 1153 1212 1154
+f 976 977 4
+f 1155 1154 1212
+f 977 978 4
+f 1158 1212 1159
+f 978 979 4
+f 1158 1157 1212
+f 979 980 4
+f 1159 1212 1160
+f 980 981 4
+f 1160 1212 1161
+f 981 982 4
+f 1162 1161 1212
+f 982 983 4
+f 1162 1212 1163
+f 983 984 4
+f 802 801 1047
+f 984 985 4
+f 801 800 1047
+f 985 986 4
+f 1165 1212 1166
+f 986 987 4
+f 1166 1212 1167
+f 987 988 4
+f 1170 1212 1171
+f 988 989 4
+f 1171 1212 1172
+f 989 990 4
+f 1170 1169 1212
+f 990 991 4
+f 1172 1212 1173
+f 991 992 4
+f 1050 1049 1212
+f 992 993 4
+f 800 799 1046
+f 993 994 4
+f 1174 1173 1212
+f 994 995 4
+f 1004 1003 1188
+f 995 996 4
+f 1005 1004 1189
+f 996 997 4
+f 1006 1005 1189
+f 997 998 574
+f 1007 1006 1190
+f 998 999 575
+f 1008 1007 1191
+f 999 1000 577
+f 1009 1008 1192
+f 1000 1001 578
+f 1010 1009 1192
+f 1001 1002 579
+f 798 797 1044
+f 1002 1003 581
+f 797 796 1043
+f 1003 1004 582
+f 1011 1010 1193
+f 1004 1005 583
+f 1012 1011 1194
+f 1005 1006 585
+f 1013 1012 1194
+f 1006 1007 586
+f 1014 1013 1195
+f 1007 1008 587
+f 1015 1014 1196
+f 1008 1009 589
+f 795 794 1041
+f 1009 1010 590
+f 1017 1016 1197
+f 1010 1011 591
+f 1018 1017 1197
+f 1011 1012 593
+f 1019 1018 1198
+f 1012 1013 594
+f 1020 1019 1199
+f 1013 1014 596
+f 1021 1020 1200
+f 1014 1015 597
+f 792 791 1039
+f 1015 1016 598
+f 1022 1021 1200
+f 1016 1017 600
+f 1023 1022 1201
+f 1017 1018 601
+f 1024 1023 1201
+f 1018 1019 602
+f 790 789 1038
+f 1019 1020 604
+f 1025 1024 1202
+f 1020 1021 606
+f 1027 1026 1203
+f 1021 1022 607
+f 1028 1027 1204
+f 1022 1023 608
+f 1029 1028 1205
+f 1023 1024 610
+f 787 786 1037
+f 1024 1025 612
+f 1030 1029 1205
+f 1025 1026 612
+f 1031 1030 1206
+f 1026 1027 613
+f 1035 784 1210
+f 1027 1028 615
+f 1032 1031 1206
+f 1028 1029 618
+f 1033 1032 1207
+f 1029 1030 619
+f 782 781 1209
+f 1030 1031 621
+f 1034 1033 1208
+f 1031 1032 623
+f 779 1034 1208
+f 1032 1033 626
+f 780 779 1208
+f 1033 1034 628
+f 781 780 1209
+f 1168 1167 1212
+f 1164 1163 1212
+f 1036 1037 786
+f 814 813 1058
+f 816 815 1060
+f 815 814 1059
+f 819 818 1062
+f 818 817 1062
+f 1160 1161 964
+f 822 821 1065
+f 1155 1156 957
+f 1040 1041 793
+f 1130 1131 920
+f 1042 1043 796
+f 1041 1042 795
+f 1126 1127 914
+f 1121 1122 907
+f 824 823 1067
+f 1116 1117 901
+f 1044 1045 798
+f 1114 1115 897
+f 1045 1046 799
+f 1099 1100 876
+f 826 825 1068
+f 1046 1047 800
+f 1092 1093 865
+f 1085 1086 855
+f 1048 1049 803
+f 1084 1085 853
+f 828 827 1070
+f 1081 1082 849
+f 1050 1051 805
+f 1079 1080 845
+f 831 830 1071
+f 876 875 1099
+f 833 832 1073
+f 1052 1053 807
+f 1075 1076 837
+f 1074 1075 835
+f 836 835 1075
+f 1054 1055 809
+f 1055 1056 811
+f 1073 1074 833
+f 846 845 1080
+f 1056 1057 812
+f 1057 1058 813
+f 1058 1059 814
+f 847 846 1080
+f 1071 1072 831
+f 848 847 1081
+f 1059 1060 815
+f 1060 1061 816
+f 1068 1069 826
+f 849 848 1081
+f 1061 1062 817
+f 1062 1063 819
+f 1063 1064 819
+f 850 849 1082
+f 852 851 1083
+f 851 850 1083
+f 1065 1066 822
+f 853 852 1084
+f 1067 1068 825
+f 854 853 1085
+f 1066 1067 823
+f 855 854 1085
+f 857 856 1087
+f 856 855 1086
+f 1070 1071 829
+f 858 857 1088
+f 1069 1070 827
+f 859 858 1088
+f 861 860 1089
+f 860 859 1089
+f 864 863 1091
+f 862 861 1090
+f 1072 1073 831
+f 863 862 1091
+f 866 865 1093
+f 865 864 1092
+f 868 867 1094
+f 867 866 1093
+f 871 870 1096
+f 870 869 1096
+f 873 872 1098
+f 872 871 1097
+f 875 874 1099
+f 874 873 1098
+f 878 877 1101
+f 877 876 1100
+f 880 879 1102
+f 879 878 1102
+f 883 882 1104
+f 882 881 1104
+f 885 884 1106
+f 884 883 1105
+f 1083 1084 852
+f 886 885 1106
+f 888 887 1108
+f 887 886 1107
+f 890 889 1109
+f 889 888 1109
+f 1086 1087 856
+f 892 891 1110
+f 895 894 1113
+f 893 892 1111
+f 1087 1088 857
+f 894 893 1112
+f 1089 1090 861
+f 896 895 1113
+f 1090 1091 862
+f 897 896 1114
+f 1091 1092 864
+f 898 897 1115
+f 900 899 1116
+f 899 898 1115
+f 1093 1094 867
+f 901 900 1116
+f 1094 1095 868
+f 902 901 1118
+f 1095 1096 869
+f 903 902 1118
+f 1096 1097 871
+f 904 903 1119
+f 1097 1098 872
+f 905 904 1120
+f 1098 1099 874
+f 906 905 1120
+f 908 907 1122
+f 907 906 1121
+f 911 910 1124
+f 909 908 1122
+f 1100 1101 877
+f 910 909 1124
+f 1102 1103 880
+f 912 911 1125
+f 1103 1104 881
+f 913 912 1125
+f 1104 1105 883
+f 914 913 1126
+f 917 916 1128
+f 915 914 1127
+f 1105 1106 884
+f 916 915 1127
+f 1107 1108 887
+f 918 917 1129
+f 921 920 1131
+f 919 918 1130
+f 1108 1109 888
+f 920 919 1130
+f 923 922 1132
+f 922 921 1131
+f 1112 1113 894
+f 924 923 1133
+f 1111 1112 893
+f 925 924 1134
+f 927 926 1135
+f 926 925 1134
+f 929 928 1136
+f 928 927 1136
+f 931 930 1138
+f 930 929 1137
+f 933 932 1139
+f 932 931 1138
+f 936 935 1141
+f 934 933 1140
+f 1117 1118 901
+f 935 934 1141
+f 938 937 1142
+f 937 936 1142
+f 940 939 1144
+f 939 938 1143
+f 942 941 1145
+f 941 940 1144
+f 1122 1123 909
+f 943 942 1146
+f 1124 1125 911
+f 944 943 1147
+f 1123 1124 909
+f 945 944 1147
+f 947 946 1149
+f 946 945 1148
+f 950 949 1151
+f 949 948 1150
+f 952 951 1152
+f 951 950 1151
+f 1128 1129 917
+f 953 952 1153
+f 1129 1130 918
+f 954 953 1154
+f 956 955 1155
+f 955 954 1154
+f 1131 1132 922
+f 957 956 1155
+f 1132 1133 923
+f 958 957 1156
+f 960 959 1158
+f 959 958 1157
+f 1134 1135 926
+f 961 960 1158
+f 1135 1136 927
+f 962 961 1159
+f 1136 1137 929
+f 963 962 1160
+f 965 964 1161
+f 964 963 1160
+f 1138 1139 932
+f 966 965 1161
+f 968 967 1163
+f 967 966 1163
+f 1142 1143 938
+f 969 968 1164
+f 1140 1141 934
+f 1141 1142 936
+f 971 970 1165
+f 970 969 1165
+f 1144 1145 941
+f 972 971 1166
+f 1143 1144 939
+f 973 972 1167
+f 976 975 1169
+f 974 973 1167
+f 1145 1146 942
+f 975 974 1169
+f 1147 1148 945
+f 977 976 1170
+f 1148 1149 946
+f 978 977 1170
+f 1149 1150 948
+f 979 978 1171
+f 982 981 1173
+f 980 979 1172
+f 1150 1151 949
+f 981 980 1172
+f 1152 1153 952
+f 983 982 1174
+f 986 985 1176
+f 984 983 1175
+f 1153 1154 953
+f 985 984 1175
+f 988 987 1177
+f 987 986 1176
+f 1157 1158 959
+f 989 988 1178
+f 1156 1157 958
+f 990 989 1179
+f 992 991 1180
+f 991 990 1179
+f 994 993 1181
+f 993 992 1181
+f 996 995 1183
+f 995 994 1182
+f 998 997 1184
+f 997 996 1183
+f 1001 1000 1186
+f 999 998 1185
+f 1162 1163 966
+f 1000 999 1185
+f 1003 1002 1187
+f 1002 1001 1187
+f 1164 1165 969
+f 1174 1212 1175
+f 1165 1166 971
+f 1049 1048 1212
+f 1166 1167 972
+f 1175 1212 1176
+f 1167 1168 974
+f 1177 1176 1212
+f 1168 1169 974
+f 1177 1212 1178
+f 1169 1170 976
+f 1179 1178 1212
+f 1170 1171 978
+f 1180 1179 1212
+f 1171 1172 979
+f 1180 1212 1181
+f 1172 1173 981
+f 1048 1047 1212
+f 1173 1174 982
+f 1181 1212 1182
+f 1174 1175 983
+f 1182 1212 1183
+f 1175 1176 985
+f 1045 1212 1046
+f 1176 1177 987
+f 1184 1183 1212
+f 1177 1178 988
+f 1184 1212 1185
+f 1178 1179 989
+f 1185 1212 1186
+f 1179 1180 991
+f 1186 1212 1187
+f 1180 1181 992
+f 1187 1212 1188
+f 1181 1182 994
+f 1188 1212 1189
+f 1182 1183 995
+f 1045 1044 1212
+f 1183 1184 997
+f 1189 1212 1190
+f 1184 1185 998
+f 1190 1212 1191
+f 1185 1186 1000
+f 1044 1043 1212
+f 1186 1187 1001
+f 1191 1212 1192
+f 1187 1188 1003
+f 1193 1192 1212
+f 1188 1189 1004
+f 1193 1212 1194
+f 1189 1190 1006
+f 1194 1212 1195
+f 1190 1191 1007
+f 1195 1212 1196
+f 1191 1192 1008
+f 1041 1212 1042
+f 1192 1193 1010
+f 1197 1196 1212
+f 1193 1194 1011
+f 1198 1212 1199
+f 1194 1195 1013
+f 1041 1040 1212
+f 1195 1196 1014
+f 1200 1212 1201
+f 1196 1197 1016
+f 1200 1199 1212
+f 1197 1198 1018
+f 1202 1212 1203
+f 1198 1199 1019
+f 1202 1201 1212
+f 1199 1200 1020
+f 1038 1212 1039
+f 1200 1201 1022
+f 1036 1212 1037
+f 1201 1202 1024
+f 1204 1203 1212
+f 1202 1203 1025
+f 1204 1212 1205
+f 1203 1204 1027
+f 1205 1212 1206
+f 1204 1205 1028
+f 1206 1212 1207
+f 1205 1206 1030
+f 1207 1212 1208
+f 1206 1207 1032
+f 1208 1212 1209
+f 1207 1208 1033
+f 1209 1212 1210
+f 1208 1209 780
+f 1210 1212 1035
+f 1209 1210 782
+f 1036 1035 1212
+f 24 1211 103
+f 1211 106 105
+f 1143 1212 1144
+f 1143 1142 1212

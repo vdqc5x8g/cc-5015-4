@@ -245,6 +245,62 @@ def test_blocked_crossing(tmp):
           "crossings are never auto-merged; only review candidates are offered")
 
 
+def test_assets(tmp):
+    """The terrain asset package must be present, loadable and reproducible."""
+    print("terrain_assets:")
+    index_path = os.path.join(ROOT, "assets", "index.json")
+    check(os.path.exists(index_path), "assets/index.json exists (run scripts/rebuild_assets.py)")
+    if not os.path.exists(index_path):
+        return
+    with open(index_path) as f:
+        index = json.load(f)
+    ids = [entry["id"] for entry in index.get("assets", [])]
+    check(len(ids) >= 4, "%d terrain assets indexed" % len(ids))
+
+    # Every asset must load as a kernel input and build a real mesh.
+    for entry in index["assets"]:
+        contours = os.path.join(ROOT, entry["contours"])
+        prefix = os.path.join(tmp, "asset_" + entry["id"])
+        proc = subprocess.run([BIN, "build", contours, "--out-prefix", prefix],
+                              capture_output=True, text=True)
+        check(proc.returncode == 0, "%s: kernel loads and builds the asset" % entry["id"])
+        if proc.returncode != 0:
+            continue
+        with open(prefix + "_pipeline.json") as f:
+            doc = json.load(f)
+        check(doc["mesh"]["ok"] and doc["mesh"]["triangle_count"] > 0,
+              "%s: %d faces" % (entry["id"], doc["mesh"]["triangle_count"]))
+        verify_constraints_present(doc, "asset " + entry["id"])
+
+    # The verifier is the authority for elevation error and case coverage.
+    verifier = os.path.join(ROOT, "scripts", "verify_terrain_assets.py")
+    proc = subprocess.run([sys.executable, "-I", verifier], capture_output=True, text=True)
+    check(proc.returncode == 0,
+          "verifier passes elevation error and constraint evidence")
+    if proc.returncode != 0:
+        print(proc.stdout)
+        print(proc.stderr)
+
+    # A recipe missing a required parameter must fail, never default.
+    import tempfile as _temp
+    with open(os.path.join(ROOT, "assets", "source", ids[0] + ".json")) as f:
+        recipe = json.load(f)
+    broken = dict(recipe)
+    broken.pop("grid_step_m", None)
+    broken["id"] = "selfcheck_missing"
+    with _temp.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+        json.dump(broken, f)
+        broken_path = f.name
+    try:
+        maker = os.path.join(ROOT, "scripts", "make_terrain_assets.py")
+        proc = subprocess.run([sys.executable, "-I", maker, "--recipe", broken_path],
+                              capture_output=True, text=True)
+        check(proc.returncode != 0 and "grid_step_m" in (proc.stdout + proc.stderr),
+              "maker rejects a recipe with a missing parameter instead of defaulting")
+    finally:
+        os.unlink(broken_path)
+
+
 def main():
     if not os.path.exists(BIN):
         raise SystemExit("missing binary; run make first")
@@ -261,6 +317,7 @@ def main():
                 print("  FAIL: mesh not ok: " + doc["mesh"]["error"])
                 continue
             fn(doc)
+        test_assets(tmp)
         if needs_server:
             test_repairs(tmp)
             test_blocked_crossing(tmp)

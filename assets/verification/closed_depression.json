@@ -1,0 +1,129 @@
+{
+  "asset": "closed_depression",
+  "ok": true,
+  "elevation_error": {
+    "metric": "max |raster bilinear elevation - declared level| over contour vertices",
+    "worst_m": 7.105427357601002e-15,
+    "allowed_m": 0.22147375000000022,
+    "worst_vertex": [
+      133.98233857508808,
+      80.0,
+      36
+    ]
+  },
+  "constraints": {
+    "total": 1213,
+    "missing": 0,
+    "by_kind": {
+      "boundary": 10,
+      "contour": 1203
+    }
+  },
+  "mesh": {
+    "triangles": 2412,
+    "vertices": 1212
+  },
+  "rebuild_max_delta_m": 0.0,
+  "checks": [
+    {
+      "ok": true,
+      "check": "recipe declares 'id'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'title'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'description'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'cases'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'meta'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'boundary'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'levels_m'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'grid_step_m'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'surface'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'controls'"
+    },
+    {
+      "ok": true,
+      "check": "recipe id matches index"
+    },
+    {
+      "ok": true,
+      "check": "recipe hash matches the file on disk"
+    },
+    {
+      "ok": true,
+      "check": "heightfield exists"
+    },
+    {
+      "ok": true,
+      "check": "heightfield hash matches provenance"
+    },
+    {
+      "ok": true,
+      "check": "contour file is the one the provenance describes"
+    },
+    {
+      "ok": true,
+      "check": "max heightfield elevation error 7.11e-15 m <= 0.221 m allowed"
+    },
+    {
+      "ok": true,
+      "check": "model reports constrained edges"
+    },
+    {
+      "ok": true,
+      "check": "all 1213 constrained edges exist in the TIN (boundary=10, contour=1203)"
+    },
+    {
+      "ok": true,
+      "check": "kernel mesh is ok"
+    },
+    {
+      "ok": true,
+      "check": "mesh has triangles"
+    },
+    {
+      "ok": true,
+      "check": "closed depression: asset has closed contours"
+    },
+    {
+      "ok": true,
+      "check": "closed depression: an inner level is nested inside an outer ring"
+    },
+    {
+      "ok": true,
+      "check": "closed depression: kernel flags 152 unsupported/extrapolated triangles"
+    },
+    {
+      "ok": true,
+      "check": "closed depression: coverage note explains the enclosed extremum"
+    },
+    {
+      "ok": true,
+      "check": "rebuild from recipe reproduces stored contours (max delta 0 m)"
+    }
+  ]
+}

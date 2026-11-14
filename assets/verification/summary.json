@@ -1,0 +1,21 @@
+{
+  "schema": "terrain-verification/1",
+  "assets": [
+    {
+      "asset": "broken_by_hole",
+      "ok": true
+    },
+    {
+      "asset": "closed_depression",
+      "ok": true
+    },
+    {
+      "asset": "nearneighbour_escarpment",
+      "ok": true
+    },
+    {
+      "asset": "ridge_truncated",
+      "ok": true
+    }
+  ]
+}

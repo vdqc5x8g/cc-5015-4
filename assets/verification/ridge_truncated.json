@@ -1,0 +1,125 @@
+{
+  "asset": "ridge_truncated",
+  "ok": true,
+  "elevation_error": {
+    "metric": "max |raster bilinear elevation - declared level| over contour vertices",
+    "worst_m": 0.0007434951116991328,
+    "allowed_m": 0.36557025000000004,
+    "worst_vertex": [
+      117.736428007134,
+      101.4899291921514,
+      20
+    ]
+  },
+  "constraints": {
+    "total": 896,
+    "missing": 0,
+    "by_kind": {
+      "boundary": 12,
+      "contour": 884
+    }
+  },
+  "mesh": {
+    "triangles": 1776,
+    "vertices": 895
+  },
+  "rebuild_max_delta_m": 0.0,
+  "checks": [
+    {
+      "ok": true,
+      "check": "recipe declares 'id'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'title'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'description'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'cases'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'meta'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'boundary'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'levels_m'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'grid_step_m'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'surface'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'controls'"
+    },
+    {
+      "ok": true,
+      "check": "recipe id matches index"
+    },
+    {
+      "ok": true,
+      "check": "recipe hash matches the file on disk"
+    },
+    {
+      "ok": true,
+      "check": "heightfield exists"
+    },
+    {
+      "ok": true,
+      "check": "heightfield hash matches provenance"
+    },
+    {
+      "ok": true,
+      "check": "contour file is the one the provenance describes"
+    },
+    {
+      "ok": true,
+      "check": "max heightfield elevation error 0.000743 m <= 0.366 m allowed"
+    },
+    {
+      "ok": true,
+      "check": "model reports constrained edges"
+    },
+    {
+      "ok": true,
+      "check": "all 896 constrained edges exist in the TIN (boundary=12, contour=884)"
+    },
+    {
+      "ok": true,
+      "check": "kernel mesh is ok"
+    },
+    {
+      "ok": true,
+      "check": "mesh has triangles"
+    },
+    {
+      "ok": true,
+      "check": "boundary truncation: asset has open contours"
+    },
+    {
+      "ok": true,
+      "check": "boundary truncation: every open contour ends on a boundary vertex"
+    },
+    {
+      "ok": true,
+      "check": "boundary truncation: boundary edges are constrained in the TIN (12)"
+    },
+    {
+      "ok": true,
+      "check": "rebuild from recipe reproduces stored contours (max delta 0 m)"
+    }
+  ]
+}

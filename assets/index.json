@@ -1,0 +1,327 @@
+{
+  "schema": "terrain-assets/1",
+  "generator": "terrain-maker/1.0",
+  "note": "Each asset is rebuilt from its recipe by scripts/rebuild_assets.py; contours, models and previews are derived, not hand-edited.",
+  "assets": [
+    {
+      "id": "broken_by_hole",
+      "title": "Contours broken by a hole",
+      "description": "A diagonal slope with a rectangular void. Contours that would cross the void are split into separate pieces by the exact clipping step, so one input level becomes several constrained lines. The hole itself is never filled.",
+      "cases": [
+        "broken-contours",
+        "hole-clipping"
+      ],
+      "recipe": "assets/source/broken_by_hole.json",
+      "recipe_sha256": "0cbb7c131453a11531e972839839f3ce88db7a6516d0b37b6de24c12498a925e",
+      "contours": "assets/contours/broken_by_hole.json",
+      "contours_sha256": "3309661cd5a1cb79318dd5ed9044ceb8e93a57d750536e7bdec31dc908437fda",
+      "model": "assets/models/broken_by_hole_model.json",
+      "mesh_obj": "assets/models/broken_by_hole.obj",
+      "preview": "assets/previews/broken_by_hole.svg",
+      "verification": "assets/verification/broken_by_hole.json",
+      "level_stats": [
+        {
+          "level_m": 10,
+          "closed": false,
+          "points": 121,
+          "marching_error_m": 1.7763568394002505e-15
+        },
+        {
+          "level_m": 16,
+          "closed": false,
+          "points": 135,
+          "marching_error_m": 1.7763568394002505e-15
+        },
+        {
+          "level_m": 22,
+          "closed": false,
+          "points": 157,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 28,
+          "closed": false,
+          "points": 86,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 28,
+          "closed": false,
+          "points": 87,
+          "marching_error_m": 2.377197036906864e-05
+        }
+      ],
+      "extrema": {
+        "min": [
+          5.746118288265396,
+          0.0,
+          0.0
+        ],
+        "max": [
+          31.992226505327555,
+          200.0,
+          100.0
+        ]
+      },
+      "contour_count": 5
+    },
+    {
+      "id": "closed_depression",
+      "title": "Closed depression inside a broader hill",
+      "description": "A bowl cut into the flank of a hill. The ring contours close without an inner level, so the kernel must mark the enclosed height as an extremum rather than invent a floor. A second, separate summit gives the asset two distinct closed features.",
+      "cases": [
+        "closed-depression",
+        "nested-closed-contours"
+      ],
+      "recipe": "assets/source/closed_depression.json",
+      "recipe_sha256": "6add2c4382b06ae58c937171566015e67dc5cdaf8a63f22759ef55840ab3d7f0",
+      "contours": "assets/contours/closed_depression.json",
+      "contours_sha256": "47fe96d65502a8961b46e6ffe4cc6168949c435e5bfc4e440dec2b286e5dac01",
+      "model": "assets/models/closed_depression_model.json",
+      "mesh_obj": "assets/models/closed_depression.obj",
+      "preview": "assets/previews/closed_depression.svg",
+      "verification": "assets/verification/closed_depression.json",
+      "level_stats": [
+        {
+          "level_m": 24,
+          "closed": true,
+          "points": 64,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 28,
+          "closed": true,
+          "points": 114,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 32,
+          "closed": true,
+          "points": 166,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 36,
+          "closed": false,
+          "points": 220,
+          "marching_error_m": 7.105427357601002e-15
+        },
+        {
+          "level_m": 40,
+          "closed": false,
+          "points": 192,
+          "marching_error_m": 7.105427357601002e-15
+        },
+        {
+          "level_m": 40,
+          "closed": false,
+          "points": 18,
+          "marching_error_m": 0.0
+        },
+        {
+          "level_m": 44,
+          "closed": true,
+          "points": 256,
+          "marching_error_m": 7.105427357601002e-15
+        },
+        {
+          "level_m": 48,
+          "closed": true,
+          "points": 176,
+          "marching_error_m": 7.105427357601002e-15
+        }
+      ],
+      "extrema": {
+        "min": [
+          21.5687522848966,
+          86.0,
+          78.0
+        ],
+        "max": [
+          52.98781107087928,
+          170.0,
+          150.0
+        ]
+      },
+      "contour_count": 8
+    },
+    {
+      "id": "nearneighbour_escarpment",
+      "title": "Near-neighbour contours on an escarpment",
+      "description": "A narrow, steep-sided plateau squeezed against a tilted base. Several contour levels run within a few metres of one another along its flanks, which exercises welding and constraint preservation where lines come close but never touch.",
+      "cases": [
+        "near-neighbour-contours",
+        "steep-escarpment"
+      ],
+      "recipe": "assets/source/nearneighbour_escarpment.json",
+      "recipe_sha256": "e3d2537a6bdf345ed65bf13b488710f8b7938976af662f81dff30608da415ae1",
+      "contours": "assets/contours/nearneighbour_escarpment.json",
+      "contours_sha256": "e629ebf29f8955bdb63994dc9c86d026da97bdf12ac21810c901acc69c587d1c",
+      "model": "assets/models/nearneighbour_escarpment_model.json",
+      "mesh_obj": "assets/models/nearneighbour_escarpment.obj",
+      "preview": "assets/previews/nearneighbour_escarpment.svg",
+      "verification": "assets/verification/nearneighbour_escarpment.json",
+      "level_stats": [
+        {
+          "level_m": 22,
+          "closed": false,
+          "points": 209,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 22,
+          "closed": false,
+          "points": 209,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 24,
+          "closed": false,
+          "points": 213,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 24,
+          "closed": false,
+          "points": 213,
+          "marching_error_m": 7.105427357601002e-15
+        },
+        {
+          "level_m": 26,
+          "closed": false,
+          "points": 215,
+          "marching_error_m": 7.105427357601002e-15
+        },
+        {
+          "level_m": 26,
+          "closed": false,
+          "points": 215,
+          "marching_error_m": 1.0658141036401503e-14
+        },
+        {
+          "level_m": 28,
+          "closed": false,
+          "points": 217,
+          "marching_error_m": 7.105427357601002e-15
+        },
+        {
+          "level_m": 28,
+          "closed": false,
+          "points": 217,
+          "marching_error_m": 1.0658141036401503e-14
+        },
+        {
+          "level_m": 30,
+          "closed": false,
+          "points": 221,
+          "marching_error_m": 7.105427357601002e-15
+        },
+        {
+          "level_m": 30,
+          "closed": false,
+          "points": 221,
+          "marching_error_m": 1.4210854715202004e-14
+        },
+        {
+          "level_m": 32,
+          "closed": true,
+          "points": 428,
+          "marching_error_m": 1.4210854715202004e-14
+        },
+        {
+          "level_m": 34,
+          "closed": true,
+          "points": 392,
+          "marching_error_m": 1.4210854715202004e-14
+        },
+        {
+          "level_m": 36,
+          "closed": true,
+          "points": 356,
+          "marching_error_m": 1.4210854715202004e-14
+        }
+      ],
+      "extrema": {
+        "min": [
+          20.000000002415323,
+          0.0,
+          0.0
+        ],
+        "max": [
+          50.0,
+          100.0,
+          60.0
+        ]
+      },
+      "contour_count": 13
+    },
+    {
+      "id": "ridge_truncated",
+      "title": "Ridge truncated by an irregular boundary",
+      "description": "An asymmetric ridge whose lower contours run off an irregular six-sided boundary. The open contours are cut exactly on the boundary ring so the constrained TIN ends at the demesne edge instead of extrapolating past it.",
+      "cases": [
+        "boundary-truncation",
+        "open-contours"
+      ],
+      "recipe": "assets/source/ridge_truncated.json",
+      "recipe_sha256": "80a19070a890d1bd5fa27d96ec323e59c9336a3a2d390cf514aa72505942d680",
+      "contours": "assets/contours/ridge_truncated.json",
+      "contours_sha256": "ea6a4a95956a0d2d23995fb20be49283ff1192eaffead198dfed6024b6ed43d4",
+      "model": "assets/models/ridge_truncated_model.json",
+      "mesh_obj": "assets/models/ridge_truncated.obj",
+      "preview": "assets/previews/ridge_truncated.svg",
+      "verification": "assets/verification/ridge_truncated.json",
+      "level_stats": [
+        {
+          "level_m": 12,
+          "closed": false,
+          "points": 109,
+          "marching_error_m": 1.7763568394002505e-15
+        },
+        {
+          "level_m": 16,
+          "closed": false,
+          "points": 146,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 20,
+          "closed": false,
+          "points": 168,
+          "marching_error_m": 0.0007434951116991328
+        },
+        {
+          "level_m": 24,
+          "closed": true,
+          "points": 200,
+          "marching_error_m": 3.552713678800501e-15
+        },
+        {
+          "level_m": 28,
+          "closed": true,
+          "points": 150,
+          "marching_error_m": 7.105427357601002e-15
+        },
+        {
+          "level_m": 32,
+          "closed": true,
+          "points": 114,
+          "marching_error_m": 7.105427357601002e-15
+        }
+      ],
+      "extrema": {
+        "min": [
+          4.075085659973707,
+          -50.0,
+          0.0
+        ],
+        "max": [
+          39.46080459604397,
+          62.0,
+          56.0
+        ]
+      },
+      "contour_count": 6
+    }
+  ]
+}

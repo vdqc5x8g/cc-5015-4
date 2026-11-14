@@ -11,7 +11,7 @@ SRC := $(wildcard src/terrain/*.cpp) src/cli_main.cpp src/http_server.cpp
 OBJ := $(patsubst %.cpp,$(BUILD)/%.o,$(SRC))
 DEPS := $(OBJ:.o=.d)
 
-.PHONY: all clean run selftest
+.PHONY: all clean run selftest assets rebuild-assets verify-assets ui-test
 
 all: $(BIN)
 
@@ -29,6 +29,25 @@ run: $(BIN)
 
 selftest: $(BIN)
 	./scripts/selftest.sh
+
+# Regenerate the terrain contour package from assets/source/*.json. Uses the
+# same CDT kernel as the CLI, and rewrites the derived contours, models and
+# previews; the recipes are never edited by this target.
+assets: $(BIN)
+	python3 -I scripts/make_terrain_assets.py
+
+# Full reproduction: regenerate + verify hashes, elevation error and
+# constraint-edge evidence. Fails if any derived file drifts.
+rebuild-assets: $(BIN)
+	python3 -I scripts/rebuild_assets.py
+
+verify-assets:
+	python3 -I scripts/verify_terrain_assets.py
+
+# Drives the real UI in headless Chromium. Requires puppeteer and a browser;
+# see README "Verifying the viewport".
+ui-test: $(BIN)
+	node scripts/ui_asset_test.js
 
 clean:
 	rm -rf $(BUILD)

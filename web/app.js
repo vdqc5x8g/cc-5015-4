@@ -9,6 +9,7 @@ const state = {
   canvasWidth: 0,
   canvasHeight: 0,
   exaggeration: 1,
+  activeTab: 'samples',
 };
 
 const scene = new THREE.Scene();
@@ -766,6 +767,8 @@ function renderAll() {
   renderRepairs();
   renderTolerance();
   renderExportNote();
+  renderAssetPanels();
+  renderCurveEditor();
   document.getElementById('sourceText').value = state.text;
 }
 
@@ -930,6 +933,311 @@ async function exportFormat(format) {
   }
 }
 
+// ------------------------------------------------------------- terrain assets
+// An asset is a generated contour document plus its provenance and verification
+// record. Loading it puts the kernels' own input into the viewport; editing a
+// contour's elevation rewrites that document and posts it to /api/run, so the
+// rebuild always goes through the same constrained-TIN kernel as the CLI.
+const assetState = {
+  index: null,
+  current: null,      // { id, assetText, entry, verification }
+  baseline: '',       // asset document text at load time
+  editText: '',       // current text after user edits
+  editable: [],       // parsed contour rows for the editor
+  loading: false,
+};
+
+async function loadAssetIndex() {
+  const select = document.getElementById('assetSelect');
+  try {
+    const res = await fetch('/api/assets');
+    if (!res.ok) throw new Error('assets index unavailable');
+    assetState.index = await res.json();
+    select.innerHTML = '';
+    for (const entry of assetState.index.assets || []) {
+      const opt = document.createElement('option');
+      opt.value = entry.id;
+      opt.textContent = entry.title || entry.id;
+      select.appendChild(opt);
+    }
+    if (assetState.index.assets?.length) {
+      select.value = assetState.index.assets[0].id;
+    }
+  } catch (e) {
+    console.error(e);
+    const opt = document.createElement('option');
+    opt.textContent = 'no assets (run scripts/make_terrain_assets.py)';
+    select.appendChild(opt);
+  }
+}
+
+async function loadAsset(id) {
+  if (!id) return;
+  assetState.loading = true;
+  setStatus('loading asset ' + id + '…', 'busy');
+  try {
+    const res = await fetch('/api/asset/' + encodeURIComponent(id));
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.error || 'asset not found');
+    }
+    const reply = await res.json();
+    assetState.current = {
+      id,
+      assetText: reply.asset_text,
+      entry: reply.index_entry || {},
+      verification: reply.verification || {},
+    };
+    assetState.baseline = reply.asset_text;
+    assetState.editText = reply.asset_text;
+    state.text = reply.asset_text;
+    state.selectedRepairs.clear();
+    parseEditableContours();
+    await build();
+    renderAssetPanels();
+    if (state.doc?.ok === false || state.doc?.mesh?.ok === false) {
+      showEditError(state.doc?.error || state.doc?.mesh?.error || 'asset did not build');
+    } else {
+      showEditError('');
+    }
+    setStatus('asset ' + id + ' loaded', '');
+  } catch (e) {
+    console.error(e);
+    setStatus(String(e.message || e), 'err');
+  } finally {
+    assetState.loading = false;
+  }
+}
+
+function parseEditableContours() {
+  try {
+    const doc = JSON.parse(assetState.editText);
+    assetState.editable = (doc.contours || []).map((c) => ({
+      id: c.id,
+      name: c.name,
+      closed: !!c.closed,
+      elevation: c.elevation,
+      originalElevation: c.elevation,
+      dx: 0,
+      dy: 0,
+    }));
+  } catch (e) {
+    assetState.editable = [];
+  }
+}
+
+function renderAssetPanels() {
+  const provenance = document.getElementById('assetProvenance');
+  const verifyPanel = document.getElementById('verifyPanel');
+  const verifyNote = document.getElementById('verifyNote');
+  const badge = document.getElementById('assetBadge');
+  const verifyBadge = document.getElementById('verifyBadge');
+  provenance.innerHTML = '';
+  verifyPanel.innerHTML = '';
+  verifyNote.textContent = '';
+  const current = assetState.current;
+  if (!current) {
+    badge.textContent = '—';
+    verifyBadge.textContent = '—';
+    verifyBadge.className = 'count';
+    return;
+  }
+  const entry = current.entry || {};
+  badge.textContent = entry.id || current.id;
+  const provDoc = (() => { try { return JSON.parse(current.assetText).provenance || {}; } catch { return {}; } })();
+  kv(provenance, 'recipe', entry.recipe || provDoc.recipe || '—');
+  kv(provenance, 'heightfield', provDoc.heightfield || '—');
+  kv(provenance, 'generator', provDoc.generator || '—');
+  kv(provenance, 'recipe hash', (entry.recipe_sha256 || '').slice(0, 12) + '…');
+  kv(provenance, 'contours hash', (entry.contours_sha256 || '').slice(0, 12) + '…');
+  kv(provenance, 'cases', (entry.cases || provDoc.cases || []).join(', ') || '—');
+  kv(provenance, 'levels', (provDoc.levels_m || []).join(', ') || '—');
+
+  const v = current.verification || {};
+  if (!v.asset) {
+    verifyBadge.textContent = 'n/a';
+    verifyBadge.className = 'count';
+    kv(verifyPanel, 'status', 'no verification record (run scripts/verify_terrain_assets.py)', 'warn');
+    return;
+  }
+  const ok = v.ok === true;
+  verifyBadge.textContent = ok ? 'pass' : 'FAIL';
+  verifyBadge.className = 'count';
+  const err = v.elevation_error || {};
+  const con = v.constraints || {};
+  kv(verifyPanel, 'status', ok ? 'verified' : (v.error || 'failed'), ok ? 'ok' : 'err');
+  kv(verifyPanel, 'elevation error', `${fmt(err.worst_m, 6)} m (limit ${fmt(err.allowed_m, 4)} m)`, 'ok');
+  kv(verifyPanel, 'constrained edges', `${con.total ?? 0} present, ${con.missing ?? 0} missing`,
+    con.missing ? 'err' : 'ok');
+  const kinds = Object.entries(con.by_kind || {}).map(([k, n]) => `${k} ${n}`).join(' · ');
+  if (kinds) kv(verifyPanel, 'by kind', kinds);
+  kv(verifyPanel, 'triangles', fmtCount(v.mesh?.triangles || 0));
+  verifyNote.textContent = ok
+    ? 'Elevation error is measured against the parsed heightfield; constrained edges are audited against the TIN edge set.'
+    : (v.error || 'verification failed');
+}
+
+function renderCurveEditor() {
+  const wrap = document.getElementById('curvePanel');
+  const list = document.getElementById('curveList');
+  const count = document.getElementById('curveCount');
+  if (!assetState.current || state.activeTab !== 'assets') {
+    wrap.hidden = true;
+    return;
+  }
+  wrap.hidden = false;
+  list.innerHTML = '';
+  count.textContent = `${assetState.editable.length}`;
+  const palette = ['#ffd166', '#ff9f4a', '#9be07a', '#6fd3e0', '#b79cff', '#ff7fb0'];
+  assetState.editable.forEach((row, index) => {
+    const div = el('div', 'curve-row');
+    div.style.setProperty('--curve-color', palette[index % palette.length]);
+    if (row.elevation !== row.originalElevation || row.dx || row.dy) div.classList.add('changed');
+    const left = el('div');
+    left.appendChild(el('div', 'curve-name', row.name || `contour ${row.id}`));
+    const offsets = row.dx || row.dy ? ` · shift ${row.dx ? row.dx.toFixed(1) : '0'},${row.dy ? row.dy.toFixed(1) : '0'} m` : '';
+    left.appendChild(el('div', 'curve-kind',
+      `${row.closed ? 'closed' : 'open'} · z ${row.originalElevation}` +
+      `${row.elevation !== row.originalElevation ? ' → ' + row.elevation : ''}${offsets}`));
+    const fields = el('div', 'curve-fields');
+    const zInput = document.createElement('input');
+    zInput.type = 'number';
+    zInput.step = 'any';
+    zInput.title = 'elevation';
+    zInput.value = row.elevation;
+    zInput.addEventListener('change', () => {
+      const value = parseFloat(zInput.value);
+      if (!Number.isFinite(value)) {
+        showEditError('elevation must be a number');
+        return;
+      }
+      assetState.editable[index].elevation = value;
+      renderCurveEditor();
+    });
+    const dxInput = document.createElement('input');
+    dxInput.type = 'number';
+    dxInput.step = 'any';
+    dxInput.title = 'plan shift X (m)';
+    dxInput.value = row.dx;
+    dxInput.addEventListener('change', () => {
+      assetState.editable[index].dx = parseFloat(dxInput.value) || 0;
+      renderCurveEditor();
+    });
+    const dyInput = document.createElement('input');
+    dyInput.type = 'number';
+    dyInput.step = 'any';
+    dyInput.title = 'plan shift Y (m)';
+    dyInput.value = row.dy;
+    dyInput.addEventListener('change', () => {
+      assetState.editable[index].dy = parseFloat(dyInput.value) || 0;
+      renderCurveEditor();
+    });
+    fields.appendChild(zInput);
+    fields.appendChild(dxInput);
+    fields.appendChild(dyInput);
+    div.appendChild(left);
+    div.appendChild(fields);
+    list.appendChild(div);
+  });
+}
+
+function applyCurveEdits() {
+  if (!assetState.current) return;
+  let doc;
+  try {
+    doc = JSON.parse(assetState.baseline);
+  } catch (e) {
+    showEditError('cannot parse the asset document');
+    return;
+  }
+  const edits = [];
+  for (const row of assetState.editable) {
+    const contour = (doc.contours || []).find((c) => c.id === row.id);
+    if (!contour) continue;
+    if (row.elevation !== row.originalElevation) {
+      contour.elevation = row.elevation;
+      contour.name = `z=${row.elevation}`;
+      edits.push({ contour_id: row.id, kind: 'elevation', from: row.originalElevation, to: row.elevation });
+    }
+    if (row.dx || row.dy) {
+      // Translate the curve in plan; whether the move is legal is the
+      // kernel's call (leaving the boundary and crossings are validated).
+      contour.points = contour.points.map((p) => [p[0] + row.dx, p[1] + row.dy]);
+      edits.push({ contour_id: row.id, kind: 'offset', dx: row.dx, dy: row.dy });
+    }
+  }
+  doc.provenance = doc.provenance || {};
+  doc.provenance.user_edits = edits;
+  assetState.editText = JSON.stringify(doc, null, 2);
+  state.text = assetState.editText;
+}
+
+function showEditError(message) {
+  const box = document.getElementById('editError');
+  if (!message) {
+    box.hidden = true;
+    box.textContent = '';
+    return;
+  }
+  box.hidden = false;
+  box.textContent = message;
+}
+
+function resetCurves() {
+  if (!assetState.current) return;
+  assetState.editText = assetState.baseline;
+  state.text = assetState.baseline;
+  parseEditableContours();
+  renderCurveEditor();
+  showEditError('');
+  renderAssetPanels();
+}
+
+async function rebuildFromEdits() {
+  if (!assetState.current) return;
+  const changed = assetState.editable.some(
+    (row) => row.elevation !== row.originalElevation || row.dx || row.dy);
+  if (!changed) {
+    showEditError('');
+    setStatus('no edits to rebuild', '');
+    return;
+  }
+  applyCurveEdits();
+  setStatus('rebuilding from edited contours…', 'busy');
+  // Remember the last good result. build() replaces state.doc even when the
+  // kernel rejects the document; for an interactive edit we keep the standing
+  // mesh instead of clearing the viewport, and surface the rejection verbatim.
+  // The rejected text stays in the source box so the user can see and fix it.
+  const previousDoc = state.doc;
+  await build();
+  if (state.doc?.mesh?.ok) {
+    showEditError('');
+    setStatus('rebuilt · ' + fmtCount(state.doc.mesh.triangle_count) + ' faces', '');
+  } else {
+    const message = state.doc?.error || state.doc?.mesh?.error || 'rebuild failed';
+    state.doc = previousDoc;
+    rebuildScene();
+    renderAll();
+    document.getElementById('sourceText').value = assetState.editText;
+    showEditError(message
+      + '\nA contour edit the kernel rejects is not applied; the previous mesh stays on screen.');
+    setStatus('rebuild rejected by kernel', 'err');
+  }
+  renderAssetPanels();
+}
+
+function setActiveTab(tab) {
+  state.activeTab = tab;
+  for (const button of document.querySelectorAll('.tab')) {
+    const active = button.dataset.tab === tab;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-selected', active ? 'true' : 'false');
+  }
+  document.querySelector('.asset-panel').hidden = tab !== 'assets';
+  document.getElementById('verifyPanel').closest('.panel').hidden = tab !== 'assets';
+  document.getElementById('curvePanel').hidden = tab !== 'assets' || !assetState.current;
+}
+
 // ------------------------------------------------------------- wiring
 document.getElementById('runBtn').addEventListener('click', build);
 document.getElementById('reloadSample').addEventListener('click', () => {
@@ -941,16 +1249,30 @@ document.getElementById('loadSource').addEventListener('click', () => {
   state.selectedRepairs.clear();
   build();
 });
+document.getElementById('loadAsset').addEventListener('click', () => {
+  const id = document.getElementById('assetSelect').value;
+  if (id) loadAsset(id);
+});
+document.getElementById('rebuildFromEdits').addEventListener('click', rebuildFromEdits);
+document.getElementById('resetCurves').addEventListener('click', resetCurves);
+for (const button of document.querySelectorAll('.tab'))
+  button.addEventListener('click', () => setActiveTab(button.dataset.tab));
 for (const button of document.querySelectorAll('[data-format]'))
   button.addEventListener('click', () => exportFormat(button.dataset.format));
 document.getElementById('exportPipeline').addEventListener('click', () => exportFormat('pipeline'));
 
 // ------------------------------------------------------------- boot
 (async function boot() {
+  setActiveTab('samples');
+  document.querySelector('.asset-panel').hidden = true;
   await loadSamples();
   const name = document.getElementById('sampleSelect').value;
   if (name) await loadSample(name);
+  await loadAssetIndex();
   animate();
 })();
 
-window.__terrain = { state, build, exportFormat, groups, camera, controls };
+window.__terrain = {
+  state, build, exportFormat, groups, camera, controls,
+  assetState, loadAsset, rebuildFromEdits, resetCurves, loadAssetIndex,
+};

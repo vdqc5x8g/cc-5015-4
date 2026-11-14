@@ -1,0 +1,95 @@
+{
+  "id": "broken_by_hole",
+  "title": "Contours broken by a hole",
+  "description": "A diagonal slope with a rectangular void. Contours that would cross the void are split into separate pieces by the exact clipping step, so one input level becomes several constrained lines. The hole itself is never filled.",
+  "cases": [
+    "broken-contours",
+    "hole-clipping"
+  ],
+  "meta": {
+    "xy_unit": "m",
+    "xy_meters_per_unit": 1.0,
+    "z_unit": "m",
+    "z_meters_per_unit": 1.0,
+    "z_datum": "asset-local datum (0 m at the recipe base plane)"
+  },
+  "boundary": [
+    [
+      0,
+      0
+    ],
+    [
+      200,
+      0
+    ],
+    [
+      200,
+      200
+    ],
+    [
+      0,
+      200
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "holes": [
+    [
+      [
+        85,
+        85
+      ],
+      [
+        115,
+        85
+      ],
+      [
+        115,
+        115
+      ],
+      [
+        85,
+        115
+      ],
+      [
+        85,
+        85
+      ]
+    ]
+  ],
+  "levels_m": [
+    10,
+    16,
+    22,
+    28
+  ],
+  "grid_step_m": 2.0,
+  "surface": {
+    "kind": "sum_of_gaussians",
+    "base_m": 5.0,
+    "slope_x_m_per_m": 0.12,
+    "slope_y_m_per_m": 0.0,
+    "terms": [
+      {
+        "amplitude_m": 12.0,
+        "cx": 100.0,
+        "cy": 100.0,
+        "sx": 60.0,
+        "sy": 60.0
+      }
+    ]
+  },
+  "controls": [
+    {
+      "name": "uphill corner",
+      "position": [
+        180,
+        180
+      ],
+      "elevation_from_surface": true
+    }
+  ],
+  "faults": []
+}

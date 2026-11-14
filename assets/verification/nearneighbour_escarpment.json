@@ -1,0 +1,121 @@
+{
+  "asset": "nearneighbour_escarpment",
+  "ok": true,
+  "elevation_error": {
+    "metric": "max |raster bilinear elevation - declared level| over contour vertices",
+    "worst_m": 1.4210854715202004e-14,
+    "allowed_m": 0.5034247499999996,
+    "worst_vertex": [
+      84.0,
+      73.18796088302292,
+      30
+    ]
+  },
+  "constraints": {
+    "total": 3340,
+    "missing": 0,
+    "by_kind": {
+      "boundary": 24,
+      "contour": 3316
+    }
+  },
+  "mesh": {
+    "triangles": 6636,
+    "vertices": 3331
+  },
+  "rebuild_max_delta_m": 0.0,
+  "checks": [
+    {
+      "ok": true,
+      "check": "recipe declares 'id'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'title'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'description'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'cases'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'meta'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'boundary'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'levels_m'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'grid_step_m'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'surface'"
+    },
+    {
+      "ok": true,
+      "check": "recipe declares 'controls'"
+    },
+    {
+      "ok": true,
+      "check": "recipe id matches index"
+    },
+    {
+      "ok": true,
+      "check": "recipe hash matches the file on disk"
+    },
+    {
+      "ok": true,
+      "check": "heightfield exists"
+    },
+    {
+      "ok": true,
+      "check": "heightfield hash matches provenance"
+    },
+    {
+      "ok": true,
+      "check": "contour file is the one the provenance describes"
+    },
+    {
+      "ok": true,
+      "check": "max heightfield elevation error 1.42e-14 m <= 0.503 m allowed"
+    },
+    {
+      "ok": true,
+      "check": "model reports constrained edges"
+    },
+    {
+      "ok": true,
+      "check": "all 3340 constrained edges exist in the TIN (boundary=24, contour=3316)"
+    },
+    {
+      "ok": true,
+      "check": "kernel mesh is ok"
+    },
+    {
+      "ok": true,
+      "check": "mesh has triangles"
+    },
+    {
+      "ok": true,
+      "check": "near neighbours: closest different-level gap 1.022 m < 5 m"
+    },
+    {
+      "ok": true,
+      "check": "near neighbours: 3316 contour constraint edges for 13 lines"
+    },
+    {
+      "ok": true,
+      "check": "rebuild from recipe reproduces stored contours (max delta 0 m)"
+    }
+  ]
+}

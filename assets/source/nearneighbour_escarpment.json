@@ -1,0 +1,30 @@
+{
+  "id": "nearneighbour_escarpment",
+  "title": "Near-neighbour contours on an escarpment",
+  "description": "A narrow, steep-sided plateau squeezed against a tilted base. Several contour levels run within a few metres of one another along its flanks, which exercises welding and constraint preservation where lines come close but never touch.",
+  "cases": ["near-neighbour-contours", "steep-escarpment"],
+  "meta": {
+    "xy_unit": "m",
+    "xy_meters_per_unit": 1.0,
+    "z_unit": "m",
+    "z_meters_per_unit": 1.0,
+    "z_datum": "asset-local datum (0 m at the recipe base plane)"
+  },
+  "boundary": [[0, 0], [200, 0], [200, 120], [0, 120], [0, 0]],
+  "holes": [],
+  "levels_m": [22, 24, 26, 28, 30, 32, 34, 36],
+  "grid_step_m": 1.0,
+  "surface": {
+    "kind": "sum_of_gaussians",
+    "base_m": 20.0,
+    "slope_x_m_per_m": 0.0,
+    "slope_y_m_per_m": 0.0,
+    "terms": [
+      { "amplitude_m": 30.0, "cx": 100.0, "cy": 60.0, "sx": 70.0, "sy": 9.0 }
+    ]
+  },
+  "controls": [
+    { "name": "plateau crest", "position": [100, 60], "elevation_from_surface": true }
+  ],
+  "faults": []
+}

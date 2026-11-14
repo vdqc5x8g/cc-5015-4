@@ -1,0 +1,31 @@
+{
+  "id": "ridge_truncated",
+  "title": "Ridge truncated by an irregular boundary",
+  "description": "An asymmetric ridge whose lower contours run off an irregular six-sided boundary. The open contours are cut exactly on the boundary ring so the constrained TIN ends at the demesne edge instead of extrapolating past it.",
+  "cases": ["boundary-truncation", "open-contours"],
+  "meta": {
+    "xy_unit": "m",
+    "xy_meters_per_unit": 1.0,
+    "z_unit": "m",
+    "z_meters_per_unit": 1.0,
+    "z_datum": "asset-local datum (0 m at the recipe base plane)"
+  },
+  "boundary": [[0, 0], [110, 0], [160, 55], [110, 110], [0, 110], [-50, 55], [0, 0]],
+  "holes": [],
+  "levels_m": [12, 16, 20, 24, 28, 32],
+  "grid_step_m": 2.0,
+  "surface": {
+    "kind": "sum_of_gaussians",
+    "base_m": 8.0,
+    "slope_x_m_per_m": 0.08,
+    "slope_y_m_per_m": 0.015,
+    "terms": [
+      { "amplitude_m": 26.0, "cx": 55.0, "cy": 55.0, "sx": 45.0, "sy": 22.0 }
+    ]
+  },
+  "controls": [
+    { "name": "north crest", "position": [55, 55], "elevation_from_surface": true },
+    { "name": "west toe", "position": [10, 20], "elevation_from_surface": true }
+  ],
+  "faults": []
+}

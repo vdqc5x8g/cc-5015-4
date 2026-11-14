@@ -83,6 +83,26 @@ button.ghost { background: transparent; }
 .status.busy { color: var(--accent); }
 .status.err { color: var(--err); }
 
+.tabs {
+  display: flex;
+  gap: 4px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--line);
+  background: #10161d;
+  flex: 0 0 auto;
+}
+.tab {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  color: var(--muted);
+  padding: 8px 12px;
+  font-size: 12px;
+}
+.tab:hover { background: transparent; color: var(--text); border-color: transparent; }
+.tab.active { color: var(--text); border-bottom-color: var(--accent); }
+
 main {
   flex: 1 1 auto;
   display: flex;
@@ -292,3 +312,58 @@ main {
 }
 
 .empty { color: var(--muted); font-size: 11.5px; }
+
+.asset-panel .asset-select { display: flex; margin-bottom: 6px; }
+.asset-panel .asset-select select { flex: 1 1 auto; }
+.asset-panel #assetProvenance { margin-top: 8px; }
+.asset-panel .note { margin-top: 8px; }
+
+.curve-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 260px;
+  overflow-y: auto;
+  margin-top: 8px;
+}
+.curve-row {
+  display: grid;
+  grid-template-columns: 1fr 132px;
+  gap: 6px 8px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--curve-color, var(--accent));
+  border-radius: 6px;
+  padding: 6px 8px;
+  background: #121820;
+  font-size: 11.5px;
+}
+.curve-row.changed { background: #1c2530; }
+.curve-row .curve-name { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.curve-row .curve-kind { color: var(--muted); font-size: 10.5px; }
+.curve-fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.curve-row input[type="number"] {
+  width: 100%;
+  background: #0f151c;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 3px 4px;
+  font: inherit;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.curve-row input[type="number"]:focus { outline: 1px solid var(--accent); }
+.curve-fields input:first-child { border-color: #4a5568; }
+.edit-error {
+  margin-top: 8px;
+  border: 1px solid rgba(248, 81, 73, .5);
+  background: rgba(248, 81, 73, .09);
+  color: #ffb4ae;
+  border-radius: 7px;
+  padding: 7px 9px;
+  font-size: 11.5px;
+  white-space: pre-wrap;
+}
+#verifyPanel .v.ok { color: var(--ok); }
+#verifyPanel .v.err { color: var(--err); }

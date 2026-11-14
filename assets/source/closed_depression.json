@@ -1,0 +1,90 @@
+{
+  "id": "closed_depression",
+  "title": "Closed depression inside a broader hill",
+  "description": "A bowl cut into the flank of a hill. The ring contours close without an inner level, so the kernel must mark the enclosed height as an extremum rather than invent a floor. A second, separate summit gives the asset two distinct closed features.",
+  "cases": [
+    "closed-depression",
+    "nested-closed-contours"
+  ],
+  "meta": {
+    "xy_unit": "m",
+    "xy_meters_per_unit": 1.0,
+    "z_unit": "m",
+    "z_meters_per_unit": 1.0,
+    "z_datum": "asset-local datum (0 m at the recipe base plane)"
+  },
+  "boundary": [
+    [
+      0,
+      0
+    ],
+    [
+      240,
+      0
+    ],
+    [
+      240,
+      220
+    ],
+    [
+      0,
+      220
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "holes": [],
+  "levels_m": [
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48
+  ],
+  "grid_step_m": 2.0,
+  "surface": {
+    "kind": "sum_of_gaussians",
+    "base_m": 35.0,
+    "slope_x_m_per_m": 0.0,
+    "slope_y_m_per_m": 0.0,
+    "terms": [
+      {
+        "amplitude_m": -16.0,
+        "cx": 90.0,
+        "cy": 80.0,
+        "sx": 30.0,
+        "sy": 26.0
+      },
+      {
+        "amplitude_m": 18.0,
+        "cx": 170.0,
+        "cy": 150.0,
+        "sx": 55.0,
+        "sy": 55.0
+      }
+    ]
+  },
+  "controls": [
+    {
+      "name": "depression rim",
+      "position": [
+        55,
+        80
+      ],
+      "elevation_from_surface": true
+    },
+    {
+      "name": "hill crown",
+      "position": [
+        170,
+        150
+      ],
+      "elevation_from_surface": true
+    }
+  ],
+  "faults": []
+}
